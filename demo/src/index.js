@@ -1,3 +1,6 @@
+import { getText } from '@/utils';
+import styles from './index.less';
+
 export default () => {
-  return <div>I am a demo material of umi.</div>
+  return <div className={styles.container}>{getText()}</div>
 }
