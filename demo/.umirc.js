@@ -1,5 +1,5 @@
 export default {
   plugins: [
-    ['umi-plugin-material-dev', {}],
+    ['umi-plugin-block-dev', {}],
   ],
 }
