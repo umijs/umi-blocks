@@ -1,2 +1,3 @@
-# umi-materials
-Official collection of some high quality materials.
+# umi-blocks
+
+Official collection of some high quality blocks.
