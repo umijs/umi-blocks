@@ -1,4 +1,4 @@
-import { getText } from '@/utils';
+import { getText } from '@/utils/helper';
 import styles from './index.less';
 
 export default () => {
