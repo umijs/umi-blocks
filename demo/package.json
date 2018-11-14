@@ -16,7 +16,8 @@
   },
   "devDependencies": {
     "umi": "^2.0.0",
-    "umi-plugin-block-dev": "^1.0.0"
+    "umi-plugin-block-dev": "^1.0.0",
+    "umi-plugin-react": "^1.2.3"
   },
   "author": "yutingzhao1991 <yutingzhao1991@sina.com>",
   "license": "ISC"
