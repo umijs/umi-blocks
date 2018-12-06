@@ -1,14 +1,14 @@
 {
-  "name": "@umi-material/demo",
+  "name": "@umi-blocks/demo",
   "version": "1.0.0",
-  "description": "a demo material of umi",
+  "description": "a demo block of umi",
   "main": "src/index.js",
   "scripts": {
     "dev": "umi dev"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/umijs/umi-materials/demo"
+    "url": "https://github.com/umijs/umi-blocks/demo"
   },
   "dependencies": {
     "react": ">=16.0.0",
