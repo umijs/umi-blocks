@@ -1,0 +1,26 @@
+{
+  "name": "@umi-block/stepform",
+  "version": "0.0.1",
+  "description": "StepForm",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "umi dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/umijs/umi-blocks/stepform"
+  },
+  "dependencies": {
+    "react": "^16.6.3",
+    "antd": "^3.10.9",
+    "ant-design-pro": "^2.1.1",
+    "dva": "^2.4.0",
+    "mockjs": "*"
+  },
+  "devDependencies": {
+    "umi": "^2.3.0-beta.1",
+    "umi-plugin-react": "^1.3.0-beta.1",
+    "umi-plugin-block-dev": "^1.0.0"
+  },
+  "license": "ISC"
+}
