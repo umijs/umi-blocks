@@ -1,9 +1,11 @@
 import React, { memo } from 'react';
 import { Card, Tabs, Row, Col } from 'antd';
 import { formatMessage, FormattedMessage } from 'umi/locale';
-import { TimelineChart, Pie } from 'ant-design-pro/lib/Charts';
-import NumberInfo from 'ant-design-pro/lib/NumberInfo';
+import { Charts } from 'ant-design-pro';
+import { NumberInfo } from 'ant-design-pro';
 import styles from './Analysis.less';
+
+const { TimelineChart, Pie } = Charts;
 
 const CustomTab = ({ data, currentTabKey: currentKey }) => (
   <Row gutter={8} style={{ width: 138, margin: '8px 0' }}>
