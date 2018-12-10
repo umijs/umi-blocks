@@ -2,7 +2,6 @@ import React, { Component, Suspense } from 'react';
 import { connect } from 'dva';
 import { Row, Col, Icon, Menu, Dropdown } from 'antd';
 
-import GridContent from '@/components/PageHeaderWrapper/GridContent';
 import { getTimeDistance } from '@/utils/utils';
 
 import styles from './Analysis.less';
@@ -130,7 +129,7 @@ class Analysis extends Component {
     const activeKey = currentTabKey || (offlineData[0] && offlineData[0].name);
 
     return (
-      <GridContent>
+      <React.Fragment>
         <Suspense fallback={<PageLoading />}>
           <IntroduceRow loading={loading} visitData={visitData} />
         </Suspense>
@@ -177,7 +176,7 @@ class Analysis extends Component {
             handleTabChange={this.handleTabChange}
           />
         </Suspense>
-      </GridContent>
+      </React.Fragment>
     );
   }
 }
