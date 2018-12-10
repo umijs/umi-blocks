@@ -3,7 +3,7 @@ import { Card, Tabs, Row, Col } from 'antd';
 import { formatMessage, FormattedMessage } from 'umi/locale';
 import { Charts } from 'ant-design-pro';
 import { NumberInfo } from 'ant-design-pro';
-import styles from './Analysis.less';
+import styles from '../style.less';
 
 const { TimelineChart, Pie } = Charts;
 

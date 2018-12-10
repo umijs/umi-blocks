@@ -3,7 +3,7 @@ import { Row, Col, Table, Tooltip, Card, Icon } from 'antd';
 import { FormattedMessage } from 'umi/locale';
 import { Trend, NumberInfo, Charts } from 'ant-design-pro';
 import numeral from 'numeral';
-import styles from './Analysis.less';
+import styles from '../style.less';
 
 const { MiniArea } = Charts;
 

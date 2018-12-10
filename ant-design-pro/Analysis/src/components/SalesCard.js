@@ -3,7 +3,7 @@ import { Row, Col, Card, Tabs, DatePicker } from 'antd';
 import { FormattedMessage, formatMessage } from 'umi/locale';
 import numeral from 'numeral';
 import { Charts } from 'ant-design-pro';
-import styles from './Analysis.less';
+import styles from '../style.less';
 
 const { Bar } = Charts;
 

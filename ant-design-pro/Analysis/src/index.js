@@ -4,14 +4,14 @@ import { Row, Col, Icon, Menu, Dropdown } from 'antd';
 
 import { getTimeDistance } from '@/utils/utils';
 
-import styles from './Analysis.less';
+import styles from './style.less';
 import PageLoading from '@/components/PageLoading';
 
-const IntroduceRow = React.lazy(() => import('./IntroduceRow'));
-const SalesCard = React.lazy(() => import('./SalesCard'));
-const TopSearch = React.lazy(() => import('./TopSearch'));
-const ProportionSales = React.lazy(() => import('./ProportionSales'));
-const OfflineData = React.lazy(() => import('./OfflineData'));
+const IntroduceRow = React.lazy(() => import('./components/IntroduceRow'));
+const SalesCard = React.lazy(() => import('./components/SalesCard'));
+const TopSearch = React.lazy(() => import('./components/TopSearch'));
+const ProportionSales = React.lazy(() => import('./components/ProportionSales'));
+const OfflineData = React.lazy(() => import('./components/OfflineData'));
 
 @connect(({ chart, loading }) => ({
   chart,
