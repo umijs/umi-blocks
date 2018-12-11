@@ -1,6 +1,6 @@
 import React, { PureComponent, Fragment } from 'react';
 import { Card, Steps } from 'antd';
-import PageHeaderWrapper from '@/components/PageHeaderWrapper';
+import PageHeaderWrapper from './components/PageHeaderWrapper';
 import styles from '../style.less';
 
 const { Step } = Steps;

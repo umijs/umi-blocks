@@ -1,4 +1,26 @@
 export default {
+  'app.forms.basic.title': '基礎表單',
+  'app.forms.basic.description':
+    '表單頁用於向用戶收集或驗證信息，基礎表單常見於數據項較少的表單場景。',
+    
+  'validation.email.required': '請輸入郵箱地址！',
+  'validation.email.wrong-format': '郵箱地址格式錯誤！',
+  'validation.userName.required': '請輸入賬戶!',
+  'validation.password.required': '請輸入密碼！',
+  'validation.password.twice': '兩次輸入的密碼不匹配!',
+  'validation.password.strength.msg': '請至少輸入 6 個字符。請不要使用容易被猜到的密碼。',
+  'validation.password.strength.strong': '強度：強',
+  'validation.password.strength.medium': '強度：中',
+  'validation.password.strength.short': '強度：太短',
+  'validation.confirm-password.required': '請確認密碼！',
+  'validation.phone-number.required': '請輸入手機號！',
+  'validation.phone-number.wrong-format': '手機號格式錯誤！',
+  'validation.verification-code.required': '請輸入驗證碼！',
+  'validation.title.required': '請輸入標題',
+  'validation.date.required': '請選擇起止日期',
+  'validation.goal.required': '請輸入目標描述',
+  'validation.standard.required': '請輸入衡量標淮',
+
   'form.get-captcha': '獲取驗證碼',
   'form.captcha.second': '秒',
   'form.optional': '（選填）',
