@@ -14,10 +14,6 @@
     "react": "^16.6.3",
     "ant-design-pro": "^2.1.1",
     "dva": "^2.4.0",
-    "antd": "^3.10.9",
-    "hash.js": "^1.1.5",
-    "moment": "^2.22.2",
-    "nzh": "^1.0.3",
     "umi-request": "^1.0.0-beta.1"
   },
   "devDependencies": {
