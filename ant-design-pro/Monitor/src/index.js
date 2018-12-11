@@ -2,17 +2,15 @@ import React, { PureComponent } from 'react';
 import { connect } from 'dva';
 import { formatMessage, FormattedMessage } from 'umi/locale';
 import { Row, Col, Card, Tooltip } from 'antd';
-import { Pie, WaterWave, Gauge, TagCloud } from 'ant-design-pro/lib/Charts';
-import NumberInfo from 'ant-design-pro/lib/NumberInfo';
+import { NumberInfo, Charts } from 'ant-design-pro';
 import CountDown from 'ant-design-pro/lib/CountDown';
 import ActiveChart from '@/components/ActiveChart';
 import numeral from 'numeral';
-import GridContent from '@/components/PageHeaderWrapper/GridContent';
 
-import Authorized from '@/utils/Authorized';
-import styles from './Monitor.less';
+import styles from './style.less';
 
-const { Secured } = Authorized;
+const { Pie, WaterWave, Gauge, TagCloud } = Charts;
+
 
 const targetTime = new Date().getTime() + 3900000;
 
@@ -22,7 +20,6 @@ const havePermissionAsync = new Promise(resolve => {
   setTimeout(() => resolve(), 300);
 });
 
-@Secured(havePermissionAsync)
 @connect(({ monitor, loading }) => ({
   monitor,
   loading: loading.models.monitor,
@@ -40,7 +37,7 @@ class Monitor extends PureComponent {
     const { tags } = monitor;
 
     return (
-      <GridContent>
+      <React.Fragment>
         <Row gutter={24}>
           <Col xl={18} lg={24} md={24} sm={24} xs={24} style={{ marginBottom: 24 }}>
             <Card
@@ -237,7 +234,7 @@ class Monitor extends PureComponent {
             </Card>
           </Col>
         </Row>
-      </GridContent>
+      </React.Fragment>
     );
   }
 }
