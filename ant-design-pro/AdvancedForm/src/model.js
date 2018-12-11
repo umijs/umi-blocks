@@ -9,7 +9,7 @@ export default {
   },
 
   effects: {
-    *submitRegularForm({ payload }, { call }) {
+    *submitAdvancedForm({ payload }, { call }) {
       yield call(fakeSubmitForm, payload);
       message.success('提交成功');
     },

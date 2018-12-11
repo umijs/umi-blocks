@@ -13,9 +13,9 @@ import {
   Popover,
 } from 'antd';
 import { connect } from 'dva';
-import FooterToolbar from 'ant-design-pro/lib/FooterToolbar';
-import PageHeaderWrapper from '@/components/PageHeaderWrapper';
-import TableForm from './TableForm';
+import { FooterToolbar } from 'ant-design-pro';
+import PageHeaderWrapper from './components/PageHeaderWrapper';
+import TableForm from './components/TableForm';
 import styles from './style.less';
 
 const { Option } = Select;

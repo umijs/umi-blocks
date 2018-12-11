@@ -15,10 +15,6 @@ export default {
   },
 
   effects: {
-    *submitRegularForm({ payload }, { call }) {
-      yield call(fakeSubmitForm, payload);
-      message.success('提交成功');
-    },
     *submitStepForm({ payload }, { call, put }) {
       yield call(fakeSubmitForm, payload);
       yield put({
@@ -26,10 +22,6 @@ export default {
         payload,
       });
       yield put(routerRedux.push('result'));
-    },
-    *submitAdvancedForm({ payload }, { call }) {
-      yield call(fakeSubmitForm, payload);
-      message.success('提交成功');
     },
   },
 
