@@ -11,10 +11,11 @@
     "url": "https://github.com/umijs/umi-blocks/searchlist"
   },
   "dependencies": {
-    "react": "^16.6.3",
-    "dva": "^2.4.0",
+    "ant-design-pro": "^2.1.1",
     "antd": "^3.10.9",
-    "ant-design-pro": "^2.1.1"
+    "dva": "^2.4.0",
+    "react": "^16.6.3",
+    "umi-request": "^1.0.0"
   },
   "devDependencies": {
     "umi": "^2.3.0-beta.1",

@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import router from 'umi/router';
 import { connect } from 'dva';
 import { Input } from 'antd';
-import PageHeaderWrapper from '@/components/PageHeaderWrapper';
+import PageHeaderWrapper from './components/PageHeaderWrapper';
 
 @connect()
 class SearchList extends Component {
@@ -67,11 +67,6 @@ class SearchList extends Component {
         onTabChange={this.handleTabChange}
       >
         {children}
-        {/* <Switch>
-          {routes.map(item => (
-            <Route key={item.key} path={item.path} component={item.component} exact={item.exact} />
-          ))}
-        </Switch> */}
       </PageHeaderWrapper>
     );
   }
