@@ -1,6 +1,9 @@
 import React, { PureComponent, Fragment } from 'react';
 import { Card, Steps } from 'antd';
 import PageHeaderWrapper from './components/PageHeaderWrapper';
+import Step1 from './components/Step1';
+import Step2 from './components/Step2';
+import Step3 from './components/Step3';
 import styles from '../style.less';
 
 const { Step } = Steps;
@@ -23,7 +26,8 @@ export default class StepForm extends PureComponent {
   }
 
   render() {
-    const { location, children } = this.props;
+    const { location } = this.props;
+    const { pathname } = location;
     return (
       <PageHeaderWrapper
         title="分步表单"
@@ -37,7 +41,13 @@ export default class StepForm extends PureComponent {
               <Step title="确认转账信息" />
               <Step title="完成" />
             </Steps>
-            {children}
+            {
+              /confirm\/?$/.test(pathname) ?
+                <Step2 /> : (
+                  /result\/?$/.test(pathname) ?
+                  <Step3 /> : <Step1 />
+                )
+            }
           </Fragment>
         </Card>
       </PageHeaderWrapper>

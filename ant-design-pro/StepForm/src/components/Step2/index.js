@@ -3,7 +3,7 @@ import { connect } from 'dva';
 import { Form, Input, Button, Alert, Divider } from 'antd';
 import router from 'umi/router';
 import { digitUppercase } from '@/utils/utils';
-import styles from './style.less';
+import styles from './index.less';
 
 const formItemLayout = {
   labelCol: {
@@ -24,7 +24,7 @@ class Step2 extends React.PureComponent {
     const { form, data, dispatch, submitting } = this.props;
     const { getFieldDecorator, validateFields } = form;
     const onPrev = () => {
-      router.push('/form/step-form/info');
+      router.push('info');
     };
     const onValidateForm = e => {
       e.preventDefault();
