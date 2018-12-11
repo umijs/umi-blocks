@@ -64,3 +64,6 @@ typings/
 pages
 .umi
 .umi-production
+
+# MacOS
+.DS_Store
