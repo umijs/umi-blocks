@@ -13,7 +13,7 @@ import {
   Icon,
   Tooltip,
 } from 'antd';
-import PageHeaderWrapper from '@/components/PageHeaderWrapper';
+import PageHeaderWrapper from './components/PageHeaderWrapper';
 import styles from './style.less';
 
 const FormItem = Form.Item;
