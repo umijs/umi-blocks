@@ -3,12 +3,10 @@ import moment from 'moment';
 import { connect } from 'dva';
 import { Row, Col, Form, Card, Select, List } from 'antd';
 
-import TagSelect from 'ant-design-pro/lib/TagSelect';
-import AvatarList from 'ant-design-pro/lib/AvatarList';
-import Ellipsis from 'ant-design-pro/lib/Ellipsis';
+import { TagSelect, AvatarList, Ellipsis } from 'ant-design-pro';
 import StandardFormRow from '@/components/StandardFormRow';
 
-import styles from './Projects.less';
+import styles from './style.less';
 
 const { Option } = Select;
 const FormItem = Form.Item;
