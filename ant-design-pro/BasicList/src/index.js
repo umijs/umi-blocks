@@ -1,4 +1,5 @@
 import React, { PureComponent } from 'react';
+import { FormattedMessage } from 'umi/locale';
 import { findDOMNode } from 'react-dom';
 import moment from 'moment';
 import { connect } from 'dva';
@@ -21,10 +22,9 @@ import {
   Select,
 } from 'antd';
 
-import PageHeaderWrapper from '@/components/PageHeaderWrapper';
-import Result from 'ant-design-pro/lib/Result';
+import { Result } from 'ant-design-pro';
 
-import styles from './BasicList.less';
+import styles from './style.less';
 
 const FormItem = Form.Item;
 const RadioButton = Radio.Button;
@@ -253,7 +253,7 @@ class BasicList extends PureComponent {
       );
     };
     return (
-      <PageHeaderWrapper>
+      <React.Fragment>
         <div className={styles.standardList}>
           <Card bordered={false}>
             <Row>
@@ -272,7 +272,7 @@ class BasicList extends PureComponent {
           <Card
             className={styles.listCard}
             bordered={false}
-            title="标准列表"
+            title={<FormattedMessage id="menu.list.basiclist" defaultMessage="Basic List" />}
             style={{ marginTop: 24 }}
             bodyStyle={{ padding: '0 32px 40px 32px' }}
             extra={extraContent}
@@ -332,7 +332,7 @@ class BasicList extends PureComponent {
         >
           {getModalContent()}
         </Modal>
-      </PageHeaderWrapper>
+      </React.Fragment>
     );
   }
 }

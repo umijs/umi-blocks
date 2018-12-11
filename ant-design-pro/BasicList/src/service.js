@@ -1,5 +1,5 @@
 import { stringify } from 'qs';
-import request from '@/utils/request';
+import request from 'umi-request';
 
 export async function queryProjectNotice() {
   return request('/api/project/notice');
