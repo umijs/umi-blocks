@@ -1,14 +1,14 @@
 {
-  "name": "@umi-block/resulterror",
+  "name": "@umi-block/resultfail",
   "version": "0.0.1",
-  "description": "ResultError",
+  "description": "ResultFail",
   "main": "src/index.js",
   "scripts": {
     "dev": "umi dev"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/umijs/umi-blocks/resulterror"
+    "url": "https://github.com/umijs/umi-blocks/resultfail"
   },
   "dependencies": {
     "react": "^16.6.3",
