@@ -4,7 +4,8 @@ import { formatMessage, FormattedMessage } from 'umi/locale';
 import Link from 'umi/link';
 import router from 'umi/router';
 import { Form, Input, Button, Select, Row, Col, Popover, Progress } from 'antd';
-import styles from './Register.less';
+import UserLayout from './components/UserLayout';
+import styles from './style.less';
 
 const FormItem = Form.Item;
 const { Option } = Select;
@@ -178,6 +179,7 @@ class Register extends Component {
     const { getFieldDecorator } = form;
     const { count, prefix, help, visible } = this.state;
     return (
+      <UserLayout>
       <div className={styles.main}>
         <h3>
           <FormattedMessage id="app.register.register" />
@@ -327,6 +329,7 @@ class Register extends Component {
           </FormItem>
         </Form>
       </div>
+      </UserLayout>
     );
   }
 }

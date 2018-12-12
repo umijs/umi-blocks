@@ -4,11 +4,13 @@ import { connect } from 'dva';
 import Link from 'umi/link';
 import { Row, Col, Card, List, Avatar } from 'antd';
 
-import { Radar } from 'ant-design-pro/lib/Charts';
-import EditableLinkGroup from '@/components/EditableLinkGroup';
-import PageHeaderWrapper from '@/components/PageHeaderWrapper';
+import { Charts } from 'ant-design-pro';
+import EditableLinkGroup from './components/EditableLinkGroup';
+import PageHeaderWrapper from './components/PageHeaderWrapper';
 
-import styles from './Workplace.less';
+import styles from './style.less';
+
+const { Radar } = Charts;
 
 const links = [
   {
@@ -37,29 +39,20 @@ const links = [
   },
 ];
 
-@connect(({ user, project, activities, chart, loading }) => ({
+@connect(({ workplace: { user, project, activities, chart }, loading }) => ({
   currentUser: user.currentUser,
   project,
   activities,
   chart,
-  currentUserLoading: loading.effects['user/fetchCurrent'],
-  projectLoading: loading.effects['project/fetchNotice'],
-  activitiesLoading: loading.effects['activities/fetchList'],
+  currentUserLoading: loading.effects['workplace/fetchUserCurrent'],
+  projectLoading: loading.effects['workplace/fetchProjectNotice'],
+  activitiesLoading: loading.effects['workplace/fetchActivitiesList'],
 }))
 class Workplace extends PureComponent {
   componentDidMount() {
     const { dispatch } = this.props;
     dispatch({
-      type: 'user/fetchCurrent',
-    });
-    dispatch({
-      type: 'project/fetchNotice',
-    });
-    dispatch({
-      type: 'activities/fetchList',
-    });
-    dispatch({
-      type: 'chart/fetch',
+      type: 'workplace/init',
     });
   }
 

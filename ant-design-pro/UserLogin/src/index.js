@@ -3,8 +3,9 @@ import { connect } from 'dva';
 import { formatMessage, FormattedMessage } from 'umi/locale';
 import Link from 'umi/link';
 import { Checkbox, Alert, Icon } from 'antd';
-import Login from 'ant-design-pro/lib/Login';
-import styles from './Login.less';
+import { Login } from 'ant-design-pro';
+import UserLayout from './components/UserLayout';
+import styles from './style.less';
 
 const { Tab, UserName, Password, Mobile, Captcha, Submit } = Login;
 
@@ -67,6 +68,7 @@ class LoginPage extends Component {
     const { login, submitting } = this.props;
     const { type, autoLogin } = this.state;
     return (
+      <UserLayout>
       <div className={styles.main}>
         <Login
           defaultActiveKey={type}
@@ -161,6 +163,7 @@ class LoginPage extends Component {
           </div>
         </Login>
       </div>
+      </UserLayout>
     );
   }
 }

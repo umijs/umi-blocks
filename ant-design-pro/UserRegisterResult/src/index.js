@@ -2,8 +2,9 @@ import React from 'react';
 import { formatMessage, FormattedMessage } from 'umi/locale';
 import { Button } from 'antd';
 import Link from 'umi/link';
-import Result from 'ant-design-pro/lib/Result';
-import styles from './RegisterResult.less';
+import { Result } from 'ant-design-pro';
+import styles from './style.less';
+import UserLayout from './components/UserLayout';
 
 const actions = (
   <div className={styles.actions}>
@@ -21,21 +22,23 @@ const actions = (
 );
 
 const RegisterResult = ({ location }) => (
-  <Result
-    className={styles.registerResult}
-    type="success"
-    title={
-      <div className={styles.title}>
-        <FormattedMessage
-          id="app.register-result.msg"
-          values={{ email: location.state ? location.state.account : 'AntDesign@example.com' }}
-        />
-      </div>
-    }
-    description={formatMessage({ id: 'app.register-result.activation-email' })}
-    actions={actions}
-    style={{ marginTop: 56 }}
-  />
+  <UserLayout>
+    <Result
+      className={styles.registerResult}
+      type="success"
+      title={
+        <div className={styles.title}>
+          <FormattedMessage
+            id="app.register-result.msg"
+            values={{ email: location.state ? location.state.account : 'AntDesign@example.com' }}
+          />
+        </div>
+      }
+      description={formatMessage({ id: 'app.register-result.activation-email' })}
+      actions={actions}
+      style={{ marginTop: 56 }}
+    />
+  </UserLayout>
 );
 
 export default RegisterResult;
