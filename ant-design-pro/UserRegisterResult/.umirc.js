@@ -5,6 +5,6 @@ export default {
       dva: true,
       locale: true,
       antd: true,
-    }]
+    }],
   ],
-}
+};
