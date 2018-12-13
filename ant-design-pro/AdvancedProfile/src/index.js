@@ -19,10 +19,9 @@ import {
 } from 'antd';
 import classNames from 'classnames';
 import { DescriptionList } from 'ant-design-pro';
-import PageHeaderWrapper from '@/components/PageHeaderWrapper';
-import styles from './AdvancedProfile.less';
+import PageHeaderWrapper from './components/PageHeaderWrapper';
+import styles from './style.less';
 
-import 'ant-design-pro/dist/ant-design-pro.css';
 
 const { Step } = Steps;
 const { Description } = DescriptionList;

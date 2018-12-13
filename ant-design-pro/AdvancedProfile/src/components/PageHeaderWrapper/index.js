@@ -3,7 +3,7 @@ import { FormattedMessage } from 'umi/locale';
 import Link from 'umi/link';
 import PageHeader from 'ant-design-pro/lib/PageHeader';
 import styles from './index.less';
-import MenuContext from '@/layouts/MenuContext';
+import MenuContext from '../../layouts/MenuContext';
 
 const PageHeaderWrapper = ({ children, contentWidth, wrapperClassName, top, ...restProps }) => (
   <div style={{ margin: '-24px -24px 0' }} className={wrapperClassName}>
