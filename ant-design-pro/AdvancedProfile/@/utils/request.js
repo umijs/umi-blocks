@@ -1,4 +1,4 @@
-import fetch from 'dva/fetch';
+import request from 'umi-request';
 import { notification } from 'antd';
 import router from 'umi/router';
 import hash from 'hash.js';
@@ -63,7 +63,7 @@ const cachedSave = (response, hashcode) => {
  * @param  {object} [option] The options we want to pass to "fetch"
  * @return {object}           An object containing either "data" or "err"
  */
-export default function request(url, option) {
+export default function (url, option) {
   const options = {
     expirys: isAntdPro(),
     ...option,

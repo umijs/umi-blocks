@@ -11,16 +11,17 @@
     "url": "https://github.com/umijs/umi-blocks/advancedprofile"
   },
   "dependencies": {
-    "react": "^16.6.3",
-    "lodash-decorators": "^6.0.0",
-    "dva": "^2.4.0",
-    "classnames": "^2.2.6",
     "ant-design-pro": "^2.1.1",
     "antd": "^3.10.9",
-    "qs": "^6.6.0",
+    "classnames": "^2.2.6",
+    "dva": "^2.4.0",
     "hash.js": "^1.1.5",
+    "lodash-decorators": "^6.0.0",
     "moment": "^2.22.2",
-    "nzh": "^1.0.3"
+    "nzh": "^1.0.3",
+    "qs": "^6.6.0",
+    "react": "^16.6.3",
+    "umi-request": "^1.0.0"
   },
   "devDependencies": {
     "umi": "^2.3.0-beta.1",
