@@ -1,0 +1,26 @@
+{
+  "name": "@umi-block/blank",
+  "version": "0.0.1",
+  "description": "A blank block for quick start a umi page develop.",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "umi dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/umijs/umi-blocks/blank"
+  },
+  "dependencies": {
+    "react": ">=16.0.0",
+    "umi-request": "^1.0.0"
+  },
+  "devDependencies": {
+    "umi": "^2.3.0-beta.1",
+    "umi-plugin-block-dev": "^1.0.0",
+    "umi-plugin-react": "^1.3.0-beta.1"
+  },
+  "authors": [
+    "yutingzhao1991 <yutingzhao1991@sina.com>"
+  ],
+  "license": "ISC"
+}
