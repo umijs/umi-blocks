@@ -22,9 +22,8 @@ import {
   Radio,
 } from 'antd';
 import StandardTable from '@/components/StandardTable';
-import PageHeaderWrapper from '@/components/PageHeaderWrapper';
 
-import styles from './TableList.less';
+import styles from './style.less';
 
 const FormItem = Form.Item;
 const { Step } = Steps;
@@ -637,7 +636,7 @@ class TableList extends PureComponent {
       handleUpdate: this.handleUpdate,
     };
     return (
-      <PageHeaderWrapper title="查询表格">
+      <Fragment>
         <Card bordered={false}>
           <div className={styles.tableList}>
             <div className={styles.tableListForm}>{this.renderForm()}</div>
@@ -674,7 +673,7 @@ class TableList extends PureComponent {
             values={stepFormValues}
           />
         ) : null}
-      </PageHeaderWrapper>
+      </Fragment>
     );
   }
 }

@@ -1,4 +1,4 @@
-import { queryRule, removeRule, addRule, updateRule } from '@/services/api';
+import { queryRule, removeRule, addRule, updateRule } from './service';
 
 export default {
   namespace: 'rule',
