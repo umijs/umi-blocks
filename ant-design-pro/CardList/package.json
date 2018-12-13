@@ -11,15 +11,16 @@
     "url": "https://github.com/umijs/umi-blocks/ant-design-pro/cardlist"
   },
   "dependencies": {
-    "react": "^16.6.3",
-    "dva": "^2.4.0",
-    "antd": "^3.10.9",
     "ant-design-pro": "^2.1.1",
-    "qs": "^6.6.0",
+    "antd": "^3.10.9",
+    "dva": "^2.4.0",
     "hash.js": "^1.1.5",
+    "mockjs": "*",
     "moment": "^2.22.2",
     "nzh": "^1.0.3",
-    "mockjs": "*"
+    "qs": "^6.6.0",
+    "react": "^16.6.3",
+    "umi-request": "^1.0.0"
   },
   "devDependencies": {
     "umi": "^2.3.0-beta.1",

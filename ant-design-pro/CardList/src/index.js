@@ -2,10 +2,10 @@ import React, { PureComponent } from 'react';
 import { connect } from 'dva';
 import { Card, Button, Icon, List } from 'antd';
 
-import Ellipsis from 'ant-design-pro/lib/Ellipsis';
-import PageHeaderWrapper from '@/components/PageHeaderWrapper';
+import { Ellipsis } from 'ant-design-pro';
+import PageHeaderWrapper from './components/PageHeaderWrapper';
 
-import styles from './CardList.less';
+import styles from './style.less';
 
 @connect(({ list, loading }) => ({
   list,
