@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 import { connect } from 'dva';
 import { Card, Badge, Table, Divider } from 'antd';
-import DescriptionList from 'ant-design-pro/lib/DescriptionList';
-import PageHeaderWrapper from '@/components/PageHeaderWrapper';
-import styles from './BasicProfile.less';
+import { DescriptionList } from 'ant-design-pro';
+import PageHeaderWrapper from './components/PageHeaderWrapper';
+import styles from './style.less';
 
 const { Description } = DescriptionList;
 
