@@ -5,7 +5,7 @@ AdvancedForm
 ## Usage
 
 ```sh
-umi block https://github.com/umijs/umi-blocks/tree/master/advancedform
+umi block ant-design-proadvancedform
 ```
 
 ## LICENSE

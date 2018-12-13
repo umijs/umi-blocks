@@ -5,7 +5,7 @@ StepForm
 ## Usage
 
 ```sh
-umi block https://github.com/umijs/umi-blocks/tree/master/stepform
+umi block ant-design-prostepform
 ```
 
 ## LICENSE

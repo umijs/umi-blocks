@@ -5,7 +5,7 @@ Monitor
 ## Usage
 
 ```sh
-umi block https://github.com/umijs/umi-blocks/tree/master/monitor
+umi block ant-design-promonitor
 ```
 
 ## LICENSE

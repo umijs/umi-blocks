@@ -5,7 +5,7 @@ UserRegister
 ## Usage
 
 ```sh
-umi block https://github.com/umijs/umi-blocks/tree/master/userregister
+umi block ant-design-prouserregister
 ```
 
 ## LICENSE

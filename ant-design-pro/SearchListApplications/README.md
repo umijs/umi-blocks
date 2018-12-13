@@ -5,7 +5,7 @@ SearchListApplications
 ## Usage
 
 ```sh
-umi block https://github.com/umijs/umi-blocks/tree/master/searchlistapplications
+umi block ant-design-prosearchlistapplications
 ```
 
 ## LICENSE

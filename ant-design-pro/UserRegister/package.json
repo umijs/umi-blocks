@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/umijs/umi-blocks/userregister"
+    "url": "https://github.com/umijs/umi-blocks/ant-design-pro/userregister"
   },
   "dependencies": {
     "ant-design-pro": "^2.1.1",

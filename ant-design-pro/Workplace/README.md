@@ -5,7 +5,7 @@ Workplace
 ## Usage
 
 ```sh
-umi block https://github.com/umijs/umi-blocks/tree/master/workplace
+umi block ant-design-proworkplace
 ```
 
 ## LICENSE

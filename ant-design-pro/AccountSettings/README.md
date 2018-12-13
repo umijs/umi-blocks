@@ -5,7 +5,7 @@ AccountSettings
 ## Usage
 
 ```sh
-umi block https://github.com/umijs/umi-blocks/tree/master/accountsettings
+umi block ant-design-pro/accountsettings
 ```
 
 ## LICENSE

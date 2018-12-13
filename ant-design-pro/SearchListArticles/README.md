@@ -5,7 +5,7 @@ SearchListArticles
 ## Usage
 
 ```sh
-umi block https://github.com/umijs/umi-blocks/tree/master/searchlistarticles
+umi block ant-design-prosearchlistarticles
 ```
 
 ## LICENSE

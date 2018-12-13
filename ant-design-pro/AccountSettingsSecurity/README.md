@@ -5,7 +5,7 @@ AccountSettingsSecurity
 ## Usage
 
 ```sh
-umi block https://github.com/umijs/umi-blocks/tree/master/accountsettingssecurity
+umi block ant-design-proaccountsettingssecurity
 ```
 
 ## LICENSE

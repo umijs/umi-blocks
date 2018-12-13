@@ -5,7 +5,7 @@ Exception500
 ## Usage
 
 ```sh
-umi block https://github.com/umijs/umi-blocks/tree/master/exception500
+umi block ant-design-proexception500
 ```
 
 ## LICENSE

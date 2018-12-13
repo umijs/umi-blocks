@@ -5,7 +5,7 @@ Exception403
 ## Usage
 
 ```sh
-umi block https://github.com/umijs/umi-blocks/tree/master/exception403
+umi block ant-design-proexception403
 ```
 
 ## LICENSE

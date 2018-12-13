@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/umijs/umi-blocks/accountsettingsnotification"
+    "url": "https://github.com/umijs/umi-blocks/ant-design-pro/accountsettingsnotification"
   },
   "dependencies": {
     "react": "^16.6.3",

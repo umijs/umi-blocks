@@ -5,7 +5,7 @@ AccountSettingsNotification
 ## Usage
 
 ```sh
-umi block https://github.com/umijs/umi-blocks/tree/master/accountsettingsnotification
+umi block ant-design-proaccountsettingsnotification
 ```
 
 ## LICENSE

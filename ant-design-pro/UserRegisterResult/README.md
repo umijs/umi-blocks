@@ -5,7 +5,7 @@ UserRegisterResult
 ## Usage
 
 ```sh
-umi block https://github.com/umijs/umi-blocks/tree/master/userregisterresult
+umi block ant-design-prouserregisterresult
 ```
 
 ## LICENSE
