@@ -1,7 +1,7 @@
 import React from 'react';
 import { FormattedMessage } from 'umi/locale';
 import Link from 'umi/link';
-import PageHeader from 'ant-design-pro/lib/PageHeader';
+import { PageHeader } from 'ant-design-pro';
 import styles from './index.less';
 import MenuContext from '../../layouts/MenuContext';
 
