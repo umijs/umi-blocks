@@ -1,4 +1,4 @@
-# @umi-material/userregister
+# @umi-blocks/ant-design-pro/userregister
 
 UserRegister
 

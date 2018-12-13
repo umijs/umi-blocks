@@ -1,4 +1,4 @@
-# @umi-material/advancedprofile
+# @umi-blocks/ant-design-pro/advancedprofile
 
 AdvancedProfile
 

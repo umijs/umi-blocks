@@ -1,4 +1,4 @@
-# @umi-material/exception500
+# @umi-blocks/ant-design-pro/exception500
 
 Exception500
 

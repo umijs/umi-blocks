@@ -1,4 +1,4 @@
-# @umi-material/accountsettingsnotification
+# @umi-blocks/ant-design-pro/accountsettingsnotification
 
 AccountSettingsNotification
 

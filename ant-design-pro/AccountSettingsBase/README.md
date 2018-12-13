@@ -1,4 +1,4 @@
-# @umi-material/accountsettingsbase
+# @umi-blocks/ant-design-pro/accountsettingsbase
 
 AccountSettingsBase
 

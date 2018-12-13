@@ -1,4 +1,4 @@
-# @umi-material/basicprofile
+# @umi-blocks/ant-design-pro/basicprofile
 
 BasicProfile
 

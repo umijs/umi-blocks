@@ -1,4 +1,4 @@
-# @umi-material/accountsettingsbinding
+# @umi-blocks/ant-design-pro/accountsettingsbinding
 
 AccountSettingsBinding
 

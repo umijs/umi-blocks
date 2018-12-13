@@ -1,4 +1,4 @@
-# @umi-material/accountcenter
+# @umi-blocks/ant-design-pro/accountcenter
 
 AccountCenter
 

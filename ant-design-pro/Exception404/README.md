@@ -1,4 +1,4 @@
-# @umi-material/exception404
+# @umi-blocks/ant-design-pro/exception404
 
 Exception404
 

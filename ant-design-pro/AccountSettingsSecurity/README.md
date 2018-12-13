@@ -1,4 +1,4 @@
-# @umi-material/accountsettingssecurity
+# @umi-blocks/ant-design-pro/accountsettingssecurity
 
 AccountSettingsSecurity
 

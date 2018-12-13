@@ -1,4 +1,4 @@
-# @umi-material/userregisterresult
+# @umi-blocks/ant-design-pro/userregisterresult
 
 UserRegisterResult
 
