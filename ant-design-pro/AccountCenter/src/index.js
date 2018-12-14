@@ -181,7 +181,7 @@ class Center extends PureComponent {
             activeTabKey={tabKey}
             onTabChange={this.onTabChange}
           >
-            {children}
+            {children || tabKey}
           </Card>
         </Col>
       </Row>

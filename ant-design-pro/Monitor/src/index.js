@@ -11,14 +11,7 @@ import styles from './style.less';
 
 const { Pie, WaterWave, Gauge, TagCloud } = Charts;
 
-
 const targetTime = new Date().getTime() + 3900000;
-
-// use permission as a parameter
-const havePermissionAsync = new Promise(resolve => {
-  // Call resolve on behalf of passed
-  setTimeout(() => resolve(), 300);
-});
 
 @connect(({ monitor, loading }) => ({
   monitor,
