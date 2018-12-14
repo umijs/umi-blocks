@@ -2,7 +2,7 @@ export default {
   'app.forms.basic.title': 'Basic form',
   'app.forms.basic.description':
     'Form pages are used to collect or verify information to users, and basic forms are common in scenarios where there are fewer data items.',
-   
+
   'validation.email.required': 'Por favor insira seu email!',
   'validation.email.wrong-format': 'O email está errado!',
   'validation.userName.required': 'Por favor insira nome de usuário!',

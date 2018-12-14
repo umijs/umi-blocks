@@ -41,13 +41,13 @@ export default class StepForm extends PureComponent {
               <Step title="确认转账信息" />
               <Step title="完成" />
             </Steps>
-            {
-              /confirm\/?$/.test(pathname) ?
-                <Step2 /> : (
-                  /result\/?$/.test(pathname) ?
-                  <Step3 /> : <Step1 />
-                )
-            }
+            {/confirm\/?$/.test(pathname) ? (
+              <Step2 />
+            ) : /result\/?$/.test(pathname) ? (
+              <Step3 />
+            ) : (
+              <Step1 />
+            )}
           </Fragment>
         </Card>
       </PageHeaderWrapper>

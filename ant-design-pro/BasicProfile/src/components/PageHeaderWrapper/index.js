@@ -26,11 +26,7 @@ const PageHeaderWrapper = ({ children, contentWidth, wrapperClassName, top, ...r
         />
       )}
     </MenuContext.Consumer>
-    {children ? (
-      <div className={styles.content}>
-        {children}
-      </div>
-    ) : null}
+    {children ? <div className={styles.content}>{children}</div> : null}
   </div>
 );
 

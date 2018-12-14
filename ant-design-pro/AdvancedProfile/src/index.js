@@ -22,7 +22,6 @@ import { DescriptionList } from 'ant-design-pro';
 import PageHeaderWrapper from './components/PageHeaderWrapper';
 import styles from './style.less';
 
-
 const { Step } = Steps;
 const { Description } = DescriptionList;
 const ButtonGroup = Button.Group;

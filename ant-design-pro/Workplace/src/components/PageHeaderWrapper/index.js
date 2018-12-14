@@ -20,11 +20,7 @@ const PageHeaderWrapper = ({ children, contentWidth, wrapperClassName, top, ...r
         return item.title;
       }}
     />
-    {children ? (
-      <div className={styles.content}>
-        { children }
-      </div>
-    ) : null}
+    {children ? <div className={styles.content}>{children}</div> : null}
   </div>
 );
 

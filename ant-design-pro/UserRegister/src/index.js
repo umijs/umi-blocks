@@ -180,155 +180,155 @@ class Register extends Component {
     const { count, prefix, help, visible } = this.state;
     return (
       <UserLayout>
-      <div className={styles.main}>
-        <h3>
-          <FormattedMessage id="app.register.register" />
-        </h3>
-        <Form onSubmit={this.handleSubmit}>
-          <FormItem>
-            {getFieldDecorator('mail', {
-              rules: [
-                {
-                  required: true,
-                  message: formatMessage({ id: 'validation.email.required' }),
-                },
-                {
-                  type: 'email',
-                  message: formatMessage({ id: 'validation.email.wrong-format' }),
-                },
-              ],
-            })(
-              <Input size="large" placeholder={formatMessage({ id: 'form.email.placeholder' })} />
-            )}
-          </FormItem>
-          <FormItem help={help}>
-            <Popover
-              getPopupContainer={node => node.parentNode}
-              content={
-                <div style={{ padding: '4px 0' }}>
-                  {passwordStatusMap[this.getPasswordStatus()]}
-                  {this.renderPasswordProgress()}
-                  <div style={{ marginTop: 10 }}>
-                    <FormattedMessage id="validation.password.strength.msg" />
-                  </div>
-                </div>
-              }
-              overlayStyle={{ width: 240 }}
-              placement="right"
-              visible={visible}
-            >
-              {getFieldDecorator('password', {
+        <div className={styles.main}>
+          <h3>
+            <FormattedMessage id="app.register.register" />
+          </h3>
+          <Form onSubmit={this.handleSubmit}>
+            <FormItem>
+              {getFieldDecorator('mail', {
                 rules: [
                   {
-                    validator: this.checkPassword,
+                    required: true,
+                    message: formatMessage({ id: 'validation.email.required' }),
+                  },
+                  {
+                    type: 'email',
+                    message: formatMessage({ id: 'validation.email.wrong-format' }),
+                  },
+                ],
+              })(
+                <Input size="large" placeholder={formatMessage({ id: 'form.email.placeholder' })} />
+              )}
+            </FormItem>
+            <FormItem help={help}>
+              <Popover
+                getPopupContainer={node => node.parentNode}
+                content={
+                  <div style={{ padding: '4px 0' }}>
+                    {passwordStatusMap[this.getPasswordStatus()]}
+                    {this.renderPasswordProgress()}
+                    <div style={{ marginTop: 10 }}>
+                      <FormattedMessage id="validation.password.strength.msg" />
+                    </div>
+                  </div>
+                }
+                overlayStyle={{ width: 240 }}
+                placement="right"
+                visible={visible}
+              >
+                {getFieldDecorator('password', {
+                  rules: [
+                    {
+                      validator: this.checkPassword,
+                    },
+                  ],
+                })(
+                  <Input
+                    size="large"
+                    type="password"
+                    placeholder={formatMessage({ id: 'form.password.placeholder' })}
+                  />
+                )}
+              </Popover>
+            </FormItem>
+            <FormItem>
+              {getFieldDecorator('confirm', {
+                rules: [
+                  {
+                    required: true,
+                    message: formatMessage({ id: 'validation.confirm-password.required' }),
+                  },
+                  {
+                    validator: this.checkConfirm,
                   },
                 ],
               })(
                 <Input
                   size="large"
                   type="password"
-                  placeholder={formatMessage({ id: 'form.password.placeholder' })}
+                  placeholder={formatMessage({ id: 'form.confirm-password.placeholder' })}
                 />
               )}
-            </Popover>
-          </FormItem>
-          <FormItem>
-            {getFieldDecorator('confirm', {
-              rules: [
-                {
-                  required: true,
-                  message: formatMessage({ id: 'validation.confirm-password.required' }),
-                },
-                {
-                  validator: this.checkConfirm,
-                },
-              ],
-            })(
-              <Input
-                size="large"
-                type="password"
-                placeholder={formatMessage({ id: 'form.confirm-password.placeholder' })}
-              />
-            )}
-          </FormItem>
-          <FormItem>
-            <InputGroup compact>
-              <Select
-                size="large"
-                value={prefix}
-                onChange={this.changePrefix}
-                style={{ width: '20%' }}
-              >
-                <Option value="86">+86</Option>
-                <Option value="87">+87</Option>
-              </Select>
-              {getFieldDecorator('mobile', {
-                rules: [
-                  {
-                    required: true,
-                    message: formatMessage({ id: 'validation.phone-number.required' }),
-                  },
-                  {
-                    pattern: /^\d{11}$/,
-                    message: formatMessage({ id: 'validation.phone-number.wrong-format' }),
-                  },
-                ],
-              })(
-                <Input
+            </FormItem>
+            <FormItem>
+              <InputGroup compact>
+                <Select
                   size="large"
-                  style={{ width: '80%' }}
-                  placeholder={formatMessage({ id: 'form.phone-number.placeholder' })}
-                />
-              )}
-            </InputGroup>
-          </FormItem>
-          <FormItem>
-            <Row gutter={8}>
-              <Col span={16}>
-                {getFieldDecorator('captcha', {
+                  value={prefix}
+                  onChange={this.changePrefix}
+                  style={{ width: '20%' }}
+                >
+                  <Option value="86">+86</Option>
+                  <Option value="87">+87</Option>
+                </Select>
+                {getFieldDecorator('mobile', {
                   rules: [
                     {
                       required: true,
-                      message: formatMessage({ id: 'validation.verification-code.required' }),
+                      message: formatMessage({ id: 'validation.phone-number.required' }),
+                    },
+                    {
+                      pattern: /^\d{11}$/,
+                      message: formatMessage({ id: 'validation.phone-number.wrong-format' }),
                     },
                   ],
                 })(
                   <Input
                     size="large"
-                    placeholder={formatMessage({ id: 'form.verification-code.placeholder' })}
+                    style={{ width: '80%' }}
+                    placeholder={formatMessage({ id: 'form.phone-number.placeholder' })}
                   />
                 )}
-              </Col>
-              <Col span={8}>
-                <Button
-                  size="large"
-                  disabled={count}
-                  className={styles.getCaptcha}
-                  onClick={this.onGetCaptcha}
-                >
-                  {count
-                    ? `${count} s`
-                    : formatMessage({ id: 'app.register.get-verification-code' })}
-                </Button>
-              </Col>
-            </Row>
-          </FormItem>
-          <FormItem>
-            <Button
-              size="large"
-              loading={submitting}
-              className={styles.submit}
-              type="primary"
-              htmlType="submit"
-            >
-              <FormattedMessage id="app.register.register" />
-            </Button>
-            <Link className={styles.login} to="/User/Login">
-              <FormattedMessage id="app.register.sign-in" />
-            </Link>
-          </FormItem>
-        </Form>
-      </div>
+              </InputGroup>
+            </FormItem>
+            <FormItem>
+              <Row gutter={8}>
+                <Col span={16}>
+                  {getFieldDecorator('captcha', {
+                    rules: [
+                      {
+                        required: true,
+                        message: formatMessage({ id: 'validation.verification-code.required' }),
+                      },
+                    ],
+                  })(
+                    <Input
+                      size="large"
+                      placeholder={formatMessage({ id: 'form.verification-code.placeholder' })}
+                    />
+                  )}
+                </Col>
+                <Col span={8}>
+                  <Button
+                    size="large"
+                    disabled={count}
+                    className={styles.getCaptcha}
+                    onClick={this.onGetCaptcha}
+                  >
+                    {count
+                      ? `${count} s`
+                      : formatMessage({ id: 'app.register.get-verification-code' })}
+                  </Button>
+                </Col>
+              </Row>
+            </FormItem>
+            <FormItem>
+              <Button
+                size="large"
+                loading={submitting}
+                className={styles.submit}
+                type="primary"
+                htmlType="submit"
+              >
+                <FormattedMessage id="app.register.register" />
+              </Button>
+              <Link className={styles.login} to="/User/Login">
+                <FormattedMessage id="app.register.sign-in" />
+              </Link>
+            </FormItem>
+          </Form>
+        </div>
       </UserLayout>
     );
   }

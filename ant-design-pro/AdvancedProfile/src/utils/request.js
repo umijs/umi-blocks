@@ -63,7 +63,7 @@ const cachedSave = (response, hashcode) => {
  * @param  {object} [option] The options we want to pass to "fetch"
  * @return {object}           An object containing either "data" or "err"
  */
-export default function (url, option) {
+export default function(url, option) {
   const options = {
     expirys: isAntdPro(),
     ...option,
