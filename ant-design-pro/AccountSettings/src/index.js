@@ -3,8 +3,11 @@ import { connect } from 'dva';
 import router from 'umi/router';
 import { FormattedMessage } from 'umi/locale';
 import { Menu } from 'antd';
-import GridContent from '@/components/PageHeaderWrapper/GridContent';
 import styles from './Info.less';
+import BaseView from './base';
+import SecurityView from './security';
+import BindingView from './binding';
+import NotificationView from './notification';
 
 const { Item } = Menu;
 
@@ -39,8 +42,8 @@ class Info extends Component {
   }
 
   static getDerivedStateFromProps(props, state) {
-    const { match, location } = props;
-    let selectKey = location.pathname.replace(`${match.path}/`, '');
+    const { location } = props;
+    let selectKey = location.pathname.split('/').pop();
     selectKey = state.menuMap[selectKey] ? selectKey : 'base';
     if (selectKey !== state.selectKey) {
       return { selectKey };
@@ -83,6 +86,9 @@ class Info extends Component {
       return;
     }
     requestAnimationFrame(() => {
+      if (!this.main) {
+        return;
+      }
       let mode = 'inline';
       const { offsetWidth } = this.main;
       if (this.main.offsetWidth < 641 && offsetWidth > 400) {
@@ -97,31 +103,47 @@ class Info extends Component {
     });
   };
 
+  renderChildren = () => {
+    const { selectKey } = this.state;
+    switch (selectKey) {
+      case 'base':
+        return <BaseView />;
+      case 'security':
+        return <SecurityView />;
+      case 'binding':
+        return <BindingView />;
+      case 'notification':
+        return <NotificationView />;
+      default:
+        break;
+    }
+
+    return null;
+  };
+
   render() {
-    const { children, currentUser } = this.props;
+    const { currentUser } = this.props;
     if (!currentUser.userid) {
       return '';
     }
     const { mode, selectKey } = this.state;
     return (
-      <GridContent>
-        <div
-          className={styles.main}
-          ref={ref => {
-            this.main = ref;
-          }}
-        >
-          <div className={styles.leftmenu}>
-            <Menu mode={mode} selectedKeys={[selectKey]} onClick={this.selectKey}>
-              {this.getmenu()}
-            </Menu>
-          </div>
-          <div className={styles.right}>
-            <div className={styles.title}>{this.getRightTitle()}</div>
-            {children}
-          </div>
+      <div
+        className={styles.main}
+        ref={ref => {
+          this.main = ref;
+        }}
+      >
+        <div className={styles.leftmenu}>
+          <Menu mode={mode} selectedKeys={[selectKey]} onClick={this.selectKey}>
+            {this.getmenu()}
+          </Menu>
         </div>
-      </GridContent>
+        <div className={styles.right}>
+          <div className={styles.title}>{this.getRightTitle()}</div>
+          {this.renderChildren()}
+        </div>
+      </div>
     );
   }
 }

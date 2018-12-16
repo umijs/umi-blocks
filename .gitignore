@@ -67,3 +67,4 @@ pages
 
 # MacOS
 .DS_Store
+yarn.lock

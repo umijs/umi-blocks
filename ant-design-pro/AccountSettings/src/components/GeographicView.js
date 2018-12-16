@@ -10,19 +10,19 @@ const nullSlectItem = {
   key: '',
 };
 
-@connect(({ geographic }) => {
-  const { province, isLoading, city } = geographic;
+@connect(({ user, loading }) => {
+  const { province, city } = user;
   return {
     province,
     city,
-    isLoading,
+    loading: loading.models.user,
   };
 })
 class GeographicView extends PureComponent {
   componentDidMount = () => {
     const { dispatch } = this.props;
     dispatch({
-      type: 'geographic/fetchProvince',
+      type: 'user/fetchProvince',
     });
   };
 
@@ -31,7 +31,7 @@ class GeographicView extends PureComponent {
 
     if (!props.value && !!value && !!value.province) {
       dispatch({
-        type: 'geographic/fetchCity',
+        type: 'user/fetchCity',
         payload: value.province.key,
       });
     }
@@ -65,7 +65,7 @@ class GeographicView extends PureComponent {
   selectProvinceItem = item => {
     const { dispatch, onChange } = this.props;
     dispatch({
-      type: 'geographic/fetchCity',
+      type: 'user/fetchCity',
       payload: item.key,
     });
     onChange({
@@ -99,9 +99,9 @@ class GeographicView extends PureComponent {
 
   render() {
     const { province, city } = this.conversionObject();
-    const { isLoading } = this.props;
+    const { loading } = this.props;
     return (
-      <Spin spinning={isLoading} wrapperClassName={styles.row}>
+      <Spin spinning={loading} wrapperClassName={styles.row}>
         <Select
           className={styles.item}
           value={province}
