@@ -5,7 +5,7 @@ BasicForm
 ## Usage
 
 ```sh
-umi block ant-design-probasicform
+umi block ant-design-pro/basicform
 ```
 
 ## LICENSE

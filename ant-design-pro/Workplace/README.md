@@ -5,7 +5,7 @@ Workplace
 ## Usage
 
 ```sh
-umi block ant-design-proworkplace
+umi block ant-design-pro/Workplace
 ```
 
 ## LICENSE

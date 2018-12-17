@@ -5,7 +5,7 @@ Monitor
 ## Usage
 
 ```sh
-umi block ant-design-promonitor
+umi block ant-design-pro/monitor
 ```
 
 ## LICENSE

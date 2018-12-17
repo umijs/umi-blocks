@@ -5,7 +5,7 @@ TableList
 ## Usage
 
 ```sh
-umi block ant-design-protablelist
+umi block ant-design-pro/TableList
 ```
 
 ## LICENSE

@@ -5,7 +5,7 @@ BasicProfile
 ## Usage
 
 ```sh
-umi block ant-design-probasicprofile
+umi block ant-design-pro/basicprofile
 ```
 
 ## LICENSE

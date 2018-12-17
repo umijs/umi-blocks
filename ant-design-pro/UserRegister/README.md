@@ -5,7 +5,7 @@ UserRegister
 ## Usage
 
 ```sh
-umi block ant-design-prouserregister
+umi block ant-design-pro/UserRegister
 ```
 
 ## LICENSE

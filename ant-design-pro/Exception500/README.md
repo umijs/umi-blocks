@@ -5,7 +5,7 @@ Exception500
 ## Usage
 
 ```sh
-umi block ant-design-proexception500
+umi block ant-design-pro/exception500
 ```
 
 ## LICENSE

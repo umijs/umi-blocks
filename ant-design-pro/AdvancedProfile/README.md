@@ -5,7 +5,7 @@ AdvancedProfile
 ## Usage
 
 ```sh
-umi block ant-design-proadvancedprofile
+umi block ant-design-pro/advancedprofile
 ```
 
 ## LICENSE

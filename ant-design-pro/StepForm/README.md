@@ -5,7 +5,7 @@ StepForm
 ## Usage
 
 ```sh
-umi block ant-design-prostepform
+umi block ant-design-pro/stepform
 ```
 
 ## LICENSE

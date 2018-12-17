@@ -5,7 +5,7 @@ SearchListArticles
 ## Usage
 
 ```sh
-umi block ant-design-prosearchlistarticles
+umi block ant-design-pro/searchlistarticles
 ```
 
 ## LICENSE

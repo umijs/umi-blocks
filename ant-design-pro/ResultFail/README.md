@@ -5,7 +5,7 @@ ResultError
 ## Usage
 
 ```sh
-umi block ant-design-proresulterror
+umi block ant-design-pro/resulterror
 ```
 
 ## LICENSE

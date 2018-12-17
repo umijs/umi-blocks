@@ -5,7 +5,7 @@ Exception404
 ## Usage
 
 ```sh
-umi block ant-design-proexception404
+umi block ant-design-pro/exception404
 ```
 
 ## LICENSE

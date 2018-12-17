@@ -5,7 +5,7 @@ Exception403
 ## Usage
 
 ```sh
-umi block ant-design-proexception403
+umi block ant-design-pro/exception403
 ```
 
 ## LICENSE

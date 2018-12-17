@@ -5,7 +5,7 @@ Analysis
 ## Usage
 
 ```sh
-umi block ant-design-proanalysis
+umi block ant-design-pro/analysis
 ```
 
 ## LICENSE

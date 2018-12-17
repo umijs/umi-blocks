@@ -5,7 +5,7 @@ AccountSettings
 ## Usage
 
 ```sh
-umi block ant-design-pro/accountsettings
+umi block ant-design-pro/AccountSettings
 ```
 
 ## LICENSE

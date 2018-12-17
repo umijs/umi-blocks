@@ -5,7 +5,7 @@ AccountCenter
 ## Usage
 
 ```sh
-umi block ant-design-proaccountcenter
+umi block ant-design-pro/AccountCenter
 ```
 
 ## LICENSE

@@ -5,7 +5,7 @@ SearchListApplications
 ## Usage
 
 ```sh
-umi block ant-design-prosearchlistapplications
+umi block ant-design-pro/searchlistapplications
 ```
 
 ## LICENSE

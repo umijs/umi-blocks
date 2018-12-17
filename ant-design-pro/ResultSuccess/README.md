@@ -5,7 +5,7 @@ ResultSuccess
 ## Usage
 
 ```sh
-umi block ant-design-proresultsuccess
+umi block ant-design-pro/resultsuccess
 ```
 
 ## LICENSE

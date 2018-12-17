@@ -5,7 +5,7 @@ BasicList
 ## Usage
 
 ```sh
-umi block ant-design-probasiclist
+umi block ant-design-pro/basiclist
 ```
 
 ## LICENSE

@@ -5,7 +5,7 @@ CardList
 ## Usage
 
 ```sh
-umi block ant-design-procardlist
+umi block ant-design-pro/cardlist
 ```
 
 ## LICENSE

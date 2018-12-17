@@ -5,7 +5,7 @@ UserLogin
 ## Usage
 
 ```sh
-umi block ant-design-prouserlogin
+umi block ant-design-pro/UserLogin
 ```
 
 ## LICENSE

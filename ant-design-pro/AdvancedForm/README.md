@@ -5,7 +5,7 @@ AdvancedForm
 ## Usage
 
 ```sh
-umi block ant-design-proadvancedform
+umi block ant-design-pro/advancedform
 ```
 
 ## LICENSE
