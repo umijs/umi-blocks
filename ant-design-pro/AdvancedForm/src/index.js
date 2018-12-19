@@ -58,10 +58,10 @@ const tableData = [
 ];
 
 @connect(({ loading }) => ({
-  submitting: loading.effects['form/submitAdvancedForm'],
+  submitting: loading.effects['BLOCK_NAME/submitAdvancedForm'],
 }))
 @Form.create()
-class AdvancedForm extends PureComponent {
+class PAGE_NAME_UPPER_CAMEL_CASE extends PureComponent {
   state = {
     width: '100%',
   };
@@ -139,7 +139,7 @@ class AdvancedForm extends PureComponent {
       if (!error) {
         // submit the values
         dispatch({
-          type: 'form/submitAdvancedForm',
+          type: 'BLOCK_NAME/submitAdvancedForm',
           payload: values,
         });
       }
@@ -320,4 +320,4 @@ class AdvancedForm extends PureComponent {
   }
 }
 
-export default AdvancedForm;
+export default PAGE_NAME_UPPER_CAMEL_CASE;
