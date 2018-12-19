@@ -10,19 +10,19 @@ const nullSlectItem = {
   key: '',
 };
 
-@connect(({ user, loading }) => {
-  const { province, city } = user;
+@connect(({ BLOCK_NAME, loading }) => {
+  const { province, city } = BLOCK_NAME;
   return {
     province,
     city,
-    loading: loading.models.user,
+    loading: loading.models.BLOCK_NAME,
   };
 })
 class GeographicView extends PureComponent {
   componentDidMount = () => {
     const { dispatch } = this.props;
     dispatch({
-      type: 'user/fetchProvince',
+      type: 'BLOCK_NAME/fetchProvince',
     });
   };
 
@@ -31,7 +31,7 @@ class GeographicView extends PureComponent {
 
     if (!props.value && !!value && !!value.province) {
       dispatch({
-        type: 'user/fetchCity',
+        type: 'BLOCK_NAME/fetchCity',
         payload: value.province.key,
       });
     }
@@ -65,7 +65,7 @@ class GeographicView extends PureComponent {
   selectProvinceItem = item => {
     const { dispatch, onChange } = this.props;
     dispatch({
-      type: 'user/fetchCity',
+      type: 'BLOCK_NAME/fetchCity',
       payload: item.key,
     });
     onChange({

@@ -35,7 +35,7 @@ const operationTabList = [
   currentUser: BLOCK_NAME.currentUser,
   currentUserLoading: loading.effects['BLOCK_NAME/fetchCurrent'],
 }))
-class Center extends PureComponent {
+class PAGE_NAME_UPPER_CAMEL_CASE extends PureComponent {
   static getDerivedStateFromProps(props, state) {
     const { match, location } = props;
     const { tabKey } = state;
@@ -188,4 +188,4 @@ class Center extends PureComponent {
   }
 }
 
-export default Center;
+export default PAGE_NAME_UPPER_CAMEL_CASE;

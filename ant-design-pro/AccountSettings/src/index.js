@@ -3,18 +3,18 @@ import { connect } from 'dva';
 import router from 'umi/router';
 import { FormattedMessage } from 'umi/locale';
 import { Menu } from 'antd';
-import styles from './Info.less';
-import BaseView from './base';
-import SecurityView from './security';
-import BindingView from './binding';
-import NotificationView from './notification';
+import styles from './style.less';
+import BaseView from './components/base';
+import SecurityView from './components/security';
+import BindingView from './components/binding';
+import NotificationView from './components/notification';
 
 const { Item } = Menu;
 
-@connect(({ user }) => ({
-  currentUser: user.currentUser,
+@connect(({ BLOCK_NAME }) => ({
+  currentUser: BLOCK_NAME.currentUser,
 }))
-class Info extends Component {
+class PAGE_NAME_UPPER_CAMEL_CASE extends Component {
   constructor(props) {
     super(props);
     const { match, location } = props;
@@ -54,7 +54,7 @@ class Info extends Component {
   componentDidMount() {
     const { dispatch } = this.props;
     dispatch({
-      type: 'user/fetchCurrent',
+      type: 'BLOCK_NAME/fetchCurrent',
     });
     window.addEventListener('resize', this.resize);
     this.resize();
@@ -148,4 +148,4 @@ class Info extends Component {
   }
 }
 
-export default Info;
+export default PAGE_NAME_UPPER_CAMEL_CASE;

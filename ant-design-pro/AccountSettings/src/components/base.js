@@ -3,9 +3,8 @@ import { formatMessage, FormattedMessage } from 'umi/locale';
 import { Form, Input, Upload, Select, Button } from 'antd';
 import { connect } from 'dva';
 import styles from './BaseView.less';
-import GeographicView from './components/GeographicView';
-import PhoneView from './components/PhoneView';
-// import { getTimeDistance } from '@/utils/utils';
+import GeographicView from './GeographicView';
+import PhoneView from './PhoneView';
 
 const FormItem = Form.Item;
 const { Option } = Select;
@@ -51,8 +50,8 @@ const validatorPhone = (rule, value, callback) => {
   callback();
 };
 
-@connect(({ user }) => ({
-  currentUser: user.currentUser,
+@connect(({ BLOCK_NAME }) => ({
+  currentUser: BLOCK_NAME.currentUser,
 }))
 @Form.create()
 class BaseView extends Component {
