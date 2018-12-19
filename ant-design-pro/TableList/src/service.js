@@ -1,14 +1,15 @@
-import { stringify } from 'qs';
 import request from 'umi-request';
 
 export async function queryRule(params) {
-  return request(`/api/rule?${stringify(params)}`);
+  return request(`/api/BLOCK_NAME`, {
+    params,
+  });
 }
 
 export async function removeRule(params) {
-  return request('/api/rule', {
+  return request('/api/BLOCK_NAME', {
     method: 'POST',
-    body: {
+    data: {
       ...params,
       method: 'delete',
     },
@@ -16,9 +17,9 @@ export async function removeRule(params) {
 }
 
 export async function addRule(params) {
-  return request('/api/rule', {
+  return request('/api/BLOCK_NAME', {
     method: 'POST',
-    body: {
+    data: {
       ...params,
       method: 'post',
     },
@@ -26,9 +27,9 @@ export async function addRule(params) {
 }
 
 export async function updateRule(params) {
-  return request('/api/rule', {
+  return request('/api/BLOCK_NAME', {
     method: 'POST',
-    body: {
+    data: {
       ...params,
       method: 'update',
     },

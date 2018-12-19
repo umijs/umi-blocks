@@ -133,6 +133,6 @@ function postRule(req, res, u, b) {
 }
 
 export default {
-  'GET /api/rule': getRule,
-  'POST /api/rule': postRule,
+  'GET /api/BLOCK_NAME': getRule,
+  'POST /api/BLOCK_NAME': postRule,
 };
