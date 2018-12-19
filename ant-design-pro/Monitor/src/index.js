@@ -4,8 +4,8 @@ import { formatMessage, FormattedMessage } from 'umi/locale';
 import { Row, Col, Card, Tooltip } from 'antd';
 import { NumberInfo, Charts } from 'ant-design-pro';
 import CountDown from 'ant-design-pro/lib/CountDown';
-import ActiveChart from '@/components/ActiveChart';
 import numeral from 'numeral';
+import ActiveChart from './components/ActiveChart';
 
 import styles from './style.less';
 
@@ -13,21 +13,21 @@ const { Pie, WaterWave, Gauge, TagCloud } = Charts;
 
 const targetTime = new Date().getTime() + 3900000;
 
-@connect(({ monitor, loading }) => ({
-  monitor,
+@connect(({ BLOCK_NAME, loading }) => ({
+  BLOCK_NAME,
   loading: loading.models.monitor,
 }))
-class Monitor extends PureComponent {
+class PAGE_NAME_UPPER_CAMEL_CASE extends PureComponent {
   componentDidMount() {
     const { dispatch } = this.props;
     dispatch({
-      type: 'monitor/fetchTags',
+      type: 'BLOCK_NAME/fetchTags',
     });
   }
 
   render() {
-    const { monitor, loading } = this.props;
-    const { tags } = monitor;
+    const { BLOCK_NAME, loading } = this.props;
+    const { tags } = BLOCK_NAME;
 
     return (
       <React.Fragment>
@@ -232,4 +232,4 @@ class Monitor extends PureComponent {
   }
 }
 
-export default Monitor;
+export default PAGE_NAME_UPPER_CAMEL_CASE;

@@ -1,7 +1,7 @@
 import { queryTags } from './service';
 
 export default {
-  namespace: 'monitor',
+  namespace: 'BLOCK_NAME',
 
   state: {
     tags: [],
