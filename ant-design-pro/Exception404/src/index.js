@@ -3,7 +3,7 @@ import { formatMessage } from 'umi/locale';
 import Link from 'umi/link';
 import { Exception } from 'ant-design-pro';
 
-const Exception404 = () => (
+const PAGE_NAME_UPPER_CAMEL_CASE = () => (
   <Exception
     type="404"
     desc={formatMessage({ id: 'app.exception.description.404' })}
@@ -12,4 +12,4 @@ const Exception404 = () => (
   />
 );
 
-export default Exception404;
+export default PAGE_NAME_UPPER_CAMEL_CASE;
