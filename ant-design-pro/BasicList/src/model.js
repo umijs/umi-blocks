@@ -1,7 +1,7 @@
 import { queryFakeList, removeFakeList, addFakeList, updateFakeList } from './service';
 
 export default {
-  namespace: 'list',
+  namespace: 'BLOCK_NAME',
 
   state: {
     list: [],

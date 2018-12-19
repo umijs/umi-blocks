@@ -32,12 +32,12 @@ const RadioGroup = Radio.Group;
 const SelectOption = Select.Option;
 const { Search, TextArea } = Input;
 
-@connect(({ list, loading }) => ({
-  list,
-  loading: loading.models.list,
+@connect(({ BLOCK_NAME, loading }) => ({
+  BLOCK_NAME,
+  loading: loading.models.BLOCK_NAME,
 }))
 @Form.create()
-class BasicList extends PureComponent {
+class PAGE_NAME_UPPER_CAMEL_CASE extends PureComponent {
   state = { visible: false, done: false };
 
   formLayout = {
@@ -48,7 +48,7 @@ class BasicList extends PureComponent {
   componentDidMount() {
     const { dispatch } = this.props;
     dispatch({
-      type: 'list/fetch',
+      type: 'BLOCK_NAME/fetch',
       payload: {
         count: 5,
       },
@@ -97,7 +97,7 @@ class BasicList extends PureComponent {
         done: true,
       });
       dispatch({
-        type: 'list/submit',
+        type: 'BLOCK_NAME/submit',
         payload: { id, ...fieldsValue },
       });
     });
@@ -106,14 +106,14 @@ class BasicList extends PureComponent {
   deleteItem = id => {
     const { dispatch } = this.props;
     dispatch({
-      type: 'list/submit',
+      type: 'BLOCK_NAME/submit',
       payload: { id },
     });
   };
 
   render() {
     const {
-      list: { list },
+      BLOCK_NAME: { list },
       loading,
     } = this.props;
     const {
@@ -337,4 +337,4 @@ class BasicList extends PureComponent {
   }
 }
 
-export default BasicList;
+export default PAGE_NAME_UPPER_CAMEL_CASE;
