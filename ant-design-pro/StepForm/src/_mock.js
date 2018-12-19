@@ -1,5 +1,5 @@
 export default {
-  'POST /api/forms': (req, res) => {
+  'POST /api/BLOCK_NAME/forms': (req, res) => {
     res.send({ message: 'Ok' });
   },
 };

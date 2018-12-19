@@ -5,8 +5,8 @@ import router from 'umi/router';
 import { Result } from 'ant-design-pro';
 import styles from './index.less';
 
-@connect(({ form }) => ({
-  data: form.step,
+@connect(({ BLOCK_NAME_CAMEL_CASE }) => ({
+  data: BLOCK_NAME_CAMEL_CASE.step,
 }))
 class Step3 extends React.PureComponent {
   render() {

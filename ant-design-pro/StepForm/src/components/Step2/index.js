@@ -2,7 +2,7 @@ import React from 'react';
 import { connect } from 'dva';
 import { Form, Input, Button, Alert, Divider } from 'antd';
 import router from 'umi/router';
-import { digitUppercase } from '@/utils/utils';
+import { digitUppercase } from '../../utils/utils';
 import styles from './index.less';
 
 const formItemLayout = {
@@ -14,9 +14,9 @@ const formItemLayout = {
   },
 };
 
-@connect(({ form, loading }) => ({
-  submitting: loading.effects['form/submitStepForm'],
-  data: form.step,
+@connect(({ BLOCK_NAME_CAMEL_CASE, loading }) => ({
+  submitting: loading.effects['BLOCK_NAME_CAMEL_CASE/submitStepForm'],
+  data: BLOCK_NAME_CAMEL_CASE.step,
 }))
 @Form.create()
 class Step2 extends React.PureComponent {
@@ -31,7 +31,7 @@ class Step2 extends React.PureComponent {
       validateFields((err, values) => {
         if (!err) {
           dispatch({
-            type: 'form/submitStepForm',
+            type: 'BLOCK_NAME_CAMEL_CASE/submitStepForm',
             payload: {
               ...data,
               ...values,

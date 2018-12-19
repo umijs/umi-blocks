@@ -1,9 +1,8 @@
 import { routerRedux } from 'dva/router';
-import { message } from 'antd';
 import { fakeSubmitForm } from './service';
 
 export default {
-  namespace: 'form',
+  namespace: 'BLOCK_NAME_CAMEL_CASE',
 
   state: {
     step: {

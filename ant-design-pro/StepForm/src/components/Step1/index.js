@@ -15,8 +15,8 @@ const formItemLayout = {
   },
 };
 
-@connect(({ form }) => ({
-  data: form.step,
+@connect(({ BLOCK_NAME_CAMEL_CASE }) => ({
+  data: BLOCK_NAME_CAMEL_CASE.step,
 }))
 @Form.create()
 class Step1 extends React.PureComponent {
@@ -27,7 +27,7 @@ class Step1 extends React.PureComponent {
       validateFields((err, values) => {
         if (!err) {
           dispatch({
-            type: 'form/saveStepFormData',
+            type: 'BLOCK_NAME_CAMEL_CASE/saveStepFormData',
             payload: values,
           });
           router.push('/confirm');
