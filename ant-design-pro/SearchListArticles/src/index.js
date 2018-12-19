@@ -3,8 +3,8 @@ import { connect } from 'dva';
 import { Form, Card, Select, List, Tag, Icon, Row, Col, Button } from 'antd';
 
 import TagSelect from 'ant-design-pro/lib/TagSelect';
-import StandardFormRow from '@/components/StandardFormRow';
-import ArticleListContent from '@/components/ArticleListContent';
+import StandardFormRow from './components/StandardFormRow';
+import ArticleListContent from './components/ArticleListContent';
 import styles from './style.less';
 
 const { Option } = Select;
@@ -12,9 +12,9 @@ const FormItem = Form.Item;
 
 const pageSize = 5;
 
-@connect(({ list, loading }) => ({
-  list,
-  loading: loading.models.list,
+@connect(({ BLOCK_NAME, loading }) => ({
+  BLOCK_NAME,
+  loading: loading.models.BLOCK_NAME,
 }))
 @Form.create({
   onValuesChange({ dispatch }, changedValues, allValues) {
@@ -23,7 +23,7 @@ const pageSize = 5;
     console.log(changedValues, allValues);
     // 模拟查询表单生效
     dispatch({
-      type: 'list/fetch',
+      type: 'BLOCK_NAME/fetch',
       payload: {
         count: 5,
       },
@@ -34,7 +34,7 @@ class SearchList extends Component {
   componentDidMount() {
     const { dispatch } = this.props;
     dispatch({
-      type: 'list/fetch',
+      type: 'BLOCK_NAME/fetch',
       payload: {
         count: 5,
       },
@@ -51,7 +51,7 @@ class SearchList extends Component {
   fetchMore = () => {
     const { dispatch } = this.props;
     dispatch({
-      type: 'list/appendFetch',
+      type: 'BLOCK_NAME/appendFetch',
       payload: {
         count: pageSize,
       },
@@ -61,7 +61,7 @@ class SearchList extends Component {
   render() {
     const {
       form,
-      list: { list },
+      BLOCK_NAME: { list },
       loading,
     } = this.props;
     const { getFieldDecorator } = form;
