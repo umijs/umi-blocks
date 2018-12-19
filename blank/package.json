@@ -11,6 +11,8 @@
     "url": "https://github.com/umijs/umi-blocks/blank"
   },
   "dependencies": {
+    "antd": "^3.0.0",
+    "dva": "^2.0.0",
     "react": ">=16.0.0",
     "umi-request": "^1.0.0"
   },

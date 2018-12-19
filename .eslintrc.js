@@ -22,7 +22,7 @@ module.exports = {
     'react/jsx-one-expression-per-line': 0,
     'import/no-unresolved': [2, { ignore: ['^@/', '^umi/'] }],
     'import/no-extraneous-dependencies': [
-      1,
+      2,
       {
         optionalDependencies: true,
         devDependencies: ['**/tests/**.js', '/mock/**.js', '**/**.test.js'],
