@@ -1,7 +1,7 @@
 import { fakeChartData } from './service';
 
 export default {
-  namespace: 'chart',
+  namespace: 'BLOCK_NAME',
 
   state: {
     visitData: [],

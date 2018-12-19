@@ -2,10 +2,10 @@ import React, { Component, Suspense } from 'react';
 import { connect } from 'dva';
 import { Row, Col, Icon, Menu, Dropdown } from 'antd';
 
-import { getTimeDistance } from '@/utils/utils';
+import { getTimeDistance } from './utils/utils';
 
 import styles from './style.less';
-import PageLoading from '@/components/PageLoading';
+import PageLoading from './components/PageLoading';
 
 const IntroduceRow = React.lazy(() => import('./components/IntroduceRow'));
 const SalesCard = React.lazy(() => import('./components/SalesCard'));
@@ -13,11 +13,11 @@ const TopSearch = React.lazy(() => import('./components/TopSearch'));
 const ProportionSales = React.lazy(() => import('./components/ProportionSales'));
 const OfflineData = React.lazy(() => import('./components/OfflineData'));
 
-@connect(({ chart, loading }) => ({
-  chart,
-  loading: loading.effects['chart/fetch'],
+@connect(({ BLOCK_NAME, loading }) => ({
+  BLOCK_NAME,
+  loading: loading.effects['BLOCK_NAME/fetch'],
 }))
-class Analysis extends Component {
+class PAGE_NAME_UPPER_CAMEL_CASE extends Component {
   state = {
     salesType: 'all',
     currentTabKey: '',
@@ -28,7 +28,7 @@ class Analysis extends Component {
     const { dispatch } = this.props;
     this.reqRef = requestAnimationFrame(() => {
       dispatch({
-        type: 'chart/fetch',
+        type: 'BLOCK_NAME/fetch',
       });
     });
   }
@@ -36,7 +36,7 @@ class Analysis extends Component {
   componentWillUnmount() {
     const { dispatch } = this.props;
     dispatch({
-      type: 'chart/clear',
+      type: 'BLOCK_NAME/clear',
     });
     cancelAnimationFrame(this.reqRef);
     clearTimeout(this.timeoutId);
@@ -61,7 +61,7 @@ class Analysis extends Component {
     });
 
     dispatch({
-      type: 'chart/fetchSalesData',
+      type: 'BLOCK_NAME/fetchSalesData',
     });
   };
 
@@ -72,7 +72,7 @@ class Analysis extends Component {
     });
 
     dispatch({
-      type: 'chart/fetchSalesData',
+      type: 'BLOCK_NAME/fetchSalesData',
     });
   };
 
@@ -93,7 +93,7 @@ class Analysis extends Component {
 
   render() {
     const { rangePickerValue, salesType, currentTabKey } = this.state;
-    const { chart, loading } = this.props;
+    const { BLOCK_NAME, loading } = this.props;
     const {
       visitData,
       visitData2,
@@ -104,7 +104,7 @@ class Analysis extends Component {
       salesTypeData,
       salesTypeDataOnline,
       salesTypeDataOffline,
-    } = chart;
+    } = BLOCK_NAME;
     let salesPieData;
     if (salesType === 'all') {
       salesPieData = salesTypeData;
@@ -181,4 +181,4 @@ class Analysis extends Component {
   }
 }
 
-export default Analysis;
+export default PAGE_NAME_UPPER_CAMEL_CASE;

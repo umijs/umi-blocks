@@ -1,8 +1,7 @@
 import React, { memo } from 'react';
 import { Card, Tabs, Row, Col } from 'antd';
 import { formatMessage, FormattedMessage } from 'umi/locale';
-import { Charts } from 'ant-design-pro';
-import { NumberInfo } from 'ant-design-pro';
+import { Charts, NumberInfo } from 'ant-design-pro';
 import styles from '../style.less';
 
 const { TimelineChart, Pie } = Charts;
