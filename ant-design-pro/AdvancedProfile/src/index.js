@@ -180,11 +180,11 @@ const columns = [
   },
 ];
 
-@connect(({ profile, loading }) => ({
-  profile,
-  loading: loading.effects['profile/fetchAdvanced'],
+@connect(({ BLOCK_NAME, loading }) => ({
+  BLOCK_NAME,
+  loading: loading.effects['BLOCK_NAME/fetchAdvanced'],
 }))
-class AdvancedProfile extends Component {
+class PAGE_NAME_UPPER_CAMEL_CASE extends Component {
   state = {
     operationkey: 'tab1',
     stepDirection: 'horizontal',
@@ -193,7 +193,7 @@ class AdvancedProfile extends Component {
   componentDidMount() {
     const { dispatch } = this.props;
     dispatch({
-      type: 'profile/fetchAdvanced',
+      type: 'BLOCK_NAME/fetchAdvanced',
     });
 
     this.setStepDirection();
@@ -227,8 +227,8 @@ class AdvancedProfile extends Component {
 
   render() {
     const { stepDirection, operationkey } = this.state;
-    const { profile, loading } = this.props;
-    const { advancedOperation1, advancedOperation2, advancedOperation3 } = profile;
+    const { BLOCK_NAME, loading } = this.props;
+    const { advancedOperation1, advancedOperation2, advancedOperation3 } = BLOCK_NAME;
     const contentList = {
       tab1: (
         <Table
@@ -350,4 +350,4 @@ class AdvancedProfile extends Component {
   }
 }
 
-export default AdvancedProfile;
+export default PAGE_NAME_UPPER_CAMEL_CASE;
