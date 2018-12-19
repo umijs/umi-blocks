@@ -1,7 +1,7 @@
 import { getText } from './service';
 
 export default {
-  namespace: 'page', // TODO: 修改为有意义的 namespace
+  namespace: 'BLOCK_NAME',
   state: {
     text: 'loading...',
   },

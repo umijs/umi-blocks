@@ -14,6 +14,7 @@ module.exports = {
     page: true,
   },
   rules: {
+    'import/prefer-default-export': 0,
     'react/jsx-filename-extension': [1, { extensions: ['.js'] }],
     'react/jsx-wrap-multilines': 0,
     'react/prop-types': 0,
@@ -21,7 +22,7 @@ module.exports = {
     'react/jsx-one-expression-per-line': 0,
     'import/no-unresolved': [2, { ignore: ['^@/', '^umi/'] }],
     'import/no-extraneous-dependencies': [
-      2,
+      1,
       {
         optionalDependencies: true,
         devDependencies: ['**/tests/**.js', '/mock/**.js', '**/**.test.js'],

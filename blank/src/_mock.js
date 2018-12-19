@@ -1,5 +1,5 @@
 export default {
-  'GET /api/text': {
+  'GET /api/BLOCK_NAME/text': {
     text: 'I am a blank block',
   },
 };

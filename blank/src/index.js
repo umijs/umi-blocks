@@ -4,13 +4,12 @@ import { connect } from 'dva';
 
 import styles from './style.less';
 
-// TODO: Page 修改为有意义的名称
-@connect(({ page }) => page)
+@connect(({ BLOCK_NAME }) => BLOCK_NAME)
 class Page extends Component {
   componentDidMount() {
     const { dispatch } = this.props;
     dispatch({
-      type: 'page/fetch',
+      type: 'BLOCK_NAME/fetch',
     });
   }
 
