@@ -22,17 +22,17 @@ const { RangePicker } = DatePicker;
 const { TextArea } = Input;
 
 @connect(({ loading }) => ({
-  submitting: loading.effects['form/submitRegularForm'],
+  submitting: loading.effects['BLOCK_NAME/submitRegularForm'],
 }))
 @Form.create()
-class BasicForms extends PureComponent {
+class PAGE_NAME_UPPER_CAMEL_CASE extends PureComponent {
   handleSubmit = e => {
     const { dispatch, form } = this.props;
     e.preventDefault();
     form.validateFieldsAndScroll((err, values) => {
       if (!err) {
         dispatch({
-          type: 'form/submitRegularForm',
+          type: 'BLOCK_NAME/submitRegularForm',
           payload: values,
         });
       }
@@ -244,4 +244,4 @@ class BasicForms extends PureComponent {
   }
 }
 
-export default BasicForms;
+export default PAGE_NAME_UPPER_CAMEL_CASE;
