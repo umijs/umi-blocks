@@ -5,8 +5,8 @@ import { Row, Col, Card, Tooltip } from 'antd';
 import { NumberInfo, Charts } from 'ant-design-pro';
 import CountDown from 'ant-design-pro/lib/CountDown';
 import numeral from 'numeral';
-import ActiveChart from './components/ActiveChart';
 
+import ActiveChart from './components/ActiveChart';
 import styles from './style.less';
 
 const { Pie, WaterWave, Gauge, TagCloud } = Charts;
