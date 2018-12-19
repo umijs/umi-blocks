@@ -7,15 +7,15 @@ import PageHeaderWrapper from './components/PageHeaderWrapper';
 
 import styles from './style.less';
 
-@connect(({ list, loading }) => ({
-  list,
+@connect(({ BLOCK_NAME, loading }) => ({
+  BLOCK_NAME,
   loading: loading.models.list,
 }))
-class CardList extends PureComponent {
+class PAGE_NAME_UPPER_CAMEL_CASE extends PureComponent {
   componentDidMount() {
     const { dispatch } = this.props;
     dispatch({
-      type: 'list/fetch',
+      type: 'BLOCK_NAME/fetch',
       payload: {
         count: 8,
       },
@@ -24,7 +24,7 @@ class CardList extends PureComponent {
 
   render() {
     const {
-      list: { list },
+      BLOCK_NAME: { list },
       loading,
     } = this.props;
 
@@ -98,4 +98,4 @@ class CardList extends PureComponent {
   }
 }
 
-export default CardList;
+export default PAGE_NAME_UPPER_CAMEL_CASE;
