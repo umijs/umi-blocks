@@ -1,7 +1,7 @@
-import { query as queryUsers, queryCurrent } from './server';
+import { query as queryUsers, queryCurrent } from './service';
 
 export default {
-  namespace: 'user',
+  namespace: 'BLOCK_NAME',
 
   state: {
     list: [],

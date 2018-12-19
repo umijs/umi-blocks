@@ -3,7 +3,6 @@ import { connect } from 'dva';
 import Link from 'umi/link';
 import { Card, Row, Col, Icon, Avatar, Tag, Divider, Input } from 'antd';
 import styles from './Center.less';
-// import router from 'umi/router';
 
 const operationTabList = [
   {
@@ -32,9 +31,9 @@ const operationTabList = [
   },
 ];
 
-@connect(({ loading, user }) => ({
-  currentUser: user.currentUser,
-  currentUserLoading: loading.effects['user/fetchCurrent'],
+@connect(({ loading, BLOCK_NAME }) => ({
+  currentUser: BLOCK_NAME.currentUser,
+  currentUserLoading: loading.effects['BLOCK_NAME/fetchCurrent'],
 }))
 class Center extends PureComponent {
   static getDerivedStateFromProps(props, state) {
@@ -59,7 +58,7 @@ class Center extends PureComponent {
   componentDidMount() {
     const { dispatch } = this.props;
     dispatch({
-      type: 'user/fetchCurrent',
+      type: 'BLOCK_NAME/fetchCurrent',
     });
   }
 
