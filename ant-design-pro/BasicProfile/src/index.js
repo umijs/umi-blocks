@@ -41,21 +41,21 @@ const progressColumns = [
   },
 ];
 
-@connect(({ profile, loading }) => ({
-  profile,
-  loading: loading.effects['profile/fetchBasic'],
+@connect(({ BLOCK_NAME, loading }) => ({
+  BLOCK_NAME,
+  loading: loading.effects['BLOCK_NAME/fetchBasic'],
 }))
-class BasicProfile extends Component {
+class PAGE_NAME_UPPER_CAMEL_CASE extends Component {
   componentDidMount() {
     const { dispatch } = this.props;
     dispatch({
-      type: 'profile/fetchBasic',
+      type: 'BLOCK_NAME/fetchBasic',
     });
   }
 
   render() {
-    const { profile, loading } = this.props;
-    const { basicGoods, basicProgress } = profile;
+    const { BLOCK_NAME, loading } = this.props;
+    const { basicGoods, basicProgress } = BLOCK_NAME;
     let goodsData = [];
     if (basicGoods.length) {
       let num = 0;
@@ -182,4 +182,4 @@ class BasicProfile extends Component {
   }
 }
 
-export default BasicProfile;
+export default PAGE_NAME_UPPER_CAMEL_CASE;
