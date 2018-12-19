@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
 import router from 'umi/router';
-import { connect } from 'dva';
 import { Input } from 'antd';
 import PageHeaderWrapper from './components/PageHeaderWrapper';
 
-@connect()
-class SearchList extends Component {
+class PAGE_NAME_UPPER_CAMEL_CASE extends Component {
   handleTabChange = key => {
     const { match } = this.props;
     switch (key) {
@@ -72,4 +70,4 @@ class SearchList extends Component {
   }
 }
 
-export default SearchList;
+export default PAGE_NAME_UPPER_CAMEL_CASE;

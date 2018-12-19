@@ -3,18 +3,17 @@ import numeral from 'numeral';
 import { connect } from 'dva';
 import { Row, Col, Form, Card, Select, Icon, Avatar, List, Tooltip, Dropdown, Menu } from 'antd';
 import { TagSelect } from 'ant-design-pro';
-import StandardFormRow from '@/components/StandardFormRow';
 
-import { formatWan } from '@/utils/utils';
-
-import styles from './Applications.less';
+import StandardFormRow from './components/StandardFormRow';
+import { formatWan } from './utils/utils';
+import styles from './style.less';
 
 const { Option } = Select;
 const FormItem = Form.Item;
 
-@connect(({ list, loading }) => ({
-  list,
-  loading: loading.models.list,
+@connect(({ BLOCK_NAME, loading }) => ({
+  BLOCK_NAME,
+  loading: loading.models.BLOCK_NAME,
 }))
 @Form.create({
   onValuesChange({ dispatch }, changedValues, allValues) {
@@ -23,18 +22,18 @@ const FormItem = Form.Item;
     console.log(changedValues, allValues);
     // 模拟查询表单生效
     dispatch({
-      type: 'list/fetch',
+      type: 'BLOCK_NAME/fetch',
       payload: {
         count: 8,
       },
     });
   },
 })
-class FilterCardList extends PureComponent {
+class PAGE_NAME_UPPER_CAMEL_CASE extends PureComponent {
   componentDidMount() {
     const { dispatch } = this.props;
     dispatch({
-      type: 'list/fetch',
+      type: 'BLOCK_NAME/fetch',
       payload: {
         count: 8,
       },
@@ -43,7 +42,7 @@ class FilterCardList extends PureComponent {
 
   render() {
     const {
-      list: { list },
+      BLOCK_NAME: { list },
       loading,
       form,
     } = this.props;
@@ -180,4 +179,4 @@ class FilterCardList extends PureComponent {
   }
 }
 
-export default FilterCardList;
+export default PAGE_NAME_UPPER_CAMEL_CASE;
