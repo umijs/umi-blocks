@@ -1,5 +1,3 @@
-let sourceData;
-
 const titles = [
   'Alipay',
   'Angular',
@@ -19,19 +17,6 @@ const avatars = [
   'https://gw.alipayobjects.com/zos/rmsportal/kZzEzemZyKLKFsojXItE.png', // React
   'https://gw.alipayobjects.com/zos/rmsportal/ComBAopevLwENQdKWiIn.png', // Vue
   'https://gw.alipayobjects.com/zos/rmsportal/nxkuOJlFJuAUhzlMTCEe.png', // Webpack
-];
-
-const avatars2 = [
-  'https://gw.alipayobjects.com/zos/rmsportal/BiazfanxmamNRoxxVxka.png',
-  'https://gw.alipayobjects.com/zos/rmsportal/cnrhVkzwxjPwAaCfPbdc.png',
-  'https://gw.alipayobjects.com/zos/rmsportal/gaOngJwsRYRaVAuXXcmB.png',
-  'https://gw.alipayobjects.com/zos/rmsportal/ubnKSIfAJTxIgXOKlciN.png',
-  'https://gw.alipayobjects.com/zos/rmsportal/WhxKECPNujWoWEFNdnJE.png',
-  'https://gw.alipayobjects.com/zos/rmsportal/jZUIxmJycoymBprLOUbT.png',
-  'https://gw.alipayobjects.com/zos/rmsportal/psOgztMplJMGpVEqfcgF.png',
-  'https://gw.alipayobjects.com/zos/rmsportal/ZpBqSxLxVEXfcUNoPKrz.png',
-  'https://gw.alipayobjects.com/zos/rmsportal/laiEnJdGHVOhJrUShBaJ.png',
-  'https://gw.alipayobjects.com/zos/rmsportal/UrQsqscbKEpNuJcvBZBu.png',
 ];
 
 const covers = [
@@ -114,43 +99,9 @@ function getFakeList(req, res) {
   const count = params.count * 1 || 20;
 
   const result = fakeList(count);
-  sourceData = result;
-  return res.json(result);
-}
-
-function postFakeList(req, res) {
-  const { /* url = '', */ body } = req;
-  // const params = getUrlParams(url);
-  const { method, id } = body;
-  // const count = (params.count * 1) || 20;
-  let result = sourceData;
-
-  switch (method) {
-    case 'delete':
-      result = result.filter(item => item.id !== id);
-      break;
-    case 'update':
-      result.forEach((item, i) => {
-        if (item.id === id) {
-          result[i] = Object.assign(item, body);
-        }
-      });
-      break;
-    case 'post':
-      result.unshift({
-        body,
-        id: `fake-list-${result.length}`,
-        createdAt: new Date().getTime(),
-      });
-      break;
-    default:
-      break;
-  }
-
   return res.json(result);
 }
 
 export default {
-  'GET /api/fake_list': getFakeList,
-  'POST /api/fake_list': postFakeList,
+  'GET /api/BLOCK_NAME/fake_list': getFakeList,
 };
