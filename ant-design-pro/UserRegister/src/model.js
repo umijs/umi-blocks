@@ -1,9 +1,7 @@
 import { fakeRegister } from './service';
-import { setAuthority } from './utils/authority';
-import { reloadAuthorized } from './utils/Authorized';
 
 export default {
-  namespace: 'register',
+  namespace: 'BLOCK_NAME_CAMEL_CASE',
 
   state: {
     status: undefined,
@@ -21,8 +19,6 @@ export default {
 
   reducers: {
     registerHandle(state, { payload }) {
-      setAuthority('user');
-      reloadAuthorized();
       return {
         ...state,
         status: payload.status,

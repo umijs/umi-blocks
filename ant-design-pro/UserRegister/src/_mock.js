@@ -1,5 +1,5 @@
 export default {
-  'POST /api/register': (req, res) => {
+  'POST /api/BLOCK_NAME/register': (req, res) => {
     res.send({ status: 'ok', currentAuthority: 'user' });
   },
 };

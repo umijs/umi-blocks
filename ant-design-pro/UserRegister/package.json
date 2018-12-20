@@ -1,5 +1,5 @@
 {
-  "name": "@umi-block/userregister",
+  "name": "@umi-block/user-register",
   "version": "0.0.1",
   "description": "UserRegister",
   "main": "src/index.js",
