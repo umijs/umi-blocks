@@ -7,15 +7,15 @@ import PageHeaderWrapper from './components/PageHeaderWrapper';
 
 import styles from './style.less';
 
-@connect(({ BLOCK_NAME, loading }) => ({
-  BLOCK_NAME,
+@connect(({ BLOCK_NAME_CAMEL_CASE, loading }) => ({
+  BLOCK_NAME_CAMEL_CASE,
   loading: loading.models.list,
 }))
 class PAGE_NAME_UPPER_CAMEL_CASE extends PureComponent {
   componentDidMount() {
     const { dispatch } = this.props;
     dispatch({
-      type: 'BLOCK_NAME/fetch',
+      type: 'BLOCK_NAME_CAMEL_CASE/fetch',
       payload: {
         count: 8,
       },
@@ -24,7 +24,7 @@ class PAGE_NAME_UPPER_CAMEL_CASE extends PureComponent {
 
   render() {
     const {
-      BLOCK_NAME: { list },
+      BLOCK_NAME_CAMEL_CASE: { list },
       loading,
     } = this.props;
 

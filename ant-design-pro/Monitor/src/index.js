@@ -13,21 +13,21 @@ const { Pie, WaterWave, Gauge, TagCloud } = Charts;
 
 const targetTime = new Date().getTime() + 3900000;
 
-@connect(({ BLOCK_NAME, loading }) => ({
-  BLOCK_NAME,
+@connect(({ BLOCK_NAME_CAMEL_CASE, loading }) => ({
+  BLOCK_NAME_CAMEL_CASE,
   loading: loading.models.monitor,
 }))
 class PAGE_NAME_UPPER_CAMEL_CASE extends PureComponent {
   componentDidMount() {
     const { dispatch } = this.props;
     dispatch({
-      type: 'BLOCK_NAME/fetchTags',
+      type: 'BLOCK_NAME_CAMEL_CASE/fetchTags',
     });
   }
 
   render() {
-    const { BLOCK_NAME, loading } = this.props;
-    const { tags } = BLOCK_NAME;
+    const { BLOCK_NAME_CAMEL_CASE, loading } = this.props;
+    const { tags } = BLOCK_NAME_CAMEL_CASE;
 
     return (
       <React.Fragment>

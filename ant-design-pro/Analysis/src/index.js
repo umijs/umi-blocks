@@ -13,9 +13,9 @@ const TopSearch = React.lazy(() => import('./components/TopSearch'));
 const ProportionSales = React.lazy(() => import('./components/ProportionSales'));
 const OfflineData = React.lazy(() => import('./components/OfflineData'));
 
-@connect(({ BLOCK_NAME, loading }) => ({
-  BLOCK_NAME,
-  loading: loading.effects['BLOCK_NAME/fetch'],
+@connect(({ BLOCK_NAME_CAMEL_CASE, loading }) => ({
+  BLOCK_NAME_CAMEL_CASE,
+  loading: loading.effects['BLOCK_NAME_CAMEL_CASE/fetch'],
 }))
 class PAGE_NAME_UPPER_CAMEL_CASE extends Component {
   state = {
@@ -28,7 +28,7 @@ class PAGE_NAME_UPPER_CAMEL_CASE extends Component {
     const { dispatch } = this.props;
     this.reqRef = requestAnimationFrame(() => {
       dispatch({
-        type: 'BLOCK_NAME/fetch',
+        type: 'BLOCK_NAME_CAMEL_CASE/fetch',
       });
     });
   }
@@ -36,7 +36,7 @@ class PAGE_NAME_UPPER_CAMEL_CASE extends Component {
   componentWillUnmount() {
     const { dispatch } = this.props;
     dispatch({
-      type: 'BLOCK_NAME/clear',
+      type: 'BLOCK_NAME_CAMEL_CASE/clear',
     });
     cancelAnimationFrame(this.reqRef);
     clearTimeout(this.timeoutId);
@@ -61,7 +61,7 @@ class PAGE_NAME_UPPER_CAMEL_CASE extends Component {
     });
 
     dispatch({
-      type: 'BLOCK_NAME/fetchSalesData',
+      type: 'BLOCK_NAME_CAMEL_CASE/fetchSalesData',
     });
   };
 
@@ -72,7 +72,7 @@ class PAGE_NAME_UPPER_CAMEL_CASE extends Component {
     });
 
     dispatch({
-      type: 'BLOCK_NAME/fetchSalesData',
+      type: 'BLOCK_NAME_CAMEL_CASE/fetchSalesData',
     });
   };
 
@@ -93,7 +93,7 @@ class PAGE_NAME_UPPER_CAMEL_CASE extends Component {
 
   render() {
     const { rangePickerValue, salesType, currentTabKey } = this.state;
-    const { BLOCK_NAME, loading } = this.props;
+    const { BLOCK_NAME_CAMEL_CASE, loading } = this.props;
     const {
       visitData,
       visitData2,
@@ -104,7 +104,7 @@ class PAGE_NAME_UPPER_CAMEL_CASE extends Component {
       salesTypeData,
       salesTypeDataOnline,
       salesTypeDataOffline,
-    } = BLOCK_NAME;
+    } = BLOCK_NAME_CAMEL_CASE;
     let salesPieData;
     if (salesType === 'all') {
       salesPieData = salesTypeData;

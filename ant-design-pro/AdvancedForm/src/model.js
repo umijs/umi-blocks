@@ -2,7 +2,7 @@ import { message } from 'antd';
 import { fakeSubmitForm } from './service';
 
 export default {
-  namespace: 'BLOCK_NAME',
+  namespace: 'BLOCK_NAME_CAMEL_CASE',
 
   state: {},
 

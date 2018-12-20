@@ -58,7 +58,7 @@ const tableData = [
 ];
 
 @connect(({ loading }) => ({
-  submitting: loading.effects['BLOCK_NAME/submitAdvancedForm'],
+  submitting: loading.effects['BLOCK_NAME_CAMEL_CASE/submitAdvancedForm'],
 }))
 @Form.create()
 class PAGE_NAME_UPPER_CAMEL_CASE extends PureComponent {
@@ -139,7 +139,7 @@ class PAGE_NAME_UPPER_CAMEL_CASE extends PureComponent {
       if (!error) {
         // submit the values
         dispatch({
-          type: 'BLOCK_NAME/submitAdvancedForm',
+          type: 'BLOCK_NAME_CAMEL_CASE/submitAdvancedForm',
           payload: values,
         });
       }

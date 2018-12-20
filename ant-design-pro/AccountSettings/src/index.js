@@ -11,8 +11,8 @@ import NotificationView from './components/notification';
 
 const { Item } = Menu;
 
-@connect(({ BLOCK_NAME }) => ({
-  currentUser: BLOCK_NAME.currentUser,
+@connect(({ BLOCK_NAME_CAMEL_CASE }) => ({
+  currentUser: BLOCK_NAME_CAMEL_CASE.currentUser,
 }))
 class PAGE_NAME_UPPER_CAMEL_CASE extends Component {
   constructor(props) {
@@ -54,7 +54,7 @@ class PAGE_NAME_UPPER_CAMEL_CASE extends Component {
   componentDidMount() {
     const { dispatch } = this.props;
     dispatch({
-      type: 'BLOCK_NAME/fetchCurrent',
+      type: 'BLOCK_NAME_CAMEL_CASE/fetchCurrent',
     });
     window.addEventListener('resize', this.resize);
     this.resize();

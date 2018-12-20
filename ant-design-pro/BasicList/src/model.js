@@ -1,7 +1,7 @@
 import { queryFakeList, removeFakeList, addFakeList, updateFakeList } from './service';
 
 export default {
-  namespace: 'BLOCK_NAME',
+  namespace: 'BLOCK_NAME_CAMEL_CASE',
 
   state: {
     list: [],

@@ -180,9 +180,9 @@ const columns = [
   },
 ];
 
-@connect(({ BLOCK_NAME, loading }) => ({
-  BLOCK_NAME,
-  loading: loading.effects['BLOCK_NAME/fetchAdvanced'],
+@connect(({ BLOCK_NAME_CAMEL_CASE, loading }) => ({
+  BLOCK_NAME_CAMEL_CASE,
+  loading: loading.effects['BLOCK_NAME_CAMEL_CASE/fetchAdvanced'],
 }))
 class PAGE_NAME_UPPER_CAMEL_CASE extends Component {
   state = {
@@ -193,7 +193,7 @@ class PAGE_NAME_UPPER_CAMEL_CASE extends Component {
   componentDidMount() {
     const { dispatch } = this.props;
     dispatch({
-      type: 'BLOCK_NAME/fetchAdvanced',
+      type: 'BLOCK_NAME_CAMEL_CASE/fetchAdvanced',
     });
 
     this.setStepDirection();
@@ -227,8 +227,8 @@ class PAGE_NAME_UPPER_CAMEL_CASE extends Component {
 
   render() {
     const { stepDirection, operationkey } = this.state;
-    const { BLOCK_NAME, loading } = this.props;
-    const { advancedOperation1, advancedOperation2, advancedOperation3 } = BLOCK_NAME;
+    const { BLOCK_NAME_CAMEL_CASE, loading } = this.props;
+    const { advancedOperation1, advancedOperation2, advancedOperation3 } = BLOCK_NAME_CAMEL_CASE;
     const contentList = {
       tab1: (
         <Table

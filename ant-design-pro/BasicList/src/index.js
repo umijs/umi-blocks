@@ -32,9 +32,9 @@ const RadioGroup = Radio.Group;
 const SelectOption = Select.Option;
 const { Search, TextArea } = Input;
 
-@connect(({ BLOCK_NAME, loading }) => ({
-  BLOCK_NAME,
-  loading: loading.models.BLOCK_NAME,
+@connect(({ BLOCK_NAME_CAMEL_CASE, loading }) => ({
+  BLOCK_NAME_CAMEL_CASE,
+  loading: loading.models.BLOCK_NAME_CAMEL_CASE,
 }))
 @Form.create()
 class PAGE_NAME_UPPER_CAMEL_CASE extends PureComponent {
@@ -48,7 +48,7 @@ class PAGE_NAME_UPPER_CAMEL_CASE extends PureComponent {
   componentDidMount() {
     const { dispatch } = this.props;
     dispatch({
-      type: 'BLOCK_NAME/fetch',
+      type: 'BLOCK_NAME_CAMEL_CASE/fetch',
       payload: {
         count: 5,
       },
@@ -97,7 +97,7 @@ class PAGE_NAME_UPPER_CAMEL_CASE extends PureComponent {
         done: true,
       });
       dispatch({
-        type: 'BLOCK_NAME/submit',
+        type: 'BLOCK_NAME_CAMEL_CASE/submit',
         payload: { id, ...fieldsValue },
       });
     });
@@ -106,14 +106,14 @@ class PAGE_NAME_UPPER_CAMEL_CASE extends PureComponent {
   deleteItem = id => {
     const { dispatch } = this.props;
     dispatch({
-      type: 'BLOCK_NAME/submit',
+      type: 'BLOCK_NAME_CAMEL_CASE/submit',
       payload: { id },
     });
   };
 
   render() {
     const {
-      BLOCK_NAME: { list },
+      BLOCK_NAME_CAMEL_CASE: { list },
       loading,
     } = this.props;
     const {

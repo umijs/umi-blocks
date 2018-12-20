@@ -11,9 +11,9 @@ import styles from './style.less';
 const { Option } = Select;
 const FormItem = Form.Item;
 
-@connect(({ BLOCK_NAME, loading }) => ({
-  BLOCK_NAME,
-  loading: loading.models.BLOCK_NAME,
+@connect(({ BLOCK_NAME_CAMEL_CASE, loading }) => ({
+  BLOCK_NAME_CAMEL_CASE,
+  loading: loading.models.BLOCK_NAME_CAMEL_CASE,
 }))
 @Form.create({
   onValuesChange({ dispatch }, changedValues, allValues) {
@@ -22,7 +22,7 @@ const FormItem = Form.Item;
     console.log(changedValues, allValues);
     // 模拟查询表单生效
     dispatch({
-      type: 'BLOCK_NAME/fetch',
+      type: 'BLOCK_NAME_CAMEL_CASE/fetch',
       payload: {
         count: 8,
       },
@@ -33,7 +33,7 @@ class PAGE_NAME_UPPER_CAMEL_CASE extends PureComponent {
   componentDidMount() {
     const { dispatch } = this.props;
     dispatch({
-      type: 'BLOCK_NAME/fetch',
+      type: 'BLOCK_NAME_CAMEL_CASE/fetch',
       payload: {
         count: 8,
       },
@@ -42,7 +42,7 @@ class PAGE_NAME_UPPER_CAMEL_CASE extends PureComponent {
 
   render() {
     const {
-      BLOCK_NAME: { list },
+      BLOCK_NAME_CAMEL_CASE: { list },
       loading,
       form,
     } = this.props;

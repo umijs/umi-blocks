@@ -12,9 +12,9 @@ const FormItem = Form.Item;
 
 const pageSize = 5;
 
-@connect(({ BLOCK_NAME, loading }) => ({
-  BLOCK_NAME,
-  loading: loading.models.BLOCK_NAME,
+@connect(({ BLOCK_NAME_CAMEL_CASE, loading }) => ({
+  BLOCK_NAME_CAMEL_CASE,
+  loading: loading.models.BLOCK_NAME_CAMEL_CASE,
 }))
 @Form.create({
   onValuesChange({ dispatch }, changedValues, allValues) {
@@ -23,7 +23,7 @@ const pageSize = 5;
     console.log(changedValues, allValues);
     // 模拟查询表单生效
     dispatch({
-      type: 'BLOCK_NAME/fetch',
+      type: 'BLOCK_NAME_CAMEL_CASE/fetch',
       payload: {
         count: 5,
       },
@@ -34,7 +34,7 @@ class SearchList extends Component {
   componentDidMount() {
     const { dispatch } = this.props;
     dispatch({
-      type: 'BLOCK_NAME/fetch',
+      type: 'BLOCK_NAME_CAMEL_CASE/fetch',
       payload: {
         count: 5,
       },
@@ -51,7 +51,7 @@ class SearchList extends Component {
   fetchMore = () => {
     const { dispatch } = this.props;
     dispatch({
-      type: 'BLOCK_NAME/appendFetch',
+      type: 'BLOCK_NAME_CAMEL_CASE/appendFetch',
       payload: {
         count: pageSize,
       },
@@ -61,7 +61,7 @@ class SearchList extends Component {
   render() {
     const {
       form,
-      BLOCK_NAME: { list },
+      BLOCK_NAME_CAMEL_CASE: { list },
       loading,
     } = this.props;
     const { getFieldDecorator } = form;

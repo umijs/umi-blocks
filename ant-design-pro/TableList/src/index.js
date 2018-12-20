@@ -272,8 +272,8 @@ class UpdateForm extends PureComponent {
 }
 
 /* eslint react/no-multi-comp:0 */
-@connect(({ BLOCK_NAME_CAMEL_CASE, loading }) => ({
-  BLOCK_NAME_CAMEL_CASE,
+@connect(({ BLOCK_NAME_CAMEL_CASE_CAMEL_CASE, loading }) => ({
+  BLOCK_NAME_CAMEL_CASE_CAMEL_CASE,
   loading: loading.models.rule,
 }))
 @Form.create()
@@ -351,7 +351,7 @@ class TableList extends PureComponent {
   componentDidMount() {
     const { dispatch } = this.props;
     dispatch({
-      type: 'BLOCK_NAME_CAMEL_CASE/fetch',
+      type: 'BLOCK_NAME_CAMEL_CASE_CAMEL_CASE/fetch',
     });
   }
 
@@ -376,7 +376,7 @@ class TableList extends PureComponent {
     }
 
     dispatch({
-      type: 'BLOCK_NAME_CAMEL_CASE/fetch',
+      type: 'BLOCK_NAME_CAMEL_CASE_CAMEL_CASE/fetch',
       payload: params,
     });
   };
@@ -388,7 +388,7 @@ class TableList extends PureComponent {
       formValues: {},
     });
     dispatch({
-      type: 'BLOCK_NAME_CAMEL_CASE/fetch',
+      type: 'BLOCK_NAME_CAMEL_CASE_CAMEL_CASE/fetch',
       payload: {},
     });
   };
@@ -408,7 +408,7 @@ class TableList extends PureComponent {
     switch (e.key) {
       case 'remove':
         dispatch({
-          type: 'BLOCK_NAME_CAMEL_CASE/remove',
+          type: 'BLOCK_NAME_CAMEL_CASE_CAMEL_CASE/remove',
           payload: {
             key: selectedRows.map(row => row.key),
           },
@@ -448,7 +448,7 @@ class TableList extends PureComponent {
       });
 
       dispatch({
-        type: 'BLOCK_NAME_CAMEL_CASE/fetch',
+        type: 'BLOCK_NAME_CAMEL_CASE_CAMEL_CASE/fetch',
         payload: values,
       });
     });
@@ -470,7 +470,7 @@ class TableList extends PureComponent {
   handleAdd = fields => {
     const { dispatch } = this.props;
     dispatch({
-      type: 'BLOCK_NAME_CAMEL_CASE/add',
+      type: 'BLOCK_NAME_CAMEL_CASE_CAMEL_CASE/add',
       payload: {
         desc: fields.desc,
       },
@@ -483,7 +483,7 @@ class TableList extends PureComponent {
   handleUpdate = fields => {
     const { dispatch } = this.props;
     dispatch({
-      type: 'BLOCK_NAME_CAMEL_CASE/update',
+      type: 'BLOCK_NAME_CAMEL_CASE_CAMEL_CASE/update',
       payload: {
         name: fields.name,
         desc: fields.desc,
@@ -616,7 +616,7 @@ class TableList extends PureComponent {
 
   render() {
     const {
-      BLOCK_NAME_CAMEL_CASE: { data },
+      BLOCK_NAME_CAMEL_CASE_CAMEL_CASE: { data },
       loading,
     } = this.props;
     const { selectedRows, modalVisible, updateModalVisible, stepFormValues } = this.state;

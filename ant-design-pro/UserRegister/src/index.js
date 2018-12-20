@@ -34,9 +34,9 @@ const passwordProgressMap = {
   poor: 'exception',
 };
 
-@connect(({ BLOCK_NAME_CAMEL_CASE, loading }) => ({
-  BLOCK_NAME_CAMEL_CASE,
-  submitting: loading.effects['BLOCK_NAME_CAMEL_CASE/submit'],
+@connect(({ BLOCK_NAME_CAMEL_CASE_CAMEL_CASE, loading }) => ({
+  BLOCK_NAME_CAMEL_CASE_CAMEL_CASE,
+  submitting: loading.effects['BLOCK_NAME_CAMEL_CASE_CAMEL_CASE/submit'],
 }))
 @Form.create()
 class PAGE_NAME_UPPER_CAMEL_CASE extends Component {
@@ -49,9 +49,9 @@ class PAGE_NAME_UPPER_CAMEL_CASE extends Component {
   };
 
   componentDidUpdate() {
-    const { form, BLOCK_NAME_CAMEL_CASE } = this.props;
+    const { form, BLOCK_NAME_CAMEL_CASE_CAMEL_CASE } = this.props;
     const account = form.getFieldValue('mail');
-    if (BLOCK_NAME_CAMEL_CASE.status === 'ok') {
+    if (BLOCK_NAME_CAMEL_CASE_CAMEL_CASE.status === 'ok') {
       router.push({
         pathname: '/user/register-result',
         state: {
@@ -96,7 +96,7 @@ class PAGE_NAME_UPPER_CAMEL_CASE extends Component {
       if (!err) {
         const { prefix } = this.state;
         dispatch({
-          type: 'BLOCK_NAME_CAMEL_CASE/submit',
+          type: 'BLOCK_NAME_CAMEL_CASE_CAMEL_CASE/submit',
           payload: {
             ...values,
             prefix,

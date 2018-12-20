@@ -31,9 +31,9 @@ const operationTabList = [
   },
 ];
 
-@connect(({ loading, BLOCK_NAME }) => ({
-  currentUser: BLOCK_NAME.currentUser,
-  currentUserLoading: loading.effects['BLOCK_NAME/fetchCurrent'],
+@connect(({ loading, BLOCK_NAME_CAMEL_CASE }) => ({
+  currentUser: BLOCK_NAME_CAMEL_CASE.currentUser,
+  currentUserLoading: loading.effects['BLOCK_NAME_CAMEL_CASE/fetchCurrent'],
 }))
 class PAGE_NAME_UPPER_CAMEL_CASE extends PureComponent {
   static getDerivedStateFromProps(props, state) {
@@ -58,7 +58,7 @@ class PAGE_NAME_UPPER_CAMEL_CASE extends PureComponent {
   componentDidMount() {
     const { dispatch } = this.props;
     dispatch({
-      type: 'BLOCK_NAME/fetchCurrent',
+      type: 'BLOCK_NAME_CAMEL_CASE/fetchCurrent',
     });
   }
 
