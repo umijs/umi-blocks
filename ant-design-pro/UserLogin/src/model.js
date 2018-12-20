@@ -6,7 +6,7 @@ import { reloadAuthorized } from './utils/Authorized';
 import { fakeAccountLogin, getFakeCaptcha } from './service';
 
 export default {
-  namespace: 'login',
+  namespace: 'BLOCK_NAME_CAMEL_CASE',
 
   state: {
     status: undefined,

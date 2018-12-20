@@ -1,5 +1,5 @@
 {
-  "name": "@umi-block/userlogin",
+  "name": "@umi-block/user-login",
   "version": "0.0.1",
   "description": "UserLogin",
   "main": "src/index.js",
@@ -15,6 +15,7 @@
     "antd": "^3.10.9",
     "dva": "^2.4.0",
     "moment": "^2.22.2",
+    "qs": "^6.6.0",
     "react": "^16.6.3",
     "umi-request": "^1.0.0"
   },
