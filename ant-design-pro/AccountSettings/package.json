@@ -1,5 +1,5 @@
 {
-  "name": "@umi-block/accountsettings",
+  "name": "@umi-block/account-settings",
   "version": "0.0.1",
   "description": "AccountSettings",
   "main": "src/index.js",

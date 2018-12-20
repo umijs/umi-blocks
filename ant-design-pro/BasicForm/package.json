@@ -1,5 +1,5 @@
 {
-  "name": "@umi-block/basicform",
+  "name": "@umi-block/basic-form",
   "version": "0.0.1",
   "description": "BasicForm",
   "main": "src/index.js",

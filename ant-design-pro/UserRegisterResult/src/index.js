@@ -4,7 +4,6 @@ import { Button } from 'antd';
 import Link from 'umi/link';
 import { Result } from 'ant-design-pro';
 import styles from './style.less';
-import UserLayout from './components/UserLayout';
 
 const actions = (
   <div className={styles.actions}>
@@ -21,24 +20,22 @@ const actions = (
   </div>
 );
 
-const RegisterResult = ({ location }) => (
-  <UserLayout>
-    <Result
-      className={styles.registerResult}
-      type="success"
-      title={
-        <div className={styles.title}>
-          <FormattedMessage
-            id="app.register-result.msg"
-            values={{ email: location.state ? location.state.account : 'AntDesign@example.com' }}
-          />
-        </div>
-      }
-      description={formatMessage({ id: 'app.register-result.activation-email' })}
-      actions={actions}
-      style={{ marginTop: 56 }}
-    />
-  </UserLayout>
+const PAGE_NAME_UPPER_CAMEL_CASE = ({ location }) => (
+  <Result
+    className={styles.registerResult}
+    type="success"
+    title={
+      <div className={styles.title}>
+        <FormattedMessage
+          id="app.register-result.msg"
+          values={{ email: location.state ? location.state.account : 'AntDesign@example.com' }}
+        />
+      </div>
+    }
+    description={formatMessage({ id: 'app.register-result.activation-email' })}
+    actions={actions}
+    style={{ marginTop: 56 }}
+  />
 );
 
-export default RegisterResult;
+export default PAGE_NAME_UPPER_CAMEL_CASE;

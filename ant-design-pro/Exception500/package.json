@@ -1,5 +1,5 @@
 {
-  "name": "@umi-block/exception500",
+  "name": "@umi-block/exception-500",
   "version": "0.0.1",
   "description": "Exception500",
   "main": "src/index.js",

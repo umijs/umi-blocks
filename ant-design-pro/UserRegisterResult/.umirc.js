@@ -1,10 +1,18 @@
 export default {
   plugins: [
-    ['umi-plugin-block-dev', {}],
-    ['umi-plugin-react', {
-      dva: true,
-      locale: true,
-      antd: true,
-    }],
+    [
+      'umi-plugin-block-dev',
+      {
+        layout: 'ant-design-pro-user',
+      },
+    ],
+    [
+      'umi-plugin-react',
+      {
+        dva: true,
+        locale: true,
+        antd: true,
+      },
+    ],
   ],
 };

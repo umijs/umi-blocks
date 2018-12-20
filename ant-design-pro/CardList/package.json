@@ -1,5 +1,5 @@
 {
-  "name": "@umi-block/cardlist",
+  "name": "@umi-block/card-list",
   "version": "0.0.1",
   "description": "CardList",
   "main": "src/index.js",

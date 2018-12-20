@@ -1,5 +1,5 @@
 {
-  "name": "@umi-block/resultsuccess",
+  "name": "@umi-block/result-success",
   "version": "0.0.1",
   "description": "ResultSuccess",
   "main": "src/index.js",

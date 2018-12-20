@@ -1,5 +1,5 @@
 {
-  "name": "@umi-block/exception404",
+  "name": "@umi-block/exception-404",
   "version": "0.0.1",
   "description": "Exception404",
   "main": "src/index.js",

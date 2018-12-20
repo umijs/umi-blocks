@@ -1,5 +1,5 @@
 {
-  "name": "@umi-block/searchlistarticles",
+  "name": "@umi-block/search-list-articles",
   "version": "0.0.1",
   "description": "SearchListArticles",
   "main": "src/index.js",

@@ -1,5 +1,5 @@
 {
-  "name": "@umi-block/basiclist",
+  "name": "@umi-block/basic-list",
   "version": "0.0.1",
   "description": "BasicList",
   "main": "src/index.js",

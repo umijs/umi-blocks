@@ -1,5 +1,5 @@
 {
-  "name": "@umi-block/accountcenter",
+  "name": "@umi-block/account-center",
   "version": "0.0.1",
   "description": "AccountCenter",
   "main": "src/index.js",

@@ -1,5 +1,5 @@
 {
-  "name": "@umi-block/basicprofile",
+  "name": "@umi-block/basic-profile",
   "version": "0.0.1",
   "description": "BasicProfile",
   "main": "src/index.js",

@@ -1,5 +1,5 @@
 {
-  "name": "@umi-block/tablelist",
+  "name": "@umi-block/table-list",
   "version": "0.0.1",
   "description": "TableList",
   "main": "src/index.js",

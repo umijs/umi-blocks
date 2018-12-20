@@ -1,5 +1,5 @@
 {
-  "name": "@umi-block/exception403",
+  "name": "@umi-block/exception-403",
   "version": "0.0.1",
   "description": "Exception403",
   "main": "src/index.js",
