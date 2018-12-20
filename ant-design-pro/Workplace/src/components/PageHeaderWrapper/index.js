@@ -4,9 +4,8 @@ import Link from 'umi/link';
 import { PageHeader } from 'ant-design-pro';
 import styles from './index.less';
 
-const PageHeaderWrapper = ({ children, contentWidth, wrapperClassName, top, ...restProps }) => (
+const PageHeaderWrapper = ({ children, contentWidth, wrapperClassName, ...restProps }) => (
   <div style={{ margin: '-24px -24px 0' }} className={wrapperClassName}>
-    {top}
     <PageHeader
       wide={contentWidth === 'Fixed'}
       home={<FormattedMessage id="menu.home" defaultMessage="Home" />}

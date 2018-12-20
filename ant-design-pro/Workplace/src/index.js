@@ -39,27 +39,27 @@ const links = [
   },
 ];
 
-@connect(({ workplace: { user, project, activities, chart }, loading }) => ({
+@connect(({ BLOCK_NAME_CAMEL_CASE: { user, project, activities, chart }, loading }) => ({
   currentUser: user.currentUser,
   project,
   activities,
   chart,
-  currentUserLoading: loading.effects['workplace/fetchUserCurrent'],
-  projectLoading: loading.effects['workplace/fetchProjectNotice'],
-  activitiesLoading: loading.effects['workplace/fetchActivitiesList'],
+  currentUserLoading: loading.effects['BLOCK_NAME_CAMEL_CASE/fetchUserCurrent'],
+  projectLoading: loading.effects['BLOCK_NAME_CAMEL_CASE/fetchProjectNotice'],
+  activitiesLoading: loading.effects['BLOCK_NAME_CAMEL_CASE/fetchActivitiesList'],
 }))
-class Workplace extends PureComponent {
+class PAGE_NAME_UPPER_CAMEL_CASE extends PureComponent {
   componentDidMount() {
     const { dispatch } = this.props;
     dispatch({
-      type: 'workplace/init',
+      type: 'BLOCK_NAME_CAMEL_CASE/init',
     });
   }
 
   componentWillUnmount() {
     const { dispatch } = this.props;
     dispatch({
-      type: 'chart/clear',
+      type: 'BLOCK_NAME_CAMEL_CASE/clear',
     });
   }
 
@@ -246,4 +246,4 @@ class Workplace extends PureComponent {
   }
 }
 
-export default Workplace;
+export default PAGE_NAME_UPPER_CAMEL_CASE;

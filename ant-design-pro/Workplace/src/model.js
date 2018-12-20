@@ -1,7 +1,7 @@
 import { queryCurrent, queryProjectNotice, queryActivities, fakeChartData } from './service';
 
 export default {
-  namespace: 'workplace',
+  namespace: 'BLOCK_NAME_CAMEL_CASE',
   state: {
     user: {
       currentUser: {},

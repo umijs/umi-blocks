@@ -1,17 +1,17 @@
 import request from 'umi-request';
 
 export async function queryProjectNotice() {
-  return request('/api/project/notice');
+  return request('/api/BLOCK_NAME/project/notice');
 }
 
 export async function queryActivities() {
-  return request('/api/activities');
+  return request('/api/BLOCK_NAME/activities');
 }
 
 export async function fakeChartData() {
-  return request('/api/fake_chart_data');
+  return request('/api/BLOCK_NAME/fake_chart_data');
 }
 
 export async function queryCurrent() {
-  return request('/api/currentUser');
+  return request('/api/BLOCK_NAME/currentUser');
 }
