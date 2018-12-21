@@ -32,7 +32,7 @@ export default class StepForm extends PureComponent {
     if (/confirm\/?$/.test(pathname)) {
       currentStep = <Step2 />;
     } else if (/result\/?$/.test(pathname)) {
-      currentStep =  <Step3 />;
+      currentStep = <Step3 />;
     } else {
       currentStep = <Step1 />;
     }
