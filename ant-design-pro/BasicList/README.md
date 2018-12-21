@@ -5,7 +5,7 @@ BasicList
 ## Usage
 
 ```sh
-umi block ant-design-pro/basiclist
+umi block add ant-design-pro/basiclist
 ```
 
 ## SNAPSHOT

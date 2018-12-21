@@ -5,7 +5,7 @@ TableList
 ## Usage
 
 ```sh
-umi block ant-design-pro/TableList
+umi block add ant-design-pro/TableList
 ```
 
 ## SNAPSHOT

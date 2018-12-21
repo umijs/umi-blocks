@@ -5,7 +5,7 @@ Monitor
 ## Usage
 
 ```sh
-umi block ant-design-pro/monitor
+umi block add ant-design-pro/monitor
 ```
 
 ## SNAPSHOT

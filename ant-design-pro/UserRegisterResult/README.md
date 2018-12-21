@@ -5,7 +5,7 @@ UserRegisterResult
 ## Usage
 
 ```sh
-umi block ant-design-pro/UserRegisterResult
+umi block add ant-design-pro/UserRegisterResult
 ```
 
 ## SNAPSHOT

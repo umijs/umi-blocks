@@ -5,7 +5,7 @@ AccountSettings
 ## Usage
 
 ```sh
-umi block ant-design-pro/AccountSettings
+umi block add ant-design-pro/AccountSettings
 ```
 
 ## SNAPSHOT
