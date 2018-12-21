@@ -1,7 +1,7 @@
 import { fakeRegister } from './service';
 
 export default {
-  namespace: 'BLOCK_NAME_CAMEL_CASE_CAMEL_CASE',
+  namespace: 'BLOCK_NAME_CAMEL_CASE',
 
   state: {
     status: undefined,

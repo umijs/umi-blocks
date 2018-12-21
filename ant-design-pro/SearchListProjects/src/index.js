@@ -13,9 +13,9 @@ const FormItem = Form.Item;
 
 /* eslint react/no-array-index-key: 0 */
 
-@connect(({ BLOCK_NAME_CAMEL_CASE_CAMEL_CASE, loading }) => ({
-  BLOCK_NAME_CAMEL_CASE_CAMEL_CASE,
-  loading: loading.models.BLOCK_NAME_CAMEL_CASE_CAMEL_CASE,
+@connect(({ BLOCK_NAME_CAMEL_CASE, loading }) => ({
+  BLOCK_NAME_CAMEL_CASE,
+  loading: loading.models.BLOCK_NAME_CAMEL_CASE,
 }))
 @Form.create({
   onValuesChange({ dispatch }, changedValues, allValues) {
@@ -24,7 +24,7 @@ const FormItem = Form.Item;
     console.log(changedValues, allValues);
     // 模拟查询表单生效
     dispatch({
-      type: 'BLOCK_NAME_CAMEL_CASE_CAMEL_CASE/fetch',
+      type: 'BLOCK_NAME_CAMEL_CASE/fetch',
       payload: {
         count: 8,
       },
@@ -35,7 +35,7 @@ class CoverCardList extends PureComponent {
   componentDidMount() {
     const { dispatch } = this.props;
     dispatch({
-      type: 'BLOCK_NAME_CAMEL_CASE_CAMEL_CASE/fetch',
+      type: 'BLOCK_NAME_CAMEL_CASE/fetch',
       payload: {
         count: 8,
       },
@@ -44,7 +44,7 @@ class CoverCardList extends PureComponent {
 
   render() {
     const {
-      BLOCK_NAME_CAMEL_CASE_CAMEL_CASE: { list = [] },
+      BLOCK_NAME_CAMEL_CASE: { list = [] },
       loading,
       form,
     } = this.props;

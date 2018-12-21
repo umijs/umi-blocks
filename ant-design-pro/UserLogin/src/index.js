@@ -8,9 +8,9 @@ import styles from './style.less';
 
 const { Tab, UserName, Password, Mobile, Captcha, Submit } = Login;
 
-@connect(({ BLOCK_NAME_CAMEL_CASE_CAMEL_CASE, loading }) => ({
-  BLOCK_NAME_CAMEL_CASE_CAMEL_CASE,
-  submitting: loading.effects['BLOCK_NAME_CAMEL_CASE_CAMEL_CASE/login'],
+@connect(({ BLOCK_NAME_CAMEL_CASE, loading }) => ({
+  BLOCK_NAME_CAMEL_CASE,
+  submitting: loading.effects['BLOCK_NAME_CAMEL_CASE/login'],
 }))
 class LoginPage extends Component {
   state = {
@@ -30,7 +30,7 @@ class LoginPage extends Component {
         } else {
           const { dispatch } = this.props;
           dispatch({
-            type: 'BLOCK_NAME_CAMEL_CASE_CAMEL_CASE/getCaptcha',
+            type: 'BLOCK_NAME_CAMEL_CASE/getCaptcha',
             payload: values.mobile,
           })
             .then(resolve)
@@ -44,7 +44,7 @@ class LoginPage extends Component {
     if (!err) {
       const { dispatch } = this.props;
       dispatch({
-        type: 'BLOCK_NAME_CAMEL_CASE_CAMEL_CASE/login',
+        type: 'BLOCK_NAME_CAMEL_CASE/login',
         payload: {
           ...values,
           type,
@@ -64,8 +64,8 @@ class LoginPage extends Component {
   );
 
   render() {
-    const { BLOCK_NAME_CAMEL_CASE_CAMEL_CASE, submitting } = this.props;
-    const { status, type: loginType } = BLOCK_NAME_CAMEL_CASE_CAMEL_CASE;
+    const { BLOCK_NAME_CAMEL_CASE, submitting } = this.props;
+    const { status, type: loginType } = BLOCK_NAME_CAMEL_CASE;
     const { type, autoLogin } = this.state;
     return (
       <div className={styles.main}>

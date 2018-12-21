@@ -2,7 +2,7 @@ import { routerRedux } from 'dva/router';
 import { fakeSubmitForm } from './service';
 
 export default {
-  namespace: 'BLOCK_NAME_CAMEL_CASE_CAMEL_CASE',
+  namespace: 'BLOCK_NAME_CAMEL_CASE',
 
   state: {
     step: {
