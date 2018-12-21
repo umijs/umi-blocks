@@ -8,6 +8,10 @@ StepForm
 umi block ant-design-pro/stepform
 ```
 
+## SNAPSHOT
+
+![SNAPSHOT](./snapshot.png)
+
 ## LICENSE
 
 MIT

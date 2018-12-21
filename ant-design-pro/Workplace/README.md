@@ -8,6 +8,10 @@ Workplace
 umi block ant-design-pro/Workplace
 ```
 
+## SNAPSHOT
+
+![SNAPSHOT](./snapshot.png)
+
 ## LICENSE
 
 MIT

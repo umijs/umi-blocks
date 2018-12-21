@@ -8,6 +8,10 @@ AccountSettings
 umi block ant-design-pro/AccountSettings
 ```
 
+## SNAPSHOT
+
+![SNAPSHOT](./snapshot.png)
+
 ## LICENSE
 
 MIT

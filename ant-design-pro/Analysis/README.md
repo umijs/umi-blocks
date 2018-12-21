@@ -8,6 +8,10 @@ Analysis
 umi block ant-design-pro/analysis
 ```
 
+## SNAPSHOT
+
+![SNAPSHOT](./snapshot.png)
+
 ## LICENSE
 
 MIT

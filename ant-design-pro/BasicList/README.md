@@ -8,6 +8,10 @@ BasicList
 umi block ant-design-pro/basiclist
 ```
 
+## SNAPSHOT
+
+![SNAPSHOT](./snapshot.png)
+
 ## LICENSE
 
 MIT

@@ -8,6 +8,10 @@ BasicProfile
 umi block ant-design-pro/basicprofile
 ```
 
+## SNAPSHOT
+
+![SNAPSHOT](./snapshot.png)
+
 ## LICENSE
 
 MIT

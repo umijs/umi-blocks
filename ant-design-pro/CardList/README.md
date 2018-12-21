@@ -8,6 +8,10 @@ CardList
 umi block ant-design-pro/cardlist
 ```
 
+## SNAPSHOT
+
+![SNAPSHOT](./snapshot.png)
+
 ## LICENSE
 
 MIT

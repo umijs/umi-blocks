@@ -8,6 +8,10 @@ Monitor
 umi block ant-design-pro/monitor
 ```
 
+## SNAPSHOT
+
+![SNAPSHOT](./snapshot.png)
+
 ## LICENSE
 
 MIT

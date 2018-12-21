@@ -8,6 +8,10 @@ SearchListArticles
 umi block ant-design-pro/searchlistarticles
 ```
 
+## SNAPSHOT
+
+![SNAPSHOT](./snapshot.png)
+
 ## LICENSE
 
 MIT

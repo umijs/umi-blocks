@@ -8,6 +8,10 @@ UserRegisterResult
 umi block ant-design-pro/UserRegisterResult
 ```
 
+## SNAPSHOT
+
+![SNAPSHOT](./snapshot.png)
+
 ## LICENSE
 
 MIT

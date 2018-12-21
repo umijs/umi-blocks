@@ -8,6 +8,10 @@ UserLogin
 umi block ant-design-pro/UserLogin
 ```
 
+## SNAPSHOT
+
+![SNAPSHOT](./snapshot.png)
+
 ## LICENSE
 
 MIT

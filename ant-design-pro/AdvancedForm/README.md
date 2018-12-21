@@ -8,6 +8,10 @@ AdvancedForm
 umi block ant-design-pro/advancedform
 ```
 
+## SNAPSHOT
+
+![SNAPSHOT](./snapshot.png)
+
 ## LICENSE
 
 MIT
