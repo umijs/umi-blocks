@@ -1,4 +1,4 @@
 export default {
-  'app.exception.back': 'Back to home',
-  'app.exception.description.500': 'Sorry, the server is reporting an error',
+  'BLOCK_BAME.exception.back': 'Back to home',
+  'BLOCK_BAME.description.500': 'Sorry, the server is reporting an error',
 };

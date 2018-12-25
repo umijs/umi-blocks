@@ -19,16 +19,16 @@ class PAGE_NAME_UPPER_CAMEL_CASE extends Component {
     super(props);
     const { match, location } = props;
     const menuMap = {
-      base: <FormattedMessage id="app.settings.menuMap.basic" defaultMessage="Basic Settings" />,
+      base: <FormattedMessage id="BLOCK_BAME.menuMap.basic" defaultMessage="Basic Settings" />,
       security: (
-        <FormattedMessage id="app.settings.menuMap.security" defaultMessage="Security Settings" />
+        <FormattedMessage id="BLOCK_BAME.menuMap.security" defaultMessage="Security Settings" />
       ),
       binding: (
-        <FormattedMessage id="app.settings.menuMap.binding" defaultMessage="Account Binding" />
+        <FormattedMessage id="BLOCK_BAME.menuMap.binding" defaultMessage="Account Binding" />
       ),
       notification: (
         <FormattedMessage
-          id="app.settings.menuMap.notification"
+          id="BLOCK_BAME.menuMap.notification"
           defaultMessage="New Message Notification"
         />
       ),

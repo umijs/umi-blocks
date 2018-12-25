@@ -12,7 +12,7 @@ const CustomTab = ({ data, currentTabKey: currentKey }) => (
       <NumberInfo
         title={data.name}
         subTitle={
-          <FormattedMessage id="app.analysis.conversion-rate" defaultMessage="Conversion Rate" />
+          <FormattedMessage id="BLOCK_BAME.analysis.conversion-rate" defaultMessage="Conversion Rate" />
         }
         gap={2}
         total={`${data.cvr * 100}%`}
@@ -51,8 +51,8 @@ const OfflineData = memo(
                 height={400}
                 data={offlineChartData}
                 titleMap={{
-                  y1: formatMessage({ id: 'app.analysis.traffic' }),
-                  y2: formatMessage({ id: 'app.analysis.payments' }),
+                  y1: formatMessage({ id: 'BLOCK_BAME.analysis.traffic' }),
+                  y2: formatMessage({ id: 'BLOCK_BAME.analysis.payments' }),
                 }}
               />
             </div>

@@ -15,7 +15,7 @@ const ProportionSales = memo(
       bordered={false}
       title={
         <FormattedMessage
-          id="app.analysis.the-proportion-of-sales"
+          id="BLOCK_BAME.analysis.the-proportion-of-sales"
           defaultMessage="The Proportion of Sales"
         />
       }
@@ -26,13 +26,13 @@ const ProportionSales = memo(
           <div className={styles.salesTypeRadio}>
             <Radio.Group value={salesType} onChange={handleChangeSalesType}>
               <Radio.Button value="all">
-                <FormattedMessage id="app.analysis.channel.all" defaultMessage="ALL" />
+                <FormattedMessage id="BLOCK_BAME.channel.all" defaultMessage="ALL" />
               </Radio.Button>
               <Radio.Button value="online">
-                <FormattedMessage id="app.analysis.channel.online" defaultMessage="Online" />
+                <FormattedMessage id="BLOCK_BAME.channel.online" defaultMessage="Online" />
               </Radio.Button>
               <Radio.Button value="stores">
-                <FormattedMessage id="app.analysis.channel.stores" defaultMessage="Stores" />
+                <FormattedMessage id="BLOCK_BAME.channel.stores" defaultMessage="Stores" />
               </Radio.Button>
             </Radio.Group>
           </div>
@@ -46,11 +46,11 @@ const ProportionSales = memo(
         }}
       >
         <h4 style={{ marginTop: 8, marginBottom: 32 }}>
-          <FormattedMessage id="app.analysis.sales" defaultMessage="Sales" />
+          <FormattedMessage id="BLOCK_BAME.analysis.sales" defaultMessage="Sales" />
         </h4>
         <Pie
           hasLegend
-          subTitle={<FormattedMessage id="app.analysis.sales" defaultMessage="Sales" />}
+          subTitle={<FormattedMessage id="BLOCK_BAME.analysis.sales" defaultMessage="Sales" />}
           total={() => <Yuan>{salesPieData.reduce((pre, now) => now.y + pre, 0)}</Yuan>}
           data={salesPieData}
           valueFormat={value => <Yuan>{value}</Yuan>}

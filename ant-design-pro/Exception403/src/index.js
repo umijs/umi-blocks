@@ -6,9 +6,9 @@ import { Exception } from 'ant-design-pro';
 const PAGE_NAME_UPPER_CAMEL_CASE = () => (
   <Exception
     type="403"
-    desc={formatMessage({ id: 'app.exception.description.403' })}
+    desc={formatMessage({ id: 'BLOCK_BAME.description.403' })}
     linkElement={Link}
-    backText={formatMessage({ id: 'app.exception.back' })}
+    backText={formatMessage({ id: 'BLOCK_BAME.exception.back' })}
   />
 );
 

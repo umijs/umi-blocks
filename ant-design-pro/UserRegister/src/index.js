@@ -13,17 +13,17 @@ const InputGroup = Input.Group;
 const passwordStatusMap = {
   ok: (
     <div className={styles.success}>
-      <FormattedMessage id="validation.password.strength.strong" />
+      <FormattedMessage id="BLOCK_BAME.strength.strong" />
     </div>
   ),
   pass: (
     <div className={styles.warning}>
-      <FormattedMessage id="validation.password.strength.medium" />
+      <FormattedMessage id="BLOCK_BAME.strength.medium" />
     </div>
   ),
   poor: (
     <div className={styles.error}>
-      <FormattedMessage id="validation.password.strength.short" />
+      <FormattedMessage id="BLOCK_BAME.strength.short" />
     </div>
   ),
 };
@@ -115,7 +115,7 @@ class PAGE_NAME_UPPER_CAMEL_CASE extends Component {
   checkConfirm = (rule, value, callback) => {
     const { form } = this.props;
     if (value && value !== form.getFieldValue('password')) {
-      callback(formatMessage({ id: 'validation.password.twice' }));
+      callback(formatMessage({ id: 'BLOCK_BAME.password.twice' }));
     } else {
       callback();
     }
@@ -125,7 +125,7 @@ class PAGE_NAME_UPPER_CAMEL_CASE extends Component {
     const { visible, confirmDirty } = this.state;
     if (!value) {
       this.setState({
-        help: formatMessage({ id: 'validation.password.required' }),
+        help: formatMessage({ id: 'BLOCK_BAME.password.required' }),
         visible: !!value,
       });
       callback('error');
@@ -180,7 +180,7 @@ class PAGE_NAME_UPPER_CAMEL_CASE extends Component {
     return (
       <div className={styles.main}>
         <h3>
-          <FormattedMessage id="app.register.register" />
+          <FormattedMessage id="BLOCK_BAME.register.register" />
         </h3>
         <Form onSubmit={this.handleSubmit}>
           <FormItem>
@@ -188,15 +188,15 @@ class PAGE_NAME_UPPER_CAMEL_CASE extends Component {
               rules: [
                 {
                   required: true,
-                  message: formatMessage({ id: 'validation.email.required' }),
+                  message: formatMessage({ id: 'BLOCK_BAME.email.required' }),
                 },
                 {
                   type: 'email',
-                  message: formatMessage({ id: 'validation.email.wrong-format' }),
+                  message: formatMessage({ id: 'BLOCK_BAME.email.wrong-format' }),
                 },
               ],
             })(
-              <Input size="large" placeholder={formatMessage({ id: 'form.email.placeholder' })} />
+              <Input size="large" placeholder={formatMessage({ id: 'BLOCK_BAME.email.placeholder' })} />
             )}
           </FormItem>
           <FormItem help={help}>
@@ -207,7 +207,7 @@ class PAGE_NAME_UPPER_CAMEL_CASE extends Component {
                   {passwordStatusMap[this.getPasswordStatus()]}
                   {this.renderPasswordProgress()}
                   <div style={{ marginTop: 10 }}>
-                    <FormattedMessage id="validation.password.strength.msg" />
+                    <FormattedMessage id="BLOCK_BAME.strength.msg" />
                   </div>
                 </div>
               }
@@ -225,7 +225,7 @@ class PAGE_NAME_UPPER_CAMEL_CASE extends Component {
                 <Input
                   size="large"
                   type="password"
-                  placeholder={formatMessage({ id: 'form.password.placeholder' })}
+                  placeholder={formatMessage({ id: 'BLOCK_BAME.password.placeholder' })}
                 />
               )}
             </Popover>
@@ -235,7 +235,7 @@ class PAGE_NAME_UPPER_CAMEL_CASE extends Component {
               rules: [
                 {
                   required: true,
-                  message: formatMessage({ id: 'validation.confirm-password.required' }),
+                  message: formatMessage({ id: 'BLOCK_BAME.confirm-password.required' }),
                 },
                 {
                   validator: this.checkConfirm,
@@ -245,7 +245,7 @@ class PAGE_NAME_UPPER_CAMEL_CASE extends Component {
               <Input
                 size="large"
                 type="password"
-                placeholder={formatMessage({ id: 'form.confirm-password.placeholder' })}
+                placeholder={formatMessage({ id: 'BLOCK_BAME.confirm-password.placeholder' })}
               />
             )}
           </FormItem>
@@ -264,18 +264,18 @@ class PAGE_NAME_UPPER_CAMEL_CASE extends Component {
                 rules: [
                   {
                     required: true,
-                    message: formatMessage({ id: 'validation.phone-number.required' }),
+                    message: formatMessage({ id: 'BLOCK_BAME.phone-number.required' }),
                   },
                   {
                     pattern: /^\d{11}$/,
-                    message: formatMessage({ id: 'validation.phone-number.wrong-format' }),
+                    message: formatMessage({ id: 'BLOCK_BAME.phone-number.wrong-format' }),
                   },
                 ],
               })(
                 <Input
                   size="large"
                   style={{ width: '80%' }}
-                  placeholder={formatMessage({ id: 'form.phone-number.placeholder' })}
+                  placeholder={formatMessage({ id: 'BLOCK_BAME.phone-number.placeholder' })}
                 />
               )}
             </InputGroup>
@@ -287,13 +287,13 @@ class PAGE_NAME_UPPER_CAMEL_CASE extends Component {
                   rules: [
                     {
                       required: true,
-                      message: formatMessage({ id: 'validation.verification-code.required' }),
+                      message: formatMessage({ id: 'BLOCK_BAME.verification-code.required' }),
                     },
                   ],
                 })(
                   <Input
                     size="large"
-                    placeholder={formatMessage({ id: 'form.verification-code.placeholder' })}
+                    placeholder={formatMessage({ id: 'BLOCK_BAME.verification-code.placeholder' })}
                   />
                 )}
               </Col>
@@ -306,7 +306,7 @@ class PAGE_NAME_UPPER_CAMEL_CASE extends Component {
                 >
                   {count
                     ? `${count} s`
-                    : formatMessage({ id: 'app.register.get-verification-code' })}
+                    : formatMessage({ id: 'BLOCK_BAME.register.get-verification-code' })}
                 </Button>
               </Col>
             </Row>
@@ -319,10 +319,10 @@ class PAGE_NAME_UPPER_CAMEL_CASE extends Component {
               type="primary"
               htmlType="submit"
             >
-              <FormattedMessage id="app.register.register" />
+              <FormattedMessage id="BLOCK_BAME.register.register" />
             </Button>
             <Link className={styles.login} to="/User/Login">
-              <FormattedMessage id="app.register.sign-in" />
+              <FormattedMessage id="BLOCK_BAME.register.sign-in" />
             </Link>
           </FormItem>
         </Form>

@@ -5,31 +5,31 @@ import { Icon, List } from 'antd';
 class BindingView extends Component {
   getData = () => [
     {
-      title: formatMessage({ id: 'app.settings.binding.taobao' }, {}),
-      description: formatMessage({ id: 'app.settings.binding.taobao-description' }, {}),
+      title: formatMessage({ id: 'BLOCK_BAME.binding.taobao' }, {}),
+      description: formatMessage({ id: 'BLOCK_BAME.binding.taobao-description' }, {}),
       actions: [
         <a>
-          <FormattedMessage id="app.settings.binding.bind" defaultMessage="Bind" />
+          <FormattedMessage id="BLOCK_BAME.binding.bind" defaultMessage="Bind" />
         </a>,
       ],
       avatar: <Icon type="taobao" className="taobao" />,
     },
     {
-      title: formatMessage({ id: 'app.settings.binding.alipay' }, {}),
-      description: formatMessage({ id: 'app.settings.binding.alipay-description' }, {}),
+      title: formatMessage({ id: 'BLOCK_BAME.binding.alipay' }, {}),
+      description: formatMessage({ id: 'BLOCK_BAME.binding.alipay-description' }, {}),
       actions: [
         <a>
-          <FormattedMessage id="app.settings.binding.bind" defaultMessage="Bind" />
+          <FormattedMessage id="BLOCK_BAME.binding.bind" defaultMessage="Bind" />
         </a>,
       ],
       avatar: <Icon type="alipay" className="alipay" />,
     },
     {
-      title: formatMessage({ id: 'app.settings.binding.dingding' }, {}),
-      description: formatMessage({ id: 'app.settings.binding.dingding-description' }, {}),
+      title: formatMessage({ id: 'BLOCK_BAME.binding.dingding' }, {}),
+      description: formatMessage({ id: 'BLOCK_BAME.binding.dingding-description' }, {}),
       actions: [
         <a>
-          <FormattedMessage id="app.settings.binding.bind" defaultMessage="Bind" />
+          <FormattedMessage id="BLOCK_BAME.binding.bind" defaultMessage="Bind" />
         </a>,
       ],
       avatar: <Icon type="dingding" className="dingding" />,

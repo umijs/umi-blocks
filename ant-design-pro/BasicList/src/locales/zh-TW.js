@@ -1,3 +1,3 @@
 export default {
-  'menu.list.basiclist': '標淮列表',
+  'BLOCK_BAME.list.basiclist': '標淮列表',
 };

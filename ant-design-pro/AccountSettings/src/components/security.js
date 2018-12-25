@@ -6,17 +6,17 @@ import { List } from 'antd';
 const passwordStrength = {
   strong: (
     <font className="strong">
-      <FormattedMessage id="app.settings.security.strong" defaultMessage="Strong" />
+      <FormattedMessage id="BLOCK_BAME.security.strong" defaultMessage="Strong" />
     </font>
   ),
   medium: (
     <font className="medium">
-      <FormattedMessage id="app.settings.security.medium" defaultMessage="Medium" />
+      <FormattedMessage id="BLOCK_BAME.security.medium" defaultMessage="Medium" />
     </font>
   ),
   weak: (
     <font className="weak">
-      <FormattedMessage id="app.settings.security.weak" defaultMessage="Weak" />
+      <FormattedMessage id="BLOCK_BAME.security.weak" defaultMessage="Weak" />
       Weak
     </font>
   ),
@@ -25,58 +25,58 @@ const passwordStrength = {
 class SecurityView extends Component {
   getData = () => [
     {
-      title: formatMessage({ id: 'app.settings.security.password' }, {}),
+      title: formatMessage({ id: 'BLOCK_BAME.security.password' }, {}),
       description: (
         <Fragment>
-          {formatMessage({ id: 'app.settings.security.password-description' })}：
+          {formatMessage({ id: 'BLOCK_BAME.security.password-description' })}：
           {passwordStrength.strong}
         </Fragment>
       ),
       actions: [
         <a>
-          <FormattedMessage id="app.settings.security.modify" defaultMessage="Modify" />
+          <FormattedMessage id="BLOCK_BAME.security.modify" defaultMessage="Modify" />
         </a>,
       ],
     },
     {
-      title: formatMessage({ id: 'app.settings.security.phone' }, {}),
+      title: formatMessage({ id: 'BLOCK_BAME.security.phone' }, {}),
       description: `${formatMessage(
-        { id: 'app.settings.security.phone-description' },
+        { id: 'BLOCK_BAME.security.phone-description' },
         {}
       )}：138****8293`,
       actions: [
         <a>
-          <FormattedMessage id="app.settings.security.modify" defaultMessage="Modify" />
+          <FormattedMessage id="BLOCK_BAME.security.modify" defaultMessage="Modify" />
         </a>,
       ],
     },
     {
-      title: formatMessage({ id: 'app.settings.security.question' }, {}),
-      description: formatMessage({ id: 'app.settings.security.question-description' }, {}),
+      title: formatMessage({ id: 'BLOCK_BAME.security.question' }, {}),
+      description: formatMessage({ id: 'BLOCK_BAME.security.question-description' }, {}),
       actions: [
         <a>
-          <FormattedMessage id="app.settings.security.set" defaultMessage="Set" />
+          <FormattedMessage id="BLOCK_BAME.security.set" defaultMessage="Set" />
         </a>,
       ],
     },
     {
-      title: formatMessage({ id: 'app.settings.security.email' }, {}),
+      title: formatMessage({ id: 'BLOCK_BAME.security.email' }, {}),
       description: `${formatMessage(
-        { id: 'app.settings.security.email-description' },
+        { id: 'BLOCK_BAME.security.email-description' },
         {}
       )}：ant***sign.com`,
       actions: [
         <a>
-          <FormattedMessage id="app.settings.security.modify" defaultMessage="Modify" />
+          <FormattedMessage id="BLOCK_BAME.security.modify" defaultMessage="Modify" />
         </a>,
       ],
     },
     {
-      title: formatMessage({ id: 'app.settings.security.mfa' }, {}),
-      description: formatMessage({ id: 'app.settings.security.mfa-description' }, {}),
+      title: formatMessage({ id: 'BLOCK_BAME.security.mfa' }, {}),
+      description: formatMessage({ id: 'BLOCK_BAME.security.mfa-description' }, {}),
       actions: [
         <a>
-          <FormattedMessage id="app.settings.security.bind" defaultMessage="Bind" />
+          <FormattedMessage id="BLOCK_BAME.security.bind" defaultMessage="Bind" />
         </a>,
       ],
     },

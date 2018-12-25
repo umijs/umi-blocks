@@ -272,7 +272,7 @@ class PAGE_NAME_UPPER_CAMEL_CASE extends PureComponent {
           <Card
             className={styles.listCard}
             bordered={false}
-            title={<FormattedMessage id="menu.list.basiclist" defaultMessage="Basic List" />}
+            title={<FormattedMessage id="BLOCK_BAME.list.basiclist" defaultMessage="Basic List" />}
             style={{ marginTop: 24 }}
             bodyStyle={{ padding: '0 32px 40px 32px' }}
             extra={extraContent}

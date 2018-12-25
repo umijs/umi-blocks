@@ -66,67 +66,67 @@ class PAGE_NAME_UPPER_CAMEL_CASE extends PureComponent {
 
     return (
       <PageHeaderWrapper
-        title={<FormattedMessage id="app.forms.basic.title" />}
-        content={<FormattedMessage id="app.forms.basic.description" />}
+        title={<FormattedMessage id="BLOCK_BAME.basic.title" />}
+        content={<FormattedMessage id="BLOCK_BAME.basic.description" />}
       >
         <Card bordered={false}>
           <Form onSubmit={this.handleSubmit} hideRequiredMark style={{ marginTop: 8 }}>
-            <FormItem {...formItemLayout} label={<FormattedMessage id="form.title.label" />}>
+            <FormItem {...formItemLayout} label={<FormattedMessage id="BLOCK_BAME.title.label" />}>
               {getFieldDecorator('title', {
                 rules: [
                   {
                     required: true,
-                    message: formatMessage({ id: 'validation.title.required' }),
+                    message: formatMessage({ id: 'BLOCK_BAME.title.required' }),
                   },
                 ],
-              })(<Input placeholder={formatMessage({ id: 'form.title.placeholder' })} />)}
+              })(<Input placeholder={formatMessage({ id: 'BLOCK_BAME.title.placeholder' })} />)}
             </FormItem>
-            <FormItem {...formItemLayout} label={<FormattedMessage id="form.date.label" />}>
+            <FormItem {...formItemLayout} label={<FormattedMessage id="BLOCK_BAME.date.label" />}>
               {getFieldDecorator('date', {
                 rules: [
                   {
                     required: true,
-                    message: formatMessage({ id: 'validation.date.required' }),
+                    message: formatMessage({ id: 'BLOCK_BAME.date.required' }),
                   },
                 ],
               })(
                 <RangePicker
                   style={{ width: '100%' }}
                   placeholder={[
-                    formatMessage({ id: 'form.date.placeholder.start' }),
-                    formatMessage({ id: 'form.date.placeholder.end' }),
+                    formatMessage({ id: 'BLOCK_BAME.placeholder.start' }),
+                    formatMessage({ id: 'BLOCK_BAME.placeholder.end' }),
                   ]}
                 />
               )}
             </FormItem>
-            <FormItem {...formItemLayout} label={<FormattedMessage id="form.goal.label" />}>
+            <FormItem {...formItemLayout} label={<FormattedMessage id="BLOCK_BAME.goal.label" />}>
               {getFieldDecorator('goal', {
                 rules: [
                   {
                     required: true,
-                    message: formatMessage({ id: 'validation.goal.required' }),
+                    message: formatMessage({ id: 'BLOCK_BAME.goal.required' }),
                   },
                 ],
               })(
                 <TextArea
                   style={{ minHeight: 32 }}
-                  placeholder={formatMessage({ id: 'form.goal.placeholder' })}
+                  placeholder={formatMessage({ id: 'BLOCK_BAME.goal.placeholder' })}
                   rows={4}
                 />
               )}
             </FormItem>
-            <FormItem {...formItemLayout} label={<FormattedMessage id="form.standard.label" />}>
+            <FormItem {...formItemLayout} label={<FormattedMessage id="BLOCK_BAME.standard.label" />}>
               {getFieldDecorator('standard', {
                 rules: [
                   {
                     required: true,
-                    message: formatMessage({ id: 'validation.standard.required' }),
+                    message: formatMessage({ id: 'BLOCK_BAME.standard.required' }),
                   },
                 ],
               })(
                 <TextArea
                   style={{ minHeight: 32 }}
-                  placeholder={formatMessage({ id: 'form.standard.placeholder' })}
+                  placeholder={formatMessage({ id: 'BLOCK_BAME.standard.placeholder' })}
                   rows={4}
                 />
               )}
@@ -135,10 +135,10 @@ class PAGE_NAME_UPPER_CAMEL_CASE extends PureComponent {
               {...formItemLayout}
               label={
                 <span>
-                  <FormattedMessage id="form.client.label" />
+                  <FormattedMessage id="BLOCK_BAME.client.label" />
                   <em className={styles.optional}>
-                    <FormattedMessage id="form.optional" />
-                    <Tooltip title={<FormattedMessage id="form.client.label.tooltip" />}>
+                    <FormattedMessage id="BLOCK_BAME.form.optional" />
+                    <Tooltip title={<FormattedMessage id="BLOCK_BAME.label.tooltip" />}>
                       <Icon type="info-circle-o" style={{ marginRight: 4 }} />
                     </Tooltip>
                   </em>
@@ -146,38 +146,38 @@ class PAGE_NAME_UPPER_CAMEL_CASE extends PureComponent {
               }
             >
               {getFieldDecorator('client')(
-                <Input placeholder={formatMessage({ id: 'form.client.placeholder' })} />
+                <Input placeholder={formatMessage({ id: 'BLOCK_BAME.client.placeholder' })} />
               )}
             </FormItem>
             <FormItem
               {...formItemLayout}
               label={
                 <span>
-                  <FormattedMessage id="form.invites.label" />
+                  <FormattedMessage id="BLOCK_BAME.invites.label" />
                   <em className={styles.optional}>
-                    <FormattedMessage id="form.optional" />
+                    <FormattedMessage id="BLOCK_BAME.form.optional" />
                   </em>
                 </span>
               }
             >
               {getFieldDecorator('invites')(
-                <Input placeholder={formatMessage({ id: 'form.invites.placeholder' })} />
+                <Input placeholder={formatMessage({ id: 'BLOCK_BAME.invites.placeholder' })} />
               )}
             </FormItem>
             <FormItem
               {...formItemLayout}
               label={
                 <span>
-                  <FormattedMessage id="form.weight.label" />
+                  <FormattedMessage id="BLOCK_BAME.weight.label" />
                   <em className={styles.optional}>
-                    <FormattedMessage id="form.optional" />
+                    <FormattedMessage id="BLOCK_BAME.form.optional" />
                   </em>
                 </span>
               }
             >
               {getFieldDecorator('weight')(
                 <InputNumber
-                  placeholder={formatMessage({ id: 'form.weight.placeholder' })}
+                  placeholder={formatMessage({ id: 'BLOCK_BAME.weight.placeholder' })}
                   min={0}
                   max={100}
                 />
@@ -186,8 +186,8 @@ class PAGE_NAME_UPPER_CAMEL_CASE extends PureComponent {
             </FormItem>
             <FormItem
               {...formItemLayout}
-              label={<FormattedMessage id="form.public.label" />}
-              help={<FormattedMessage id="form.public.label.help" />}
+              label={<FormattedMessage id="BLOCK_BAME.public.label" />}
+              help={<FormattedMessage id="BLOCK_BAME.label.help" />}
             >
               <div>
                 {getFieldDecorator('public', {
@@ -195,13 +195,13 @@ class PAGE_NAME_UPPER_CAMEL_CASE extends PureComponent {
                 })(
                   <Radio.Group>
                     <Radio value="1">
-                      <FormattedMessage id="form.public.radio.public" />
+                      <FormattedMessage id="BLOCK_BAME.radio.public" />
                     </Radio>
                     <Radio value="2">
-                      <FormattedMessage id="form.public.radio.partially-public" />
+                      <FormattedMessage id="BLOCK_BAME.radio.partially-public" />
                     </Radio>
                     <Radio value="3">
-                      <FormattedMessage id="form.public.radio.private" />
+                      <FormattedMessage id="BLOCK_BAME.radio.private" />
                     </Radio>
                   </Radio.Group>
                 )}
@@ -209,20 +209,20 @@ class PAGE_NAME_UPPER_CAMEL_CASE extends PureComponent {
                   {getFieldDecorator('publicUsers')(
                     <Select
                       mode="multiple"
-                      placeholder={formatMessage({ id: 'form.publicUsers.placeholder' })}
+                      placeholder={formatMessage({ id: 'BLOCK_BAME.publicUsers.placeholder' })}
                       style={{
                         margin: '8px 0',
                         display: getFieldValue('public') === '2' ? 'block' : 'none',
                       }}
                     >
                       <Option value="1">
-                        <FormattedMessage id="form.publicUsers.option.A" />
+                        <FormattedMessage id="BLOCK_BAME.option.A" />
                       </Option>
                       <Option value="2">
-                        <FormattedMessage id="form.publicUsers.option.B" />
+                        <FormattedMessage id="BLOCK_BAME.option.B" />
                       </Option>
                       <Option value="3">
-                        <FormattedMessage id="form.publicUsers.option.C" />
+                        <FormattedMessage id="BLOCK_BAME.option.C" />
                       </Option>
                     </Select>
                   )}
@@ -231,10 +231,10 @@ class PAGE_NAME_UPPER_CAMEL_CASE extends PureComponent {
             </FormItem>
             <FormItem {...submitFormLayout} style={{ marginTop: 32 }}>
               <Button type="primary" htmlType="submit" loading={submitting}>
-                <FormattedMessage id="form.submit" />
+                <FormattedMessage id="BLOCK_BAME.form.submit" />
               </Button>
               <Button style={{ marginLeft: 8 }}>
-                <FormattedMessage id="form.save" />
+                <FormattedMessage id="BLOCK_BAME.form.save" />
               </Button>
             </FormItem>
           </Form>

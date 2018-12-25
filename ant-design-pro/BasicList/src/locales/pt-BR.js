@@ -1,3 +1,3 @@
 export default {
-  'menu.list.basiclist': 'Lista Básica',
+  'BLOCK_BAME.list.basiclist': 'Lista Básica',
 };

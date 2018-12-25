@@ -1,4 +1,4 @@
 export default {
-  'app.exception.back': 'Back to home',
-  'app.exception.description.404': 'Sorry, the page you visited does not exist',
+  'BLOCK_BAME.exception.back': 'Back to home',
+  'BLOCK_BAME.description.404': 'Sorry, the page you visited does not exist',
 };
