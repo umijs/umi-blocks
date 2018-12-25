@@ -1,10 +1,11 @@
-import React, { Component, Fragment } from 'react';
+import React, { Component } from 'react';
 import { connect } from 'dva';
-import { Form, Card, Select, List, Tag, Icon, Row, Col, Button } from 'antd';
+import { Form, Card, Select, List, Tag, Icon, Row, Col, Button, Input } from 'antd';
 
 import TagSelect from 'ant-design-pro/lib/TagSelect';
 import StandardFormRow from './components/StandardFormRow';
 import ArticleListContent from './components/ArticleListContent';
+import PageHeaderWrapper from './components/PageHeaderWrapper';
 import styles from './style.less';
 
 const { Option } = Select;
@@ -119,8 +120,24 @@ class SearchList extends Component {
         </div>
       ) : null;
 
+    const mainSearch = (
+      <div style={{ textAlign: 'center' }}>
+        <Input.Search
+          placeholder="请输入"
+          enterButton="搜索"
+          size="large"
+          onSearch={this.handleFormSubmit}
+          style={{ width: 522 }}
+        />
+      </div>
+    );
+
     return (
-      <Fragment>
+      <PageHeaderWrapper
+        title="搜索列表"
+        content={mainSearch}
+        onTabChange={this.handleTabChange}
+      >
         <Card bordered={false}>
           <Form layout="inline">
             <StandardFormRow title="所属类目" block style={{ paddingBottom: 11 }}>
@@ -234,7 +251,7 @@ class SearchList extends Component {
             )}
           />
         </Card>
-      </Fragment>
+      </PageHeaderWrapper>
     );
   }
 }
