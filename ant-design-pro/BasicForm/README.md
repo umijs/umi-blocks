@@ -5,7 +5,7 @@ BasicForm
 ## Usage
 
 ```sh
-umi block ant-design-pro/basicform
+umi block add ant-design-pro/basicform
 ```
 
 ## SNAPSHOT

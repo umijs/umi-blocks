@@ -5,7 +5,7 @@ A blank block for quick start a umi page develop.
 ## Usage
 
 ```sh
-umi block https://github.com/umijs/umi-blocks/tree/master/blank
+umi block add https://github.com/umijs/umi-blocks/tree/master/blank
 ```
 
 ## LICENSE

@@ -1,4 +1,3 @@
-
 import nzh from 'nzh/cn';
 
 export function digitUppercase(n) {

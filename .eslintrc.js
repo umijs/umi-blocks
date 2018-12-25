@@ -20,12 +20,12 @@ module.exports = {
     'react/prop-types': 0,
     'react/forbid-prop-types': 0,
     'react/jsx-one-expression-per-line': 0,
-    'import/no-unresolved': [2, { ignore: ['^@/', '^umi/'] }],
+    'import/no-unresolved': 0,
     'import/no-extraneous-dependencies': [
       2,
       {
         optionalDependencies: true,
-        devDependencies: ['**/tests/**.js', '/mock/**.js', '**/**.test.js'],
+        devDependencies: ['**/tests/**.js', '/mock/**.js', '**/**.test.js', '**/_scripts/*.js'],
       },
     ],
     'jsx-a11y/no-noninteractive-element-interactions': 0,

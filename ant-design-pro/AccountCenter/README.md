@@ -5,7 +5,7 @@ AccountCenter
 ## Usage
 
 ```sh
-umi block ant-design-pro/AccountCenter
+umi block add ant-design-pro/AccountCenter
 ```
 
 ## SNAPSHOT

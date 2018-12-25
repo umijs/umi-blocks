@@ -5,7 +5,7 @@ ResultError
 ## Usage
 
 ```sh
-umi block ant-design-pro/resulterror
+umi block add ant-design-pro/resulterror
 ```
 
 ## SNAPSHOT

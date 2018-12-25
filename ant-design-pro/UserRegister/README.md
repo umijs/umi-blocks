@@ -5,7 +5,7 @@ UserRegister
 ## Usage
 
 ```sh
-umi block ant-design-pro/UserRegister
+umi block add ant-design-pro/UserRegister
 ```
 
 ## SNAPSHOT

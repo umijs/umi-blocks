@@ -5,7 +5,7 @@ ResultSuccess
 ## Usage
 
 ```sh
-umi block ant-design-pro/resultsuccess
+umi block add ant-design-pro/resultsuccess
 ```
 
 ## SNAPSHOT

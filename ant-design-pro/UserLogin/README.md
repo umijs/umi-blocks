@@ -5,7 +5,7 @@ UserLogin
 ## Usage
 
 ```sh
-umi block ant-design-pro/UserLogin
+umi block add ant-design-pro/UserLogin
 ```
 
 ## SNAPSHOT

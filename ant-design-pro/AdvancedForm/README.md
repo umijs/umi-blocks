@@ -5,7 +5,7 @@ AdvancedForm
 ## Usage
 
 ```sh
-umi block ant-design-pro/advancedform
+umi block add ant-design-pro/advancedform
 ```
 
 ## SNAPSHOT

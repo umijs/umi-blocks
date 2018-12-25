@@ -5,7 +5,7 @@ SearchListProjects
 ## Usage
 
 ```sh
-umi block ant-design-pro/searchlistprojects
+umi block add ant-design-pro/searchlistprojects
 ```
 
 ## SNAPSHOT
