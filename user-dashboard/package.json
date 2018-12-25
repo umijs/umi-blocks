@@ -1,0 +1,7 @@
+{
+  "name": "@umi-block/user-dashboard",
+  "description": "User dashboard example.",
+  "dependencies": {
+    "umi-request": "^1.0.0"
+  }
+}
