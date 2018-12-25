@@ -2,7 +2,6 @@ import React, { Fragment } from 'react';
 import { formatMessage, FormattedMessage } from 'umi/locale';
 import { Button, Row, Col, Icon, Steps, Card } from 'antd';
 import { Result } from 'ant-design-pro';
-import PageHeaderWrapper from './components/PageHeaderWrapper';
 
 const { Step } = Steps;
 
@@ -129,16 +128,14 @@ const actions = (
 );
 
 export default () => (
-  <PageHeaderWrapper>
-    <Card bordered={false}>
-      <Result
-        type="success"
-        title={formatMessage({ id: 'BLOCK_BAME.success.title' })}
-        description={formatMessage({ id: 'BLOCK_BAME.success.description' })}
-        extra={extra}
-        actions={actions}
-        style={{ marginTop: 48, marginBottom: 16 }}
-      />
-    </Card>
-  </PageHeaderWrapper>
+  <Card bordered={false}>
+    <Result
+      type="success"
+      title={formatMessage({ id: 'BLOCK_BAME.success.title' })}
+      description={formatMessage({ id: 'BLOCK_BAME.success.description' })}
+      extra={extra}
+      actions={actions}
+      style={{ marginTop: 48, marginBottom: 16 }}
+    />
+  </Card>
 );
