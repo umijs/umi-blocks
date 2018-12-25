@@ -1,24 +1,4 @@
 {
   "name": "@umi-blocks/demo",
-  "version": "1.0.0",
-  "description": "a demo block of umi",
-  "main": "src/index.js",
-  "scripts": {
-    "dev": "umi dev"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/umijs/umi-blocks/demo"
-  },
-  "dependencies": {
-    "react": ">=16.0.0",
-    "antd": "^3.0.0"
-  },
-  "devDependencies": {
-    "umi": "^2.0.0",
-    "umi-plugin-block-dev": "^1.0.0",
-    "umi-plugin-react": "^1.2.3"
-  },
-  "author": "yutingzhao1991 <yutingzhao1991@sina.com>",
-  "license": "ISC"
+  "description": "a demo block of umi"
 }
