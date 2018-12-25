@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import { connect } from 'dva';
-import router from 'umi/router';
 import { FormattedMessage } from 'umi/locale';
 import { Menu } from 'antd';
 import styles from './style.less';
@@ -17,7 +16,6 @@ const { Item } = Menu;
 class PAGE_NAME_UPPER_CAMEL_CASE extends Component {
   constructor(props) {
     super(props);
-    const { match, location } = props;
     const menuMap = {
       base: <FormattedMessage id="BLOCK_BAME.menuMap.basic" defaultMessage="Basic Settings" />,
       security: (
@@ -33,22 +31,11 @@ class PAGE_NAME_UPPER_CAMEL_CASE extends Component {
         />
       ),
     };
-    const key = location.pathname.replace(`${match.path}/`, '');
     this.state = {
       mode: 'inline',
       menuMap,
-      selectKey: menuMap[key] ? key : 'base',
+      selectKey: 'base',
     };
-  }
-
-  static getDerivedStateFromProps(props, state) {
-    const { location } = props;
-    let selectKey = location.pathname.split('/').pop();
-    selectKey = state.menuMap[selectKey] ? selectKey : 'base';
-    if (selectKey !== state.selectKey) {
-      return { selectKey };
-    }
-    return null;
   }
 
   componentDidMount() {
@@ -75,7 +62,6 @@ class PAGE_NAME_UPPER_CAMEL_CASE extends Component {
   };
 
   selectKey = ({ key }) => {
-    router.push(`/account/settings/${key}`);
     this.setState({
       selectKey: key,
     });
