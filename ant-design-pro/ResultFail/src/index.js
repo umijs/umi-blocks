@@ -2,7 +2,6 @@ import React, { Fragment } from 'react';
 import { formatMessage, FormattedMessage } from 'umi/locale';
 import { Button, Icon, Card } from 'antd';
 import { Result } from 'ant-design-pro';
-import PageHeaderWrapper from './components/PageHeaderWrapper';
 
 const extra = (
   <Fragment>
@@ -51,16 +50,14 @@ const actions = (
 );
 
 export default () => (
-  <PageHeaderWrapper>
-    <Card bordered={false}>
-      <Result
-        type="error"
-        title={formatMessage({ id: 'BLOCK_BAME.error.title' })}
-        description={formatMessage({ id: 'BLOCK_BAME.error.description' })}
-        extra={extra}
-        actions={actions}
-        style={{ marginTop: 48, marginBottom: 16 }}
-      />
-    </Card>
-  </PageHeaderWrapper>
+  <Card bordered={false}>
+    <Result
+      type="error"
+      title={formatMessage({ id: 'BLOCK_BAME.error.title' })}
+      description={formatMessage({ id: 'BLOCK_BAME.error.description' })}
+      extra={extra}
+      actions={actions}
+      style={{ marginTop: 48, marginBottom: 16 }}
+    />
+  </Card>
 );
