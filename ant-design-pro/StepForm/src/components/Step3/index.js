@@ -1,7 +1,6 @@
 import React, { Fragment } from 'react';
 import { connect } from 'dva';
 import { Button, Row, Col } from 'antd';
-import router from 'umi/router';
 import { Result } from 'ant-design-pro';
 import styles from './index.less';
 
@@ -10,9 +9,12 @@ import styles from './index.less';
 }))
 class Step3 extends React.PureComponent {
   render() {
-    const { data } = this.props;
+    const { data, dispatch } = this.props;
     const onFinish = () => {
-      router.push('info');
+      dispatch({
+        type: 'BLOCK_NAME_CAMEL_CASE/saveCurrentStep',
+        payload: 'info',
+      });
     };
     const information = (
       <div className={styles.information}>

@@ -1,10 +1,10 @@
-import { routerRedux } from 'dva/router';
 import { fakeSubmitForm } from './service';
 
 export default {
   namespace: 'BLOCK_NAME_CAMEL_CASE',
 
   state: {
+    current: 'info',
     step: {
       payAccount: 'ant-design@alipay.com',
       receiverAccount: 'test@example.com',
@@ -20,11 +20,21 @@ export default {
         type: 'saveStepFormData',
         payload,
       });
-      yield put(routerRedux.push('result'));
+      yield put({
+        type: 'saveCurrentStep',
+        payload: 'result',
+      });
     },
   },
 
   reducers: {
+    saveCurrentStep(state, { payload }) {
+      return {
+        ...state,
+        current: payload,
+      };
+    },
+
     saveStepFormData(state, { payload }) {
       return {
         ...state,

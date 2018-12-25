@@ -1,7 +1,6 @@
 import React, { Fragment } from 'react';
 import { connect } from 'dva';
 import { Form, Input, Button, Select, Divider } from 'antd';
-import router from 'umi/router';
 import styles from './index.less';
 
 const { Option } = Select;
@@ -30,7 +29,10 @@ class Step1 extends React.PureComponent {
             type: 'BLOCK_NAME_CAMEL_CASE/saveStepFormData',
             payload: values,
           });
-          router.push('/confirm');
+          dispatch({
+            type: 'BLOCK_NAME_CAMEL_CASE/saveCurrentStep',
+            payload: 'confirm',
+          });
         }
       });
     };
