@@ -17,16 +17,16 @@ class PAGE_NAME_UPPER_CAMEL_CASE extends Component {
   constructor(props) {
     super(props);
     const menuMap = {
-      base: <FormattedMessage id="BLOCK_BAME.menuMap.basic" defaultMessage="Basic Settings" />,
+      base: <FormattedMessage id="BLOCK_NAME.menuMap.basic" defaultMessage="Basic Settings" />,
       security: (
-        <FormattedMessage id="BLOCK_BAME.menuMap.security" defaultMessage="Security Settings" />
+        <FormattedMessage id="BLOCK_NAME.menuMap.security" defaultMessage="Security Settings" />
       ),
       binding: (
-        <FormattedMessage id="BLOCK_BAME.menuMap.binding" defaultMessage="Account Binding" />
+        <FormattedMessage id="BLOCK_NAME.menuMap.binding" defaultMessage="Account Binding" />
       ),
       notification: (
         <FormattedMessage
-          id="BLOCK_BAME.menuMap.notification"
+          id="BLOCK_NAME.menuMap.notification"
           defaultMessage="New Message Notification"
         />
       ),

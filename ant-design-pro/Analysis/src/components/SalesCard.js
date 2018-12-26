@@ -13,7 +13,7 @@ const { TabPane } = Tabs;
 const rankingListData = [];
 for (let i = 0; i < 7; i += 1) {
   rankingListData.push({
-    title: formatMessage({ id: 'BLOCK_BAME.analysis.test' }, { no: i }),
+    title: formatMessage({ id: 'BLOCK_NAME.analysis.test' }, { no: i }),
     total: 323234,
   });
 }
@@ -27,16 +27,16 @@ const SalesCard = memo(
             <div className={styles.salesExtraWrap}>
               <div className={styles.salesExtra}>
                 <a className={isActive('today')} onClick={() => selectDate('today')}>
-                  <FormattedMessage id="BLOCK_BAME.analysis.all-day" defaultMessage="All Day" />
+                  <FormattedMessage id="BLOCK_NAME.analysis.all-day" defaultMessage="All Day" />
                 </a>
                 <a className={isActive('week')} onClick={() => selectDate('week')}>
-                  <FormattedMessage id="BLOCK_BAME.analysis.all-week" defaultMessage="All Week" />
+                  <FormattedMessage id="BLOCK_NAME.analysis.all-week" defaultMessage="All Week" />
                 </a>
                 <a className={isActive('month')} onClick={() => selectDate('month')}>
-                  <FormattedMessage id="BLOCK_BAME.analysis.all-month" defaultMessage="All Month" />
+                  <FormattedMessage id="BLOCK_NAME.analysis.all-month" defaultMessage="All Month" />
                 </a>
                 <a className={isActive('year')} onClick={() => selectDate('year')}>
-                  <FormattedMessage id="BLOCK_BAME.analysis.all-year" defaultMessage="All Year" />
+                  <FormattedMessage id="BLOCK_NAME.analysis.all-year" defaultMessage="All Year" />
                 </a>
               </div>
               <RangePicker
@@ -50,7 +50,7 @@ const SalesCard = memo(
           tabBarStyle={{ marginBottom: 24 }}
         >
           <TabPane
-            tab={<FormattedMessage id="BLOCK_BAME.analysis.sales" defaultMessage="Sales" />}
+            tab={<FormattedMessage id="BLOCK_NAME.analysis.sales" defaultMessage="Sales" />}
             key="sales"
           >
             <Row>
@@ -60,7 +60,7 @@ const SalesCard = memo(
                     height={295}
                     title={
                       <FormattedMessage
-                        id="BLOCK_BAME.analysis.sales-trend"
+                        id="BLOCK_NAME.analysis.sales-trend"
                         defaultMessage="Sales Trend"
                       />
                     }
@@ -72,7 +72,7 @@ const SalesCard = memo(
                 <div className={styles.salesRank}>
                   <h4 className={styles.rankingTitle}>
                     <FormattedMessage
-                      id="BLOCK_BAME.analysis.sales-ranking"
+                      id="BLOCK_NAME.analysis.sales-ranking"
                       defaultMessage="Sales Ranking"
                     />
                   </h4>
@@ -98,7 +98,7 @@ const SalesCard = memo(
             </Row>
           </TabPane>
           <TabPane
-            tab={<FormattedMessage id="BLOCK_BAME.analysis.visits" defaultMessage="Visits" />}
+            tab={<FormattedMessage id="BLOCK_NAME.analysis.visits" defaultMessage="Visits" />}
             key="views"
           >
             <Row>
@@ -108,7 +108,7 @@ const SalesCard = memo(
                     height={292}
                     title={
                       <FormattedMessage
-                        id="BLOCK_BAME.analysis.visits-trend"
+                        id="BLOCK_NAME.analysis.visits-trend"
                         defaultMessage="Visits Trend"
                       />
                     }
@@ -120,7 +120,7 @@ const SalesCard = memo(
                 <div className={styles.salesRank}>
                   <h4 className={styles.rankingTitle}>
                     <FormattedMessage
-                      id="BLOCK_BAME.analysis.visits-ranking"
+                      id="BLOCK_NAME.analysis.visits-ranking"
                       defaultMessage="Visits Ranking"
                     />
                   </h4>

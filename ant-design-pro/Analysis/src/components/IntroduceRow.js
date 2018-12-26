@@ -22,10 +22,10 @@ const IntroduceRow = memo(({ loading, visitData }) => (
     <Col {...topColResponsiveProps}>
       <ChartCard
         bordered={false}
-        title={<FormattedMessage id="BLOCK_BAME.analysis.total-sales" defaultMessage="Total Sales" />}
+        title={<FormattedMessage id="BLOCK_NAME.analysis.total-sales" defaultMessage="Total Sales" />}
         action={
           <Tooltip
-            title={<FormattedMessage id="BLOCK_BAME.analysis.introduce" defaultMessage="Introduce" />}
+            title={<FormattedMessage id="BLOCK_NAME.analysis.introduce" defaultMessage="Introduce" />}
           >
             <Icon type="info-circle-o" />
           </Tooltip>
@@ -34,18 +34,18 @@ const IntroduceRow = memo(({ loading, visitData }) => (
         total={() => <Yuan>126560</Yuan>}
         footer={
           <Field
-            label={<FormattedMessage id="BLOCK_BAME.analysis.day-sales" defaultMessage="Daily Sales" />}
+            label={<FormattedMessage id="BLOCK_NAME.analysis.day-sales" defaultMessage="Daily Sales" />}
             value={`￥${numeral(12423).format('0,0')}`}
           />
         }
         contentHeight={46}
       >
         <Trend flag="up" style={{ marginRight: 16 }}>
-          <FormattedMessage id="BLOCK_BAME.analysis.week" defaultMessage="Weekly Changes" />
+          <FormattedMessage id="BLOCK_NAME.analysis.week" defaultMessage="Weekly Changes" />
           <span className={styles.trendText}>12%</span>
         </Trend>
         <Trend flag="down">
-          <FormattedMessage id="BLOCK_BAME.analysis.day" defaultMessage="Daily Changes" />
+          <FormattedMessage id="BLOCK_NAME.analysis.day" defaultMessage="Daily Changes" />
           <span className={styles.trendText}>11%</span>
         </Trend>
       </ChartCard>
@@ -55,10 +55,10 @@ const IntroduceRow = memo(({ loading, visitData }) => (
       <ChartCard
         bordered={false}
         loading={loading}
-        title={<FormattedMessage id="BLOCK_BAME.analysis.visits" defaultMessage="Visits" />}
+        title={<FormattedMessage id="BLOCK_NAME.analysis.visits" defaultMessage="Visits" />}
         action={
           <Tooltip
-            title={<FormattedMessage id="BLOCK_BAME.analysis.introduce" defaultMessage="Introduce" />}
+            title={<FormattedMessage id="BLOCK_NAME.analysis.introduce" defaultMessage="Introduce" />}
           >
             <Icon type="info-circle-o" />
           </Tooltip>
@@ -66,7 +66,7 @@ const IntroduceRow = memo(({ loading, visitData }) => (
         total={numeral(8846).format('0,0')}
         footer={
           <Field
-            label={<FormattedMessage id="BLOCK_BAME.analysis.day-visits" defaultMessage="Daily Visits" />}
+            label={<FormattedMessage id="BLOCK_NAME.analysis.day-visits" defaultMessage="Daily Visits" />}
             value={numeral(1234).format('0,0')}
           />
         }
@@ -79,10 +79,10 @@ const IntroduceRow = memo(({ loading, visitData }) => (
       <ChartCard
         bordered={false}
         loading={loading}
-        title={<FormattedMessage id="BLOCK_BAME.analysis.payments" defaultMessage="Payments" />}
+        title={<FormattedMessage id="BLOCK_NAME.analysis.payments" defaultMessage="Payments" />}
         action={
           <Tooltip
-            title={<FormattedMessage id="BLOCK_BAME.analysis.introduce" defaultMessage="Introduce" />}
+            title={<FormattedMessage id="BLOCK_NAME.analysis.introduce" defaultMessage="Introduce" />}
           >
             <Icon type="info-circle-o" />
           </Tooltip>
@@ -92,7 +92,7 @@ const IntroduceRow = memo(({ loading, visitData }) => (
           <Field
             label={
               <FormattedMessage
-                id="BLOCK_BAME.analysis.conversion-rate"
+                id="BLOCK_NAME.analysis.conversion-rate"
                 defaultMessage="Conversion Rate"
               />
             }
@@ -110,13 +110,13 @@ const IntroduceRow = memo(({ loading, visitData }) => (
         bordered={false}
         title={
           <FormattedMessage
-            id="BLOCK_BAME.analysis.operational-effect"
+            id="BLOCK_NAME.analysis.operational-effect"
             defaultMessage="Operational Effect"
           />
         }
         action={
           <Tooltip
-            title={<FormattedMessage id="BLOCK_BAME.analysis.introduce" defaultMessage="Introduce" />}
+            title={<FormattedMessage id="BLOCK_NAME.analysis.introduce" defaultMessage="Introduce" />}
           >
             <Icon type="info-circle-o" />
           </Tooltip>
@@ -125,11 +125,11 @@ const IntroduceRow = memo(({ loading, visitData }) => (
         footer={
           <div style={{ whiteSpace: 'nowrap', overflow: 'hidden' }}>
             <Trend flag="up" style={{ marginRight: 16 }}>
-              <FormattedMessage id="BLOCK_BAME.analysis.week" defaultMessage="Weekly Changes" />
+              <FormattedMessage id="BLOCK_NAME.analysis.week" defaultMessage="Weekly Changes" />
               <span className={styles.trendText}>12%</span>
             </Trend>
             <Trend flag="down">
-              <FormattedMessage id="BLOCK_BAME.analysis.day" defaultMessage="Weekly Changes" />
+              <FormattedMessage id="BLOCK_NAME.analysis.day" defaultMessage="Weekly Changes" />
               <span className={styles.trendText}>11%</span>
             </Trend>
           </div>

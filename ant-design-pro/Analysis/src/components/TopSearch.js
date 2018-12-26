@@ -9,27 +9,27 @@ const { MiniArea } = Charts;
 
 const columns = [
   {
-    title: <FormattedMessage id="BLOCK_BAME.table.rank" defaultMessage="Rank" />,
+    title: <FormattedMessage id="BLOCK_NAME.table.rank" defaultMessage="Rank" />,
     dataIndex: 'index',
     key: 'index',
   },
   {
     title: (
-      <FormattedMessage id="BLOCK_BAME.table.search-keyword" defaultMessage="Search keyword" />
+      <FormattedMessage id="BLOCK_NAME.table.search-keyword" defaultMessage="Search keyword" />
     ),
     dataIndex: 'keyword',
     key: 'keyword',
     render: text => <a href="/">{text}</a>,
   },
   {
-    title: <FormattedMessage id="BLOCK_BAME.table.users" defaultMessage="Users" />,
+    title: <FormattedMessage id="BLOCK_NAME.table.users" defaultMessage="Users" />,
     dataIndex: 'count',
     key: 'count',
     sorter: (a, b) => a.count - b.count,
     className: styles.alignRight,
   },
   {
-    title: <FormattedMessage id="BLOCK_BAME.table.weekly-range" defaultMessage="Weekly Range" />,
+    title: <FormattedMessage id="BLOCK_NAME.table.weekly-range" defaultMessage="Weekly Range" />,
     dataIndex: 'range',
     key: 'range',
     sorter: (a, b) => a.range - b.range,
@@ -47,7 +47,7 @@ const TopSearch = memo(({ loading, visitData2, searchData, dropdownGroup }) => (
     loading={loading}
     bordered={false}
     title={
-      <FormattedMessage id="BLOCK_BAME.analysis.online-top-search" defaultMessage="Online Top Search" />
+      <FormattedMessage id="BLOCK_NAME.analysis.online-top-search" defaultMessage="Online Top Search" />
     }
     extra={dropdownGroup}
     style={{ marginTop: 24 }}
@@ -57,9 +57,9 @@ const TopSearch = memo(({ loading, visitData2, searchData, dropdownGroup }) => (
         <NumberInfo
           subTitle={
             <span>
-              <FormattedMessage id="BLOCK_BAME.analysis.search-users" defaultMessage="search users" />
+              <FormattedMessage id="BLOCK_NAME.analysis.search-users" defaultMessage="search users" />
               <Tooltip
-                title={<FormattedMessage id="BLOCK_BAME.analysis.introduce" defaultMessage="introduce" />}
+                title={<FormattedMessage id="BLOCK_NAME.analysis.introduce" defaultMessage="introduce" />}
               >
                 <Icon style={{ marginLeft: 8 }} type="info-circle-o" />
               </Tooltip>
@@ -77,11 +77,11 @@ const TopSearch = memo(({ loading, visitData2, searchData, dropdownGroup }) => (
           subTitle={
             <span>
               <FormattedMessage
-                id="BLOCK_BAME.analysis.per-capita-search"
+                id="BLOCK_NAME.analysis.per-capita-search"
                 defaultMessage="Per Capita Search"
               />
               <Tooltip
-                title={<FormattedMessage id="BLOCK_BAME.analysis.introduce" defaultMessage="introduce" />}
+                title={<FormattedMessage id="BLOCK_NAME.analysis.introduce" defaultMessage="introduce" />}
               >
                 <Icon style={{ marginLeft: 8 }} type="info-circle-o" />
               </Tooltip>

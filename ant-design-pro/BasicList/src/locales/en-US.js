@@ -1,3 +1,3 @@
 export default {
-  'BLOCK_BAME.list.basiclist': 'Basic List',
+  'BLOCK_NAME.list.basiclist': 'Basic List',
 };

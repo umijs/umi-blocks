@@ -8,7 +8,7 @@ const PageHeaderWrapper = ({ children, contentWidth, wrapperClassName, ...restPr
   <div style={{ margin: '-24px -24px 0' }} className={wrapperClassName}>
     <PageHeader
       wide={contentWidth === 'Fixed'}
-      home={<FormattedMessage id="BLOCK_BAME.menu.home" defaultMessage="Home" />}
+      home={<FormattedMessage id="BLOCK_NAME.menu.home" defaultMessage="Home" />}
       key="pageheader"
       {...restProps}
       linkElement={Link}

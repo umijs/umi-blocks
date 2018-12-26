@@ -13,7 +13,7 @@ const { Option } = Select;
 const AvatarView = ({ avatar }) => (
   <Fragment>
     <div className={styles.avatar_title}>
-      <FormattedMessage id="BLOCK_BAME.basic.avatar" defaultMessage="Avatar" />
+      <FormattedMessage id="BLOCK_NAME.basic.avatar" defaultMessage="Avatar" />
     </div>
     <div className={styles.avatar}>
       <img src={avatar} alt="avatar" />
@@ -21,7 +21,7 @@ const AvatarView = ({ avatar }) => (
     <Upload fileList={[]}>
       <div className={styles.button_view}>
         <Button icon="upload">
-          <FormattedMessage id="BLOCK_BAME.basic.change-avatar" defaultMessage="Change avatar" />
+          <FormattedMessage id="BLOCK_NAME.basic.change-avatar" defaultMessage="Change avatar" />
         </Button>
       </div>
     </Upload>
@@ -89,47 +89,47 @@ class BaseView extends Component {
       <div className={styles.baseView} ref={this.getViewDom}>
         <div className={styles.left}>
           <Form layout="vertical" onSubmit={this.handleSubmit} hideRequiredMark>
-            <FormItem label={formatMessage({ id: 'BLOCK_BAME.basic.email' })}>
+            <FormItem label={formatMessage({ id: 'BLOCK_NAME.basic.email' })}>
               {getFieldDecorator('email', {
                 rules: [
                   {
                     required: true,
-                    message: formatMessage({ id: 'BLOCK_BAME.basic.email-message' }, {}),
+                    message: formatMessage({ id: 'BLOCK_NAME.basic.email-message' }, {}),
                   },
                 ],
               })(<Input />)}
             </FormItem>
-            <FormItem label={formatMessage({ id: 'BLOCK_BAME.basic.nickname' })}>
+            <FormItem label={formatMessage({ id: 'BLOCK_NAME.basic.nickname' })}>
               {getFieldDecorator('name', {
                 rules: [
                   {
                     required: true,
-                    message: formatMessage({ id: 'BLOCK_BAME.basic.nickname-message' }, {}),
+                    message: formatMessage({ id: 'BLOCK_NAME.basic.nickname-message' }, {}),
                   },
                 ],
               })(<Input />)}
             </FormItem>
-            <FormItem label={formatMessage({ id: 'BLOCK_BAME.basic.profile' })}>
+            <FormItem label={formatMessage({ id: 'BLOCK_NAME.basic.profile' })}>
               {getFieldDecorator('profile', {
                 rules: [
                   {
                     required: true,
-                    message: formatMessage({ id: 'BLOCK_BAME.basic.profile-message' }, {}),
+                    message: formatMessage({ id: 'BLOCK_NAME.basic.profile-message' }, {}),
                   },
                 ],
               })(
                 <Input.TextArea
-                  placeholder={formatMessage({ id: 'BLOCK_BAME.basic.profile-placeholder' })}
+                  placeholder={formatMessage({ id: 'BLOCK_NAME.basic.profile-placeholder' })}
                   rows={4}
                 />
               )}
             </FormItem>
-            <FormItem label={formatMessage({ id: 'BLOCK_BAME.basic.country' })}>
+            <FormItem label={formatMessage({ id: 'BLOCK_NAME.basic.country' })}>
               {getFieldDecorator('country', {
                 rules: [
                   {
                     required: true,
-                    message: formatMessage({ id: 'BLOCK_BAME.basic.country-message' }, {}),
+                    message: formatMessage({ id: 'BLOCK_NAME.basic.country-message' }, {}),
                   },
                 ],
               })(
@@ -138,12 +138,12 @@ class BaseView extends Component {
                 </Select>
               )}
             </FormItem>
-            <FormItem label={formatMessage({ id: 'BLOCK_BAME.basic.geographic' })}>
+            <FormItem label={formatMessage({ id: 'BLOCK_NAME.basic.geographic' })}>
               {getFieldDecorator('geographic', {
                 rules: [
                   {
                     required: true,
-                    message: formatMessage({ id: 'BLOCK_BAME.basic.geographic-message' }, {}),
+                    message: formatMessage({ id: 'BLOCK_NAME.basic.geographic-message' }, {}),
                   },
                   {
                     validator: validatorGeographic,
@@ -151,22 +151,22 @@ class BaseView extends Component {
                 ],
               })(<GeographicView />)}
             </FormItem>
-            <FormItem label={formatMessage({ id: 'BLOCK_BAME.basic.address' })}>
+            <FormItem label={formatMessage({ id: 'BLOCK_NAME.basic.address' })}>
               {getFieldDecorator('address', {
                 rules: [
                   {
                     required: true,
-                    message: formatMessage({ id: 'BLOCK_BAME.basic.address-message' }, {}),
+                    message: formatMessage({ id: 'BLOCK_NAME.basic.address-message' }, {}),
                   },
                 ],
               })(<Input />)}
             </FormItem>
-            <FormItem label={formatMessage({ id: 'BLOCK_BAME.basic.phone' })}>
+            <FormItem label={formatMessage({ id: 'BLOCK_NAME.basic.phone' })}>
               {getFieldDecorator('phone', {
                 rules: [
                   {
                     required: true,
-                    message: formatMessage({ id: 'BLOCK_BAME.basic.phone-message' }, {}),
+                    message: formatMessage({ id: 'BLOCK_NAME.basic.phone-message' }, {}),
                   },
                   { validator: validatorPhone },
                 ],
@@ -174,7 +174,7 @@ class BaseView extends Component {
             </FormItem>
             <Button type="primary">
               <FormattedMessage
-                id="BLOCK_BAME.basic.update"
+                id="BLOCK_NAME.basic.update"
                 defaultMessage="Update Information"
               />
             </Button>

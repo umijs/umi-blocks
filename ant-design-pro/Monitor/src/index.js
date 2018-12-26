@@ -36,7 +36,7 @@ class PAGE_NAME_UPPER_CAMEL_CASE extends PureComponent {
             <Card
               title={
                 <FormattedMessage
-                  id="BLOCK_BAME.monitor.trading-activity"
+                  id="BLOCK_NAME.monitor.trading-activity"
                   defaultMessage="Real-Time Trading Activity"
                 />
               }
@@ -47,7 +47,7 @@ class PAGE_NAME_UPPER_CAMEL_CASE extends PureComponent {
                   <NumberInfo
                     subTitle={
                       <FormattedMessage
-                        id="BLOCK_BAME.monitor.total-transactions"
+                        id="BLOCK_NAME.monitor.total-transactions"
                         defaultMessage="Total transactions today"
                       />
                     }
@@ -59,7 +59,7 @@ class PAGE_NAME_UPPER_CAMEL_CASE extends PureComponent {
                   <NumberInfo
                     subTitle={
                       <FormattedMessage
-                        id="BLOCK_BAME.monitor.sales-target"
+                        id="BLOCK_NAME.monitor.sales-target"
                         defaultMessage="Sales target completion rate"
                       />
                     }
@@ -70,7 +70,7 @@ class PAGE_NAME_UPPER_CAMEL_CASE extends PureComponent {
                   <NumberInfo
                     subTitle={
                       <FormattedMessage
-                        id="BLOCK_BAME.monitor.remaining-time"
+                        id="BLOCK_NAME.monitor.remaining-time"
                         defaultMessage="Remaining time of activity"
                       />
                     }
@@ -81,7 +81,7 @@ class PAGE_NAME_UPPER_CAMEL_CASE extends PureComponent {
                   <NumberInfo
                     subTitle={
                       <FormattedMessage
-                        id="BLOCK_BAME.monitor.total-transactions-per-second"
+                        id="BLOCK_NAME.monitor.total-transactions-per-second"
                         defaultMessage="Total transactions per second"
                       />
                     }
@@ -94,7 +94,7 @@ class PAGE_NAME_UPPER_CAMEL_CASE extends PureComponent {
                 <Tooltip
                   title={
                     <FormattedMessage
-                      id="BLOCK_BAME.monitor.waiting-for-implementation"
+                      id="BLOCK_NAME.monitor.waiting-for-implementation"
                       defaultMessage="Waiting for implementation"
                     />
                   }
@@ -111,7 +111,7 @@ class PAGE_NAME_UPPER_CAMEL_CASE extends PureComponent {
             <Card
               title={
                 <FormattedMessage
-                  id="BLOCK_BAME.monitor.activity-forecast"
+                  id="BLOCK_NAME.monitor.activity-forecast"
                   defaultMessage="Activity forecast"
                 />
               }
@@ -121,13 +121,13 @@ class PAGE_NAME_UPPER_CAMEL_CASE extends PureComponent {
               <ActiveChart />
             </Card>
             <Card
-              title={<FormattedMessage id="BLOCK_BAME.monitor.efficiency" defaultMessage="Efficiency" />}
+              title={<FormattedMessage id="BLOCK_NAME.monitor.efficiency" defaultMessage="Efficiency" />}
               style={{ marginBottom: 24 }}
               bodyStyle={{ textAlign: 'center' }}
               bordered={false}
             >
               <Gauge
-                title={formatMessage({ id: 'BLOCK_BAME.monitor.ratio', defaultMessage: 'Ratio' })}
+                title={formatMessage({ id: 'BLOCK_NAME.monitor.ratio', defaultMessage: 'Ratio' })}
                 height={180}
                 percent={87}
               />
@@ -139,7 +139,7 @@ class PAGE_NAME_UPPER_CAMEL_CASE extends PureComponent {
             <Card
               title={
                 <FormattedMessage
-                  id="BLOCK_BAME.monitor.proportion-per-category"
+                  id="BLOCK_NAME.monitor.proportion-per-category"
                   defaultMessage="Proportion Per Category"
                 />
               }
@@ -152,7 +152,7 @@ class PAGE_NAME_UPPER_CAMEL_CASE extends PureComponent {
                     animate={false}
                     percent={28}
                     subTitle={
-                      <FormattedMessage id="BLOCK_BAME.monitor.fast-food" defaultMessage="Fast food" />
+                      <FormattedMessage id="BLOCK_NAME.monitor.fast-food" defaultMessage="Fast food" />
                     }
                     total="28%"
                     height={128}
@@ -166,7 +166,7 @@ class PAGE_NAME_UPPER_CAMEL_CASE extends PureComponent {
                     percent={22}
                     subTitle={
                       <FormattedMessage
-                        id="BLOCK_BAME.monitor.western-food"
+                        id="BLOCK_NAME.monitor.western-food"
                         defaultMessage="Western food"
                       />
                     }
@@ -181,7 +181,7 @@ class PAGE_NAME_UPPER_CAMEL_CASE extends PureComponent {
                     color="#2FC25B"
                     percent={32}
                     subTitle={
-                      <FormattedMessage id="BLOCK_BAME.monitor.hot-pot" defaultMessage="Hot pot" />
+                      <FormattedMessage id="BLOCK_NAME.monitor.hot-pot" defaultMessage="Hot pot" />
                     }
                     total="32%"
                     height={128}
@@ -195,7 +195,7 @@ class PAGE_NAME_UPPER_CAMEL_CASE extends PureComponent {
             <Card
               title={
                 <FormattedMessage
-                  id="BLOCK_BAME.monitor.popular-searches"
+                  id="BLOCK_NAME.monitor.popular-searches"
                   defaultMessage="Popular Searches"
                 />
               }
@@ -210,7 +210,7 @@ class PAGE_NAME_UPPER_CAMEL_CASE extends PureComponent {
             <Card
               title={
                 <FormattedMessage
-                  id="BLOCK_BAME.monitor.resource-surplus"
+                  id="BLOCK_NAME.monitor.resource-surplus"
                   defaultMessage="Resource Surplus"
                 />
               }
@@ -220,7 +220,7 @@ class PAGE_NAME_UPPER_CAMEL_CASE extends PureComponent {
               <WaterWave
                 height={161}
                 title={
-                  <FormattedMessage id="BLOCK_BAME.monitor.fund-surplus" defaultMessage="Fund Surplus" />
+                  <FormattedMessage id="BLOCK_NAME.monitor.fund-surplus" defaultMessage="Fund Surplus" />
                 }
                 percent={34}
               />

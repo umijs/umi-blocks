@@ -6,17 +6,17 @@ import { List } from 'antd';
 const passwordStrength = {
   strong: (
     <font className="strong">
-      <FormattedMessage id="BLOCK_BAME.security.strong" defaultMessage="Strong" />
+      <FormattedMessage id="BLOCK_NAME.security.strong" defaultMessage="Strong" />
     </font>
   ),
   medium: (
     <font className="medium">
-      <FormattedMessage id="BLOCK_BAME.security.medium" defaultMessage="Medium" />
+      <FormattedMessage id="BLOCK_NAME.security.medium" defaultMessage="Medium" />
     </font>
   ),
   weak: (
     <font className="weak">
-      <FormattedMessage id="BLOCK_BAME.security.weak" defaultMessage="Weak" />
+      <FormattedMessage id="BLOCK_NAME.security.weak" defaultMessage="Weak" />
       Weak
     </font>
   ),
@@ -25,58 +25,58 @@ const passwordStrength = {
 class SecurityView extends Component {
   getData = () => [
     {
-      title: formatMessage({ id: 'BLOCK_BAME.security.password' }, {}),
+      title: formatMessage({ id: 'BLOCK_NAME.security.password' }, {}),
       description: (
         <Fragment>
-          {formatMessage({ id: 'BLOCK_BAME.security.password-description' })}：
+          {formatMessage({ id: 'BLOCK_NAME.security.password-description' })}：
           {passwordStrength.strong}
         </Fragment>
       ),
       actions: [
         <a>
-          <FormattedMessage id="BLOCK_BAME.security.modify" defaultMessage="Modify" />
+          <FormattedMessage id="BLOCK_NAME.security.modify" defaultMessage="Modify" />
         </a>,
       ],
     },
     {
-      title: formatMessage({ id: 'BLOCK_BAME.security.phone' }, {}),
+      title: formatMessage({ id: 'BLOCK_NAME.security.phone' }, {}),
       description: `${formatMessage(
-        { id: 'BLOCK_BAME.security.phone-description' },
+        { id: 'BLOCK_NAME.security.phone-description' },
         {}
       )}：138****8293`,
       actions: [
         <a>
-          <FormattedMessage id="BLOCK_BAME.security.modify" defaultMessage="Modify" />
+          <FormattedMessage id="BLOCK_NAME.security.modify" defaultMessage="Modify" />
         </a>,
       ],
     },
     {
-      title: formatMessage({ id: 'BLOCK_BAME.security.question' }, {}),
-      description: formatMessage({ id: 'BLOCK_BAME.security.question-description' }, {}),
+      title: formatMessage({ id: 'BLOCK_NAME.security.question' }, {}),
+      description: formatMessage({ id: 'BLOCK_NAME.security.question-description' }, {}),
       actions: [
         <a>
-          <FormattedMessage id="BLOCK_BAME.security.set" defaultMessage="Set" />
+          <FormattedMessage id="BLOCK_NAME.security.set" defaultMessage="Set" />
         </a>,
       ],
     },
     {
-      title: formatMessage({ id: 'BLOCK_BAME.security.email' }, {}),
+      title: formatMessage({ id: 'BLOCK_NAME.security.email' }, {}),
       description: `${formatMessage(
-        { id: 'BLOCK_BAME.security.email-description' },
+        { id: 'BLOCK_NAME.security.email-description' },
         {}
       )}：ant***sign.com`,
       actions: [
         <a>
-          <FormattedMessage id="BLOCK_BAME.security.modify" defaultMessage="Modify" />
+          <FormattedMessage id="BLOCK_NAME.security.modify" defaultMessage="Modify" />
         </a>,
       ],
     },
     {
-      title: formatMessage({ id: 'BLOCK_BAME.security.mfa' }, {}),
-      description: formatMessage({ id: 'BLOCK_BAME.security.mfa-description' }, {}),
+      title: formatMessage({ id: 'BLOCK_NAME.security.mfa' }, {}),
+      description: formatMessage({ id: 'BLOCK_NAME.security.mfa-description' }, {}),
       actions: [
         <a>
-          <FormattedMessage id="BLOCK_BAME.security.bind" defaultMessage="Bind" />
+          <FormattedMessage id="BLOCK_NAME.security.bind" defaultMessage="Bind" />
         </a>,
       ],
     },

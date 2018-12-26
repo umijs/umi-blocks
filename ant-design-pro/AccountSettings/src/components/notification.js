@@ -6,25 +6,25 @@ class NotificationView extends Component {
   getData = () => {
     const Action = (
       <Switch
-        checkedChildren={formatMessage({ id: 'BLOCK_BAME.settings.open' })}
-        unCheckedChildren={formatMessage({ id: 'BLOCK_BAME.settings.close' })}
+        checkedChildren={formatMessage({ id: 'BLOCK_NAME.settings.open' })}
+        unCheckedChildren={formatMessage({ id: 'BLOCK_NAME.settings.close' })}
         defaultChecked
       />
     );
     return [
       {
-        title: formatMessage({ id: 'BLOCK_BAME.notification.password' }, {}),
-        description: formatMessage({ id: 'BLOCK_BAME.notification.password-description' }, {}),
+        title: formatMessage({ id: 'BLOCK_NAME.notification.password' }, {}),
+        description: formatMessage({ id: 'BLOCK_NAME.notification.password-description' }, {}),
         actions: [Action],
       },
       {
-        title: formatMessage({ id: 'BLOCK_BAME.notification.messages' }, {}),
-        description: formatMessage({ id: 'BLOCK_BAME.notification.messages-description' }, {}),
+        title: formatMessage({ id: 'BLOCK_NAME.notification.messages' }, {}),
+        description: formatMessage({ id: 'BLOCK_NAME.notification.messages-description' }, {}),
         actions: [Action],
       },
       {
-        title: formatMessage({ id: 'BLOCK_BAME.notification.todo' }, {}),
-        description: formatMessage({ id: 'BLOCK_BAME.notification.todo-description' }, {}),
+        title: formatMessage({ id: 'BLOCK_NAME.notification.todo' }, {}),
+        description: formatMessage({ id: 'BLOCK_NAME.notification.todo-description' }, {}),
         actions: [Action],
       },
     ];
