@@ -1,5 +1,5 @@
 import { routerRedux } from 'dva/router';
-import { stringify } from 'qs';
+import { stringify } from 'query-string';
 import { getPageQuery } from './utils/utils';
 import { setAuthority } from './utils/authority';
 import { reloadAuthorized } from './utils/Authorized';
