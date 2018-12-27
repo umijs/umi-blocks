@@ -3,7 +3,7 @@ import request from 'umi-request';
 export async function fakeAccountLogin(params) {
   return request('/api/BLOCK_NAME/account', {
     method: 'POST',
-    body: params,
+    data: params,
   });
 }
 
