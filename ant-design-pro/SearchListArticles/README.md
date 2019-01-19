@@ -5,7 +5,7 @@ SearchListArticles
 ## Usage
 
 ```sh
-umi block add ant-design-pro/searchlistarticles
+umi block add ant-design-pro/SearchListArticles
 ```
 
 ## SNAPSHOT
