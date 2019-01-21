@@ -5,7 +5,7 @@ BasicProfile
 ## Usage
 
 ```sh
-umi block add ant-design-pro/basicprofile
+umi block add ant-design-pro/BasicProfile
 ```
 
 ## SNAPSHOT

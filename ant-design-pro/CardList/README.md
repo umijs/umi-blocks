@@ -5,7 +5,7 @@ CardList
 ## Usage
 
 ```sh
-umi block add ant-design-pro/cardlist
+umi block add ant-design-pro/CardList
 ```
 
 ## SNAPSHOT

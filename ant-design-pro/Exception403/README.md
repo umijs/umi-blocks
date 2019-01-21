@@ -5,7 +5,7 @@ Exception403
 ## Usage
 
 ```sh
-umi block add ant-design-pro/exception403
+umi block add ant-design-pro/Exception403
 ```
 
 ## SNAPSHOT

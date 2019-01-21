@@ -5,7 +5,7 @@ SearchListApplications
 ## Usage
 
 ```sh
-umi block add ant-design-pro/searchlistapplications
+umi block add ant-design-pro/SearchListApplications
 ```
 
 ## SNAPSHOT

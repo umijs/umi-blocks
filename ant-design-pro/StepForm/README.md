@@ -5,7 +5,7 @@ StepForm
 ## Usage
 
 ```sh
-umi block add ant-design-pro/stepform
+umi block add ant-design-pro/StepForm
 ```
 
 ## SNAPSHOT

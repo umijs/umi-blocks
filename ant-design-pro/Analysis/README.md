@@ -5,7 +5,7 @@ Analysis
 ## Usage
 
 ```sh
-umi block add ant-design-pro/analysis
+umi block add ant-design-pro/Analysis
 ```
 
 ## SNAPSHOT

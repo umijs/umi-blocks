@@ -5,7 +5,7 @@ AdvancedProfile
 ## Usage
 
 ```sh
-umi block add ant-design-pro/advancedprofile
+umi block add ant-design-pro/AdvancedProfile
 ```
 
 ## SNAPSHOT
