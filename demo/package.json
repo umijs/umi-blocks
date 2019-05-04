@@ -1,4 +1,7 @@
 {
   "name": "@umi-blocks/demo",
-  "description": "a demo block of umi"
+  "description": "a demo block of umi",
+  "blockConfig": {
+    "specVersion": "0.1"
+  }
 }
