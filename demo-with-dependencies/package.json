@@ -1,0 +1,18 @@
+{
+  "name": "@umi-blocks/demo-with-dependencies",
+  "description": "a demo block with dependencies",
+  "scripts": {
+    "dev": "umi dev"
+  },
+  "dependencies": {
+    "antd": "^3.10.9"
+  },
+  "devDependencies": {
+    "umi": "^2.3.0",
+    "umi-plugin-react": "^1.3.0",
+    "umi-plugin-block-dev": "^1.0.0"
+  },
+  "blockConfig": {
+    "dependencies": ["demo"]
+  }
+}
