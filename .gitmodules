@@ -1,0 +1,3 @@
+[submodule "ant-design-pro"]
+	path = ant-design-pro
+	url = https://github.com/ant-design/pro-blocks
