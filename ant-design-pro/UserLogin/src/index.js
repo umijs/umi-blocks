@@ -101,7 +101,11 @@ class LoginPage extends Component {
                   message: formatMessage({ id: 'BLOCK_NAME.password.required' }),
                 },
               ]}
-              onPressEnter={() => this.loginForm.validateFields(this.handleSubmit)}
+              onPressEnter={(e) => {
+                  e.preventDefault();
+                  this.loginForm.validateFields(this.handleSubmit);
+                }
+              }
             />
           </Tab>
           <Tab key="mobile" tab={formatMessage({ id: 'BLOCK_NAME.login.tab-login-mobile' })}>
