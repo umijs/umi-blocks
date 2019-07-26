@@ -1,0 +1,43 @@
+
+*{margin:0; padding:0;}
+li{list-style:none;}
+.footer{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  box-sizing: border-box;
+  background: #000;
+}
+.footer .map{
+  display: flex;
+  justify-content: center;
+}
+.footer .map div{
+  flex: 1;
+}
+.footer h3{
+  margin-bottom: 20px;
+  color: #fff;
+} 
+.footer ul li {
+  line-height: 36px;
+}
+.footer ul li a{
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer ul a:hover{
+  color: #1890ff;
+}
+.footer ul .desc{
+  color: rgba(255, 255, 255, 0.4);
+}
+.footer .copyright{
+  padding: 30px 0 10px;
+  background: #000;
+  color: rgba(255, 255, 255, 0.4);
+  text-align: center;
+}
