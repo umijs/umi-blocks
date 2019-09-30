@@ -1,0 +1,15 @@
+{
+  "name": "blocks",
+  "version": 2,
+  "scope": "umijs",
+  "builds": [
+    {
+      "src": "./package.json",
+      "use": "@now/static-build",
+      "config": {
+        "distDir": "./dist"
+      }
+    }
+  ],
+  "alias": ["blocks.umijs.org"]
+}
