@@ -2,7 +2,7 @@ import { Component } from 'react';
 import { connect } from 'dva';
 import Users from './components/Users';
 
-class BLOCK_NAME extends Component {
+class BLOCK_NAME_CAMEL_CASE extends Component {
   componentDidMount() {
     this.props.dispatch({
       type: 'BLOCK_NAME/fetch',
@@ -21,4 +21,4 @@ class BLOCK_NAME extends Component {
   }
 }
 
-export default connect()(BLOCK_NAME);
+export default connect()(BLOCK_NAME_CAMEL_CASE);
