@@ -10,12 +10,13 @@ function parseJSON(root) {
     const absDirPath = join(root, dir);
     const pkg = require(join(absDirPath, 'package.json'));
     const url = `https://github.com/umijs/umi-blocks/tree/master/${type}/${dir}`;
+    const img = `https://github.com/umijs/umi-blocks/blob/master/${type}/${dir}/snapshot.png?raw=true`;
     memo.push({
       name: pkg.name,
       description: pkg.description,
       url,
       tags: [],
-      img: `${url}/snapshot.png?raw=true`,
+      img,
       previewUrl: '',
       features: [],
     });
