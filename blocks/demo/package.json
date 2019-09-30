@@ -1,6 +1,6 @@
 {
   "name": "Demo",
-  "description": "A demo block of umi.",
+  "description": "Demo block of umi, with antd.",
   "dependencies": {
     "antd": "^3.10.9"
   }

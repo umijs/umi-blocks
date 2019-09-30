@@ -1,22 +1,37 @@
 # umi-blocks
 
-Official collection of some high quality blocks.
+Official block collection from umi community.
 
 ## Usage
 
-```shell
-$ umi block list
-$ umi block add [A block name in list, or any github address of a umi block]
+### Install Dependencies
+
+```bash
+$ yarn
+```
+
+### View Block or Template
+
+> Specify the block via BLOCK env.
+
+```bash
+$ BLOCK=templates/user-dashboard yarn start
+```
+
+### Create Block
+
+```bash
+# Create
+$ BLOCK=templates/my-template yarn run create
+
+# Debug
+$ BLOCK=templates/my-template yarn start
 ```
 
 You can visit umi [doc](https://umijs.org/guide/block.html) for find out more info about umi block.
 
-## Contribute
+If you are done, make a PR for this.
 
-You can create a umi block and make a PR for us!
+## LICENSE
 
-How to create a block:
-
-```shell
-$ yarn create umi --block
-```
+MIT

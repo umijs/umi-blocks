@@ -1,6 +1,6 @@
 {
   "name": "Blank",
-  "description": "A blank block for quick start a umi page develop.",
+  "description": "Blank block for quick start a umi page develop, with mock, dva, service and antd.",
   "dependencies": {
     "umi-request": "^1.0.0"
   }
