@@ -11,7 +11,7 @@ e.g.
 
 $ BLOCK=templates/user-dashboard yarn start
 $ BLOCK=blocks/blank yarn start
-  `.trim());
+  `);
   process.exit(1);
 }
 
