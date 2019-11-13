@@ -1,0 +1,10 @@
+{
+  "name": "两栏布局 Col 12-12",
+  "description": "Antd 的 col-12-12 布局。",
+  "dependencies": {
+    "antd": "^3.10.9"
+  },
+  "block": {
+    "category": "布局"
+  }
+}
