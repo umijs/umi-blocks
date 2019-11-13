@@ -54,6 +54,7 @@ function parseJSON(root) {
       img,
       previewUrl: '',
       features,
+      ...(pkg.block && pkg.block.category ? { category: pkg.block.category } : {}),
     });
     return memo;
   }, []);
