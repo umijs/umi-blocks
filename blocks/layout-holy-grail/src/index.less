@@ -1,0 +1,35 @@
+
+.wrapper {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+
+  header, footer {
+    background: #82caff;
+    flex: 0 0 6em;
+  }
+}
+
+.body {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+
+  main {
+    flex: 1;
+    background: #fecccc;
+  }
+  aside, nav {
+    flex: 0 0 12em;
+    background: #c9c;
+  }
+  nav {
+    order: -1;
+  }
+}
+
+@media (min-width: 768px) {
+  .body {
+    flex-direction: row;
+  }
+}
