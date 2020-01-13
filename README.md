@@ -15,7 +15,7 @@ $ yarn
 > Specify the block via BLOCK env.
 
 ```bash
-$ BLOCK=templates/user-dashboard yarn start
+ yarn start templates/user-dashboard
 ```
 
 ### Create Block
