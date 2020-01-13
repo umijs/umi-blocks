@@ -33,7 +33,7 @@ function haveImport(cwd, name) {
 function parseJSON(root) {
   const dirs = readdirSync(root);
   const type = basename(root);
-  const list = dirs.reduce((memo, dir) => {
+  const list = dirs.reduce((memo = [], dir) => {
     if (dir.charAt(0) === '.') return;
     const absDirPath = join(root, dir);
     const pkg = require(join(absDirPath, 'package.json'));
@@ -69,11 +69,7 @@ function generate(root) {
   mkdirp.sync(dist);
 
   const json = parseJSON(root);
-  writeFileSync(
-    join(dist, `${type}.json`),
-    JSON.stringify(json, null, 2),
-    'utf-8',
-  );
+  writeFileSync(join(dist, `${type}.json`), JSON.stringify(json, null, 2), 'utf-8');
 }
 
 generate(join(__dirname, '..', 'templates'));

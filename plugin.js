@@ -35,7 +35,7 @@ function getRoute() {
   };
 }
 
-export default (api) => {
+export default api => {
   api.modifyRoutes(routes => {
     routes[0].routes = [
       getRoute(),

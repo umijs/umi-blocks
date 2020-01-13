@@ -2,8 +2,8 @@
   "compilerOptions": {
     "outDir": "build/dist",
     "module": "esnext",
-    "target": "es2016",
-    "lib": ["es6", "dom"],
+    "target": "esnext",
+    "lib": ["esnext", "dom"],
     "sourceMap": true,
     "baseUrl": ".",
     "jsx": "react",
@@ -15,21 +15,13 @@
     "suppressImplicitAnyIndexErrors": true,
     "noUnusedLocals": true,
     "allowJs": true,
+    "resolveJsonModule": true,
     "experimentalDecorators": true,
+    "strict": true,
     "paths": {
-      "@/*": ["./ant-design-pro/*/src/*"]
+      "@/*": ["./src/*"]
     }
   },
-  "include": ["./ant-design-pro"],
-  "exclude": [
-    "node_modules",
-    "build",
-    "scripts",
-    "acceptance-tests",
-    "webpack",
-    "jest",
-    "src/setupTests.ts",
-    "tslint:latest",
-    "tslint-config-prettier"
-  ]
+  "include": [".", "./typings.d"],
+  "exclude": ["node_modules", "_scripts", "jest", "tslint:latest", "tslint-config-prettier"]
 }

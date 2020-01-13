@@ -11,7 +11,7 @@ class UserEditModal extends Component {
     };
   }
 
-  showModelHandler = (e) => {
+  showModelHandler = e => {
     if (e) e.stopPropagation();
     this.setState({
       visible: true,
@@ -45,9 +45,7 @@ class UserEditModal extends Component {
 
     return (
       <span>
-        <span onClick={this.showModelHandler}>
-          { children }
-        </span>
+        <span onClick={this.showModelHandler}>{children}</span>
         <Modal
           title="Edit User"
           visible={this.state.visible}
@@ -55,35 +53,20 @@ class UserEditModal extends Component {
           onCancel={this.hideModelHandler}
         >
           <Form horizontal onSubmit={this.okHandler}>
-            <FormItem
-              {...formItemLayout}
-              label="Name"
-            >
-              {
-                getFieldDecorator('name', {
-                  initialValue: name,
-                })(<Input />)
-              }
+            <FormItem {...formItemLayout} label="Name">
+              {getFieldDecorator('name', {
+                initialValue: name,
+              })(<Input />)}
             </FormItem>
-            <FormItem
-              {...formItemLayout}
-              label="Email"
-            >
-              {
-                getFieldDecorator('email', {
-                  initialValue: email,
-                })(<Input />)
-              }
+            <FormItem {...formItemLayout} label="Email">
+              {getFieldDecorator('email', {
+                initialValue: email,
+              })(<Input />)}
             </FormItem>
-            <FormItem
-              {...formItemLayout}
-              label="Website"
-            >
-              {
-                getFieldDecorator('website', {
-                  initialValue: website,
-                })(<Input />)
-              }
+            <FormItem {...formItemLayout} label="Website">
+              {getFieldDecorator('website', {
+                initialValue: website,
+              })(<Input />)}
             </FormItem>
           </Form>
         </Modal>
