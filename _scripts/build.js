@@ -33,7 +33,7 @@ function haveImport(cwd, name) {
 function parseJSON(root) {
   const dirs = readdirSync(root);
   const type = basename(root);
-  const list = dirs.reduce((memo, dir) => {
+  const list = dirs.reduce((memo = [], dir) => {
     if (dir.charAt(0) === '.') return;
     const absDirPath = join(root, dir);
     const pkg = require(join(absDirPath, 'package.json'));

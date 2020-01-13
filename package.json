@@ -8,9 +8,9 @@
     "lint-staged:js": "eslint --ext .js",
     "lint:fix": "eslint --fix --ext .js src mock tests && npm run lint:style",
     "lint:style": "stylelint \"src/**/*.less\" --syntax less",
-    "start": "umi block_dev",
     "prettier": "prettier -c --write \"**/*\"",
-    "screenshot": "pro screenshot"
+    "screenshot": "pro screenshot",
+    "start": "umi block_dev"
   },
   "husky": {
     "hooks": {
@@ -49,5 +49,8 @@
     "umi-plugin-react": "^1.15.0",
     "umi-request": "^1.2.17",
     "yeoman-generator": "^4.1.0"
+  },
+  "engines": {
+    "node": "12.x"
   }
 }
