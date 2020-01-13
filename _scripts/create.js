@@ -24,4 +24,3 @@ const generator = new BlockGenerator({
 generator.run(() => {
   console.log('done');
 });
-

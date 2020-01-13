@@ -1,0 +1,16 @@
+{
+  "name": "table",
+  "description": "查询表格是每一个项目都需要的基本页面。",
+  "dependencies": {
+    "@ant-design/pro-table": "^1.0.31",
+    "@umijs/ui-flag": "1.0.2",
+    "antd": "^3.10.9"
+  },
+  "peerDependencies": {
+    "react": "^16.8.6",
+    "react-dom": "^16.8.6"
+  },
+  "devDependencies": {
+    "umi": "^2.13.0"
+  }
+}

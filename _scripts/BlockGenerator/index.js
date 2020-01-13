@@ -17,7 +17,7 @@ class BlockGenerator extends Generator {
             this.destinationPath(file.replace(/^_/, '.')),
             {
               name: process.env.BLOCK.split('/')[1],
-            },
+            }
           );
         }
       });
