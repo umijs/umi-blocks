@@ -1,5 +1,6 @@
 {
-  "private": true,
+  "name": "umi-blocks",
+  "version": "1.0.0",
   "scripts": {
     "build": "node ./_scripts/build.js",
     "create": "node ./_scripts/create.js",
