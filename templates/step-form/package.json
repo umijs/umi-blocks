@@ -1,0 +1,36 @@
+{
+  "name": "tarzan-step-form",
+  "description": "bigfish-Tarzan模板中的分布表单页面",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "bigfish dev --block",
+    "dev": "bigfish dev --block",
+    "analyze": "bigfish dev --block --analyze",
+    "version": "bigfish -v",
+    "lint": "bigfish lint --style",
+    "precommit": "bigfish lint --staged --prettier --style --fix",
+    "ci": "bigfish lint"
+  },
+  "devDependencies": {
+    "@ali/bkbone-lib": "^0.2.20",
+    "@alipay/bigfish": "^2.21.0"
+  },
+  "engines": {
+    "install-alinode": "4"
+  },
+  "ci": {
+    "version": "alinode=4"
+  },
+  "dependencies": {
+    "@ali/tarzan-lib": "^0.0.6",
+    "@ali/tarzan-ui": "^0.0.9",
+    "@alipay/bigfish": "^2.21.0",
+    "@alipay/tech-ui": "^1.6.0",
+    "@alipay/techui-form": "^1.0.20",
+    "@umijs/hooks": "^1.0.1",
+    "moment": "^2.24.0"
+  },
+  "blockConfig": {
+    "dependencies": []
+  }
+}
